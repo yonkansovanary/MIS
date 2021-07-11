@@ -20,3 +20,4 @@ D:\Test\MIS\AssGroupIII\AssGroupIII\obj\Debug\AssGroupIII.vbprojResolveAssemblyR
 D:\Test\MIS\AssGroupIII\AssGroupIII\obj\Debug\AssGroupIII.Form1.resources
 D:\Test\MIS\AssGroupIII\AssGroupIII\obj\Debug\AssGroupIII.Resources.resources
 D:\Test\MIS\AssGroupIII\AssGroupIII\obj\Debug\AssGroupIII.vbproj.GenerateResource.Cache
+D:\Test\MIS\AssGroupIII\AssGroupIII\obj\Debug\AssGroupIII.MainForm.resources
