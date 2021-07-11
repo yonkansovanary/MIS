@@ -9,3 +9,14 @@ D:\SRU\AssGroupIII\AssGroupIII\obj\Debug\AssGroupIII.vbproj.GenerateResource.Cac
 D:\SRU\AssGroupIII\AssGroupIII\obj\Debug\AssGroupIII.exe
 D:\SRU\AssGroupIII\AssGroupIII\obj\Debug\AssGroupIII.xml
 D:\SRU\AssGroupIII\AssGroupIII\obj\Debug\AssGroupIII.pdb
+D:\Test\MIS\AssGroupIII\AssGroupIII\bin\Debug\AssGroupIII.exe.config
+D:\Test\MIS\AssGroupIII\AssGroupIII\obj\Debug\AssGroupIII.exe
+D:\Test\MIS\AssGroupIII\AssGroupIII\obj\Debug\AssGroupIII.xml
+D:\Test\MIS\AssGroupIII\AssGroupIII\obj\Debug\AssGroupIII.pdb
+D:\Test\MIS\AssGroupIII\AssGroupIII\bin\Debug\AssGroupIII.exe
+D:\Test\MIS\AssGroupIII\AssGroupIII\bin\Debug\AssGroupIII.pdb
+D:\Test\MIS\AssGroupIII\AssGroupIII\bin\Debug\AssGroupIII.xml
+D:\Test\MIS\AssGroupIII\AssGroupIII\obj\Debug\AssGroupIII.vbprojResolveAssemblyReference.cache
+D:\Test\MIS\AssGroupIII\AssGroupIII\obj\Debug\AssGroupIII.Form1.resources
+D:\Test\MIS\AssGroupIII\AssGroupIII\obj\Debug\AssGroupIII.Resources.resources
+D:\Test\MIS\AssGroupIII\AssGroupIII\obj\Debug\AssGroupIII.vbproj.GenerateResource.Cache
