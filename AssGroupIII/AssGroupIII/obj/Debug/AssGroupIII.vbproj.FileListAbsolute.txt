@@ -1,0 +1,11 @@
+D:\SRU\AssGroupIII\AssGroupIII\bin\Debug\AssGroupIII.exe.config
+D:\SRU\AssGroupIII\AssGroupIII\bin\Debug\AssGroupIII.exe
+D:\SRU\AssGroupIII\AssGroupIII\bin\Debug\AssGroupIII.pdb
+D:\SRU\AssGroupIII\AssGroupIII\bin\Debug\AssGroupIII.xml
+D:\SRU\AssGroupIII\AssGroupIII\obj\Debug\AssGroupIII.vbprojResolveAssemblyReference.cache
+D:\SRU\AssGroupIII\AssGroupIII\obj\Debug\AssGroupIII.Form1.resources
+D:\SRU\AssGroupIII\AssGroupIII\obj\Debug\AssGroupIII.Resources.resources
+D:\SRU\AssGroupIII\AssGroupIII\obj\Debug\AssGroupIII.vbproj.GenerateResource.Cache
+D:\SRU\AssGroupIII\AssGroupIII\obj\Debug\AssGroupIII.exe
+D:\SRU\AssGroupIII\AssGroupIII\obj\Debug\AssGroupIII.xml
+D:\SRU\AssGroupIII\AssGroupIII\obj\Debug\AssGroupIII.pdb
