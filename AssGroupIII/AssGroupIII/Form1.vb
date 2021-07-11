@@ -10,10 +10,10 @@ Public Class Form1
         Return
     End Sub
     Private Sub Form1_Load(sender As Object, e As EventArgs) Handles MyBase.Load
-        DataGridView1.DataSource = GetStudent()
+
     End Sub
 
-    Private Sub Button1_Click(sender As Object, e As EventArgs) Handles Button1.Click
+    Private Sub Button1_Click(sender As Object, e As EventArgs)
         sqlConnector()
         Try
             myCmd.CommandText = "SELECT * FROM Student "
