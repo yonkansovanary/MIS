@@ -30,7 +30,6 @@ Partial Class AddUserForm
         Me.LabelEmail = New System.Windows.Forms.Label()
         Me.LabelPhone = New System.Windows.Forms.Label()
         Me.LabelAddUserTitle = New System.Windows.Forms.Label()
-        Me.TextBox1 = New System.Windows.Forms.TextBox()
         Me.txtFirstname = New System.Windows.Forms.TextBox()
         Me.txtLastname = New System.Windows.Forms.TextBox()
         Me.txtUsername = New System.Windows.Forms.TextBox()
@@ -120,13 +119,6 @@ Partial Class AddUserForm
         Me.LabelAddUserTitle.TabIndex = 7
         Me.LabelAddUserTitle.Text = "Add User"
         '
-        'TextBox1
-        '
-        Me.TextBox1.Location = New System.Drawing.Point(0, 0)
-        Me.TextBox1.Name = "TextBox1"
-        Me.TextBox1.Size = New System.Drawing.Size(100, 20)
-        Me.TextBox1.TabIndex = 8
-        '
         'txtFirstname
         '
         Me.txtFirstname.Font = New System.Drawing.Font("Microsoft Sans Serif", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
@@ -195,7 +187,6 @@ Partial Class AddUserForm
         Me.Controls.Add(Me.txtUsername)
         Me.Controls.Add(Me.txtLastname)
         Me.Controls.Add(Me.txtFirstname)
-        Me.Controls.Add(Me.TextBox1)
         Me.Controls.Add(Me.LabelAddUserTitle)
         Me.Controls.Add(Me.LabelPhone)
         Me.Controls.Add(Me.LabelEmail)
@@ -219,7 +210,6 @@ Partial Class AddUserForm
     Friend WithEvents LabelEmail As Label
     Friend WithEvents LabelPhone As Label
     Friend WithEvents LabelAddUserTitle As Label
-    Friend WithEvents TextBox1 As TextBox
     Friend WithEvents txtFirstname As TextBox
     Friend WithEvents txtLastname As TextBox
     Friend WithEvents txtUsername As TextBox
