@@ -62,7 +62,7 @@ Partial Class MainForm
         '
         'PanelSidebar
         '
-        Me.PanelSidebar.BackColor = System.Drawing.Color.Navy
+        Me.PanelSidebar.BackColor = System.Drawing.Color.MidnightBlue
         Me.PanelSidebar.Controls.Add(Me.PanelAdminBtn)
         Me.PanelSidebar.Controls.Add(Me.PictureBox2)
         Me.PanelSidebar.Controls.Add(Me.PictureBox1)
@@ -70,7 +70,7 @@ Partial Class MainForm
         Me.PanelSidebar.Controls.Add(Me.LabelUserAdminName)
         Me.PanelSidebar.Dock = System.Windows.Forms.DockStyle.Left
         Me.PanelSidebar.Location = New System.Drawing.Point(0, 0)
-        Me.PanelSidebar.Margin = New System.Windows.Forms.Padding(4, 4, 4, 4)
+        Me.PanelSidebar.Margin = New System.Windows.Forms.Padding(4)
         Me.PanelSidebar.Name = "PanelSidebar"
         Me.PanelSidebar.Size = New System.Drawing.Size(267, 865)
         Me.PanelSidebar.TabIndex = 1
@@ -80,7 +80,7 @@ Partial Class MainForm
         Me.PanelAdminBtn.Controls.Add(Me.Adminbtn)
         Me.PanelAdminBtn.Controls.Add(Me.PictureBox8)
         Me.PanelAdminBtn.Location = New System.Drawing.Point(0, 281)
-        Me.PanelAdminBtn.Margin = New System.Windows.Forms.Padding(4, 4, 4, 4)
+        Me.PanelAdminBtn.Margin = New System.Windows.Forms.Padding(4)
         Me.PanelAdminBtn.Name = "PanelAdminBtn"
         Me.PanelAdminBtn.Size = New System.Drawing.Size(261, 53)
         Me.PanelAdminBtn.TabIndex = 6
@@ -101,7 +101,7 @@ Partial Class MainForm
         '
         Me.PictureBox8.Image = CType(resources.GetObject("PictureBox8.Image"), System.Drawing.Image)
         Me.PictureBox8.Location = New System.Drawing.Point(19, 9)
-        Me.PictureBox8.Margin = New System.Windows.Forms.Padding(4, 4, 4, 4)
+        Me.PictureBox8.Margin = New System.Windows.Forms.Padding(4)
         Me.PictureBox8.Name = "PictureBox8"
         Me.PictureBox8.Size = New System.Drawing.Size(33, 36)
         Me.PictureBox8.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom
@@ -112,7 +112,7 @@ Partial Class MainForm
         '
         Me.PictureBox2.Image = CType(resources.GetObject("PictureBox2.Image"), System.Drawing.Image)
         Me.PictureBox2.Location = New System.Drawing.Point(52, 214)
-        Me.PictureBox2.Margin = New System.Windows.Forms.Padding(4, 4, 4, 4)
+        Me.PictureBox2.Margin = New System.Windows.Forms.Padding(4)
         Me.PictureBox2.Name = "PictureBox2"
         Me.PictureBox2.Size = New System.Drawing.Size(39, 36)
         Me.PictureBox2.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom
@@ -123,7 +123,7 @@ Partial Class MainForm
         '
         Me.PictureBox1.Image = CType(resources.GetObject("PictureBox1.Image"), System.Drawing.Image)
         Me.PictureBox1.Location = New System.Drawing.Point(64, 87)
-        Me.PictureBox1.Margin = New System.Windows.Forms.Padding(4, 4, 4, 4)
+        Me.PictureBox1.Margin = New System.Windows.Forms.Padding(4)
         Me.PictureBox1.Name = "PictureBox1"
         Me.PictureBox1.Size = New System.Drawing.Size(127, 122)
         Me.PictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage
@@ -159,7 +159,7 @@ Partial Class MainForm
         Me.PanelHeaderB.Controls.Add(Me.PanelHeaderS)
         Me.PanelHeaderB.Dock = System.Windows.Forms.DockStyle.Top
         Me.PanelHeaderB.Location = New System.Drawing.Point(267, 0)
-        Me.PanelHeaderB.Margin = New System.Windows.Forms.Padding(4, 4, 4, 4)
+        Me.PanelHeaderB.Margin = New System.Windows.Forms.Padding(4)
         Me.PanelHeaderB.Name = "PanelHeaderB"
         Me.PanelHeaderB.Size = New System.Drawing.Size(1560, 58)
         Me.PanelHeaderB.TabIndex = 2
@@ -169,17 +169,17 @@ Partial Class MainForm
         Me.PanelHeaderS.BackColor = System.Drawing.SystemColors.Control
         Me.PanelHeaderS.Dock = System.Windows.Forms.DockStyle.Top
         Me.PanelHeaderS.Location = New System.Drawing.Point(0, 0)
-        Me.PanelHeaderS.Margin = New System.Windows.Forms.Padding(4, 4, 4, 4)
+        Me.PanelHeaderS.Margin = New System.Windows.Forms.Padding(4)
         Me.PanelHeaderS.Name = "PanelHeaderS"
         Me.PanelHeaderS.Size = New System.Drawing.Size(1560, 57)
         Me.PanelHeaderS.TabIndex = 3
         '
         'PanelFooter
         '
-        Me.PanelFooter.BackColor = System.Drawing.Color.Navy
+        Me.PanelFooter.BackColor = System.Drawing.Color.MidnightBlue
         Me.PanelFooter.Dock = System.Windows.Forms.DockStyle.Bottom
         Me.PanelFooter.Location = New System.Drawing.Point(267, 808)
-        Me.PanelFooter.Margin = New System.Windows.Forms.Padding(4, 4, 4, 4)
+        Me.PanelFooter.Margin = New System.Windows.Forms.Padding(4)
         Me.PanelFooter.Name = "PanelFooter"
         Me.PanelFooter.Size = New System.Drawing.Size(1560, 57)
         Me.PanelFooter.TabIndex = 3
@@ -189,7 +189,7 @@ Partial Class MainForm
         Me.ListUserPanel.Controls.Add(Me.btnAddUser)
         Me.ListUserPanel.Controls.Add(Me.DataGridView_sec_user)
         Me.ListUserPanel.Location = New System.Drawing.Point(267, 116)
-        Me.ListUserPanel.Margin = New System.Windows.Forms.Padding(4, 4, 4, 4)
+        Me.ListUserPanel.Margin = New System.Windows.Forms.Padding(4)
         Me.ListUserPanel.Name = "ListUserPanel"
         Me.ListUserPanel.Size = New System.Drawing.Size(1560, 686)
         Me.ListUserPanel.TabIndex = 7
@@ -197,11 +197,11 @@ Partial Class MainForm
         '
         'btnAddUser
         '
-        Me.btnAddUser.BackColor = System.Drawing.Color.Blue
+        Me.btnAddUser.BackColor = System.Drawing.Color.MidnightBlue
         Me.btnAddUser.Font = New System.Drawing.Font("Microsoft Sans Serif", 18.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.btnAddUser.Image = CType(resources.GetObject("btnAddUser.Image"), System.Drawing.Image)
         Me.btnAddUser.Location = New System.Drawing.Point(1444, 4)
-        Me.btnAddUser.Margin = New System.Windows.Forms.Padding(4, 4, 4, 4)
+        Me.btnAddUser.Margin = New System.Windows.Forms.Padding(4)
         Me.btnAddUser.Name = "btnAddUser"
         Me.btnAddUser.Size = New System.Drawing.Size(100, 52)
         Me.btnAddUser.TabIndex = 2
@@ -211,9 +211,9 @@ Partial Class MainForm
         '
         Me.DataGridView_sec_user.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize
         Me.DataGridView_sec_user.Location = New System.Drawing.Point(13, 63)
-        Me.DataGridView_sec_user.Margin = New System.Windows.Forms.Padding(4, 4, 4, 4)
+        Me.DataGridView_sec_user.Margin = New System.Windows.Forms.Padding(4)
         Me.DataGridView_sec_user.Name = "DataGridView_sec_user"
-        Me.DataGridView_sec_user.Size = New System.Drawing.Size(1531, 612)
+        Me.DataGridView_sec_user.Size = New System.Drawing.Size(1531, 601)
         Me.DataGridView_sec_user.TabIndex = 0
         '
         'AdminLabel
@@ -240,7 +240,7 @@ Partial Class MainForm
         Me.Controls.Add(Me.ListUserPanel)
         Me.Controls.Add(Me.PanelSidebar)
         Me.Controls.Add(Me.LabelWelcome)
-        Me.Margin = New System.Windows.Forms.Padding(4, 4, 4, 4)
+        Me.Margin = New System.Windows.Forms.Padding(4)
         Me.Name = "MainForm"
         Me.Text = "MainForm"
         Me.PanelSidebar.ResumeLayout(False)
