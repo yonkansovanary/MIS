@@ -26,6 +26,8 @@ Public Class Form1
             password = myReader("password").ToString()
             If ((username <> txtUsername.Text) OrElse (password <> txtPassword.TextAlign)) Then
                 MainForm.Show()
+                Me.Hide()
+
             Else
                 MsgBox("Please check username and password again")
             End If
