@@ -186,9 +186,9 @@ Partial Class MainForm
         'DataGridView_sec_user
         '
         Me.DataGridView_sec_user.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize
-        Me.DataGridView_sec_user.Location = New System.Drawing.Point(10, 42)
+        Me.DataGridView_sec_user.Location = New System.Drawing.Point(10, 51)
         Me.DataGridView_sec_user.Name = "DataGridView_sec_user"
-        Me.DataGridView_sec_user.Size = New System.Drawing.Size(1148, 506)
+        Me.DataGridView_sec_user.Size = New System.Drawing.Size(1148, 497)
         Me.DataGridView_sec_user.TabIndex = 0
         '
         'AdminLabel
@@ -210,7 +210,7 @@ Partial Class MainForm
         Me.btnAddUser.Image = CType(resources.GetObject("btnAddUser.Image"), System.Drawing.Image)
         Me.btnAddUser.Location = New System.Drawing.Point(1083, 3)
         Me.btnAddUser.Name = "btnAddUser"
-        Me.btnAddUser.Size = New System.Drawing.Size(75, 33)
+        Me.btnAddUser.Size = New System.Drawing.Size(75, 42)
         Me.btnAddUser.TabIndex = 2
         Me.btnAddUser.UseVisualStyleBackColor = False
         '
