@@ -1,5 +1,7 @@
-﻿Public Class MainForm
+﻿Imports System.Data.SqlClient
+Public Class MainForm
     Dim myCon As New Connection
+
 
     Private Sub Panel16_Paint(sender As Object, e As PaintEventArgs) Handles PanelAdminBtn.Paint
     End Sub
@@ -27,5 +29,13 @@
 
     Private Sub btnAddUser_Click(sender As Object, e As EventArgs) Handles btnAddUser.Click
         AddUserForm.Show()
+    End Sub
+
+    Private Sub MainForm_Load(sender As Object, e As EventArgs) Handles MyBase.Load
+        LabelUserAdminName.Text = Form1.txtUsername.Text
+    End Sub
+
+    Private Sub DataGridView_sec_user_CellContentClick(sender As Object, e As DataGridViewCellEventArgs) Handles DataGridView_sec_user.CellContentClick
+
     End Sub
 End Class

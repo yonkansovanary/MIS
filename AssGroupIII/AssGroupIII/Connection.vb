@@ -12,14 +12,27 @@ Public Class Connection
     End Sub
     Public Function listAllData(sql As String)
         Dim data As New DataTable
+        Try
+            sqlConnector()
+            myCmd.CommandText = sql
+            myConn.Open()
+            myReader = myCmd.ExecuteReader()
+            data.Load(myReader)
+            Return data
+        Catch ex As Exception
+            MsgBox(ex.Message)
+        End Try
+
+    End Function
+    Public Function myReaderFunction(sql As String)
+        Dim data As New DataTable
         sqlConnector()
         myCmd.CommandText = sql
         myConn.Open()
         myReader = myCmd.ExecuteReader()
-        data.Load(myReader)
-        Return data
+        Return myReader
     End Function
-    Public Function myReaderFunction(sql As String)
+    Public Function getCurentUser(sql As String)
         Dim data As New DataTable
         sqlConnector()
         myCmd.CommandText = sql

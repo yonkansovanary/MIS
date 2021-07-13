@@ -53,9 +53,10 @@ Partial Class MainForm
         '
         Me.LabelWelcome.AutoSize = True
         Me.LabelWelcome.Font = New System.Drawing.Font("Microsoft Sans Serif", 14.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.LabelWelcome.Location = New System.Drawing.Point(726, 344)
+        Me.LabelWelcome.Location = New System.Drawing.Point(968, 423)
+        Me.LabelWelcome.Margin = New System.Windows.Forms.Padding(4, 0, 4, 0)
         Me.LabelWelcome.Name = "LabelWelcome"
-        Me.LabelWelcome.Size = New System.Drawing.Size(91, 24)
+        Me.LabelWelcome.Size = New System.Drawing.Size(115, 29)
         Me.LabelWelcome.TabIndex = 0
         Me.LabelWelcome.Text = "Welcome"
         '
@@ -69,17 +70,19 @@ Partial Class MainForm
         Me.PanelSidebar.Controls.Add(Me.LabelUserAdminName)
         Me.PanelSidebar.Dock = System.Windows.Forms.DockStyle.Left
         Me.PanelSidebar.Location = New System.Drawing.Point(0, 0)
+        Me.PanelSidebar.Margin = New System.Windows.Forms.Padding(4, 4, 4, 4)
         Me.PanelSidebar.Name = "PanelSidebar"
-        Me.PanelSidebar.Size = New System.Drawing.Size(200, 703)
+        Me.PanelSidebar.Size = New System.Drawing.Size(267, 865)
         Me.PanelSidebar.TabIndex = 1
         '
         'PanelAdminBtn
         '
         Me.PanelAdminBtn.Controls.Add(Me.Adminbtn)
         Me.PanelAdminBtn.Controls.Add(Me.PictureBox8)
-        Me.PanelAdminBtn.Location = New System.Drawing.Point(0, 228)
+        Me.PanelAdminBtn.Location = New System.Drawing.Point(0, 281)
+        Me.PanelAdminBtn.Margin = New System.Windows.Forms.Padding(4, 4, 4, 4)
         Me.PanelAdminBtn.Name = "PanelAdminBtn"
-        Me.PanelAdminBtn.Size = New System.Drawing.Size(196, 43)
+        Me.PanelAdminBtn.Size = New System.Drawing.Size(261, 53)
         Me.PanelAdminBtn.TabIndex = 6
         '
         'Adminbtn
@@ -87,18 +90,20 @@ Partial Class MainForm
         Me.Adminbtn.AutoSize = True
         Me.Adminbtn.Font = New System.Drawing.Font("Microsoft Sans Serif", 12.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.Adminbtn.ForeColor = System.Drawing.Color.White
-        Me.Adminbtn.Location = New System.Drawing.Point(46, 12)
+        Me.Adminbtn.Location = New System.Drawing.Point(61, 15)
+        Me.Adminbtn.Margin = New System.Windows.Forms.Padding(4, 0, 4, 0)
         Me.Adminbtn.Name = "Adminbtn"
-        Me.Adminbtn.Size = New System.Drawing.Size(124, 20)
+        Me.Adminbtn.Size = New System.Drawing.Size(149, 25)
         Me.Adminbtn.TabIndex = 13
         Me.Adminbtn.Text = "Administration"
         '
         'PictureBox8
         '
         Me.PictureBox8.Image = CType(resources.GetObject("PictureBox8.Image"), System.Drawing.Image)
-        Me.PictureBox8.Location = New System.Drawing.Point(14, 7)
+        Me.PictureBox8.Location = New System.Drawing.Point(19, 9)
+        Me.PictureBox8.Margin = New System.Windows.Forms.Padding(4, 4, 4, 4)
         Me.PictureBox8.Name = "PictureBox8"
-        Me.PictureBox8.Size = New System.Drawing.Size(25, 29)
+        Me.PictureBox8.Size = New System.Drawing.Size(33, 36)
         Me.PictureBox8.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom
         Me.PictureBox8.TabIndex = 9
         Me.PictureBox8.TabStop = False
@@ -106,9 +111,10 @@ Partial Class MainForm
         'PictureBox2
         '
         Me.PictureBox2.Image = CType(resources.GetObject("PictureBox2.Image"), System.Drawing.Image)
-        Me.PictureBox2.Location = New System.Drawing.Point(39, 174)
+        Me.PictureBox2.Location = New System.Drawing.Point(52, 214)
+        Me.PictureBox2.Margin = New System.Windows.Forms.Padding(4, 4, 4, 4)
         Me.PictureBox2.Name = "PictureBox2"
-        Me.PictureBox2.Size = New System.Drawing.Size(29, 29)
+        Me.PictureBox2.Size = New System.Drawing.Size(39, 36)
         Me.PictureBox2.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom
         Me.PictureBox2.TabIndex = 8
         Me.PictureBox2.TabStop = False
@@ -116,9 +122,10 @@ Partial Class MainForm
         'PictureBox1
         '
         Me.PictureBox1.Image = CType(resources.GetObject("PictureBox1.Image"), System.Drawing.Image)
-        Me.PictureBox1.Location = New System.Drawing.Point(48, 71)
+        Me.PictureBox1.Location = New System.Drawing.Point(64, 87)
+        Me.PictureBox1.Margin = New System.Windows.Forms.Padding(4, 4, 4, 4)
         Me.PictureBox1.Name = "PictureBox1"
-        Me.PictureBox1.Size = New System.Drawing.Size(95, 99)
+        Me.PictureBox1.Size = New System.Drawing.Size(127, 122)
         Me.PictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage
         Me.PictureBox1.TabIndex = 6
         Me.PictureBox1.TabStop = False
@@ -128,9 +135,10 @@ Partial Class MainForm
         Me.LabelProjectTitle.AutoSize = True
         Me.LabelProjectTitle.Font = New System.Drawing.Font("Microsoft Sans Serif", 14.25!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.LabelProjectTitle.ForeColor = System.Drawing.Color.White
-        Me.LabelProjectTitle.Location = New System.Drawing.Point(12, 22)
+        Me.LabelProjectTitle.Location = New System.Drawing.Point(16, 27)
+        Me.LabelProjectTitle.Margin = New System.Windows.Forms.Padding(4, 0, 4, 0)
         Me.LabelProjectTitle.Name = "LabelProjectTitle"
-        Me.LabelProjectTitle.Size = New System.Drawing.Size(168, 24)
+        Me.LabelProjectTitle.Size = New System.Drawing.Size(210, 29)
         Me.LabelProjectTitle.TabIndex = 4
         Me.LabelProjectTitle.Text = "Inventory System"
         '
@@ -139,20 +147,21 @@ Partial Class MainForm
         Me.LabelUserAdminName.AutoSize = True
         Me.LabelUserAdminName.Font = New System.Drawing.Font("Microsoft Sans Serif", 12.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.LabelUserAdminName.ForeColor = System.Drawing.Color.White
-        Me.LabelUserAdminName.Location = New System.Drawing.Point(74, 183)
+        Me.LabelUserAdminName.Location = New System.Drawing.Point(99, 225)
+        Me.LabelUserAdminName.Margin = New System.Windows.Forms.Padding(4, 0, 4, 0)
         Me.LabelUserAdminName.Name = "LabelUserAdminName"
-        Me.LabelUserAdminName.Size = New System.Drawing.Size(86, 20)
+        Me.LabelUserAdminName.Size = New System.Drawing.Size(0, 25)
         Me.LabelUserAdminName.TabIndex = 7
-        Me.LabelUserAdminName.Text = "Lisa Khim"
         '
         'PanelHeaderB
         '
         Me.PanelHeaderB.BackColor = System.Drawing.SystemColors.AppWorkspace
         Me.PanelHeaderB.Controls.Add(Me.PanelHeaderS)
         Me.PanelHeaderB.Dock = System.Windows.Forms.DockStyle.Top
-        Me.PanelHeaderB.Location = New System.Drawing.Point(200, 0)
+        Me.PanelHeaderB.Location = New System.Drawing.Point(267, 0)
+        Me.PanelHeaderB.Margin = New System.Windows.Forms.Padding(4, 4, 4, 4)
         Me.PanelHeaderB.Name = "PanelHeaderB"
-        Me.PanelHeaderB.Size = New System.Drawing.Size(1170, 47)
+        Me.PanelHeaderB.Size = New System.Drawing.Size(1560, 58)
         Me.PanelHeaderB.TabIndex = 2
         '
         'PanelHeaderS
@@ -160,26 +169,29 @@ Partial Class MainForm
         Me.PanelHeaderS.BackColor = System.Drawing.SystemColors.Control
         Me.PanelHeaderS.Dock = System.Windows.Forms.DockStyle.Top
         Me.PanelHeaderS.Location = New System.Drawing.Point(0, 0)
+        Me.PanelHeaderS.Margin = New System.Windows.Forms.Padding(4, 4, 4, 4)
         Me.PanelHeaderS.Name = "PanelHeaderS"
-        Me.PanelHeaderS.Size = New System.Drawing.Size(1170, 46)
+        Me.PanelHeaderS.Size = New System.Drawing.Size(1560, 57)
         Me.PanelHeaderS.TabIndex = 3
         '
         'PanelFooter
         '
         Me.PanelFooter.BackColor = System.Drawing.Color.Navy
         Me.PanelFooter.Dock = System.Windows.Forms.DockStyle.Bottom
-        Me.PanelFooter.Location = New System.Drawing.Point(200, 657)
+        Me.PanelFooter.Location = New System.Drawing.Point(267, 808)
+        Me.PanelFooter.Margin = New System.Windows.Forms.Padding(4, 4, 4, 4)
         Me.PanelFooter.Name = "PanelFooter"
-        Me.PanelFooter.Size = New System.Drawing.Size(1170, 46)
+        Me.PanelFooter.Size = New System.Drawing.Size(1560, 57)
         Me.PanelFooter.TabIndex = 3
         '
         'ListUserPanel
         '
         Me.ListUserPanel.Controls.Add(Me.btnAddUser)
         Me.ListUserPanel.Controls.Add(Me.DataGridView_sec_user)
-        Me.ListUserPanel.Location = New System.Drawing.Point(200, 94)
+        Me.ListUserPanel.Location = New System.Drawing.Point(267, 116)
+        Me.ListUserPanel.Margin = New System.Windows.Forms.Padding(4, 4, 4, 4)
         Me.ListUserPanel.Name = "ListUserPanel"
-        Me.ListUserPanel.Size = New System.Drawing.Size(1170, 557)
+        Me.ListUserPanel.Size = New System.Drawing.Size(1560, 686)
         Me.ListUserPanel.TabIndex = 7
         Me.ListUserPanel.Visible = False
         '
@@ -188,18 +200,20 @@ Partial Class MainForm
         Me.btnAddUser.BackColor = System.Drawing.Color.Blue
         Me.btnAddUser.Font = New System.Drawing.Font("Microsoft Sans Serif", 18.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.btnAddUser.Image = CType(resources.GetObject("btnAddUser.Image"), System.Drawing.Image)
-        Me.btnAddUser.Location = New System.Drawing.Point(1083, 3)
+        Me.btnAddUser.Location = New System.Drawing.Point(1444, 4)
+        Me.btnAddUser.Margin = New System.Windows.Forms.Padding(4, 4, 4, 4)
         Me.btnAddUser.Name = "btnAddUser"
-        Me.btnAddUser.Size = New System.Drawing.Size(75, 42)
+        Me.btnAddUser.Size = New System.Drawing.Size(100, 52)
         Me.btnAddUser.TabIndex = 2
         Me.btnAddUser.UseVisualStyleBackColor = False
         '
         'DataGridView_sec_user
         '
         Me.DataGridView_sec_user.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize
-        Me.DataGridView_sec_user.Location = New System.Drawing.Point(10, 51)
+        Me.DataGridView_sec_user.Location = New System.Drawing.Point(13, 63)
+        Me.DataGridView_sec_user.Margin = New System.Windows.Forms.Padding(4, 4, 4, 4)
         Me.DataGridView_sec_user.Name = "DataGridView_sec_user"
-        Me.DataGridView_sec_user.Size = New System.Drawing.Size(1148, 497)
+        Me.DataGridView_sec_user.Size = New System.Drawing.Size(1531, 612)
         Me.DataGridView_sec_user.TabIndex = 0
         '
         'AdminLabel
@@ -207,24 +221,26 @@ Partial Class MainForm
         Me.AdminLabel.AutoSize = True
         Me.AdminLabel.Font = New System.Drawing.Font("Microsoft Sans Serif", 12.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.AdminLabel.ForeColor = System.Drawing.Color.Black
-        Me.AdminLabel.Location = New System.Drawing.Point(206, 71)
+        Me.AdminLabel.Location = New System.Drawing.Point(275, 87)
+        Me.AdminLabel.Margin = New System.Windows.Forms.Padding(4, 0, 4, 0)
         Me.AdminLabel.Name = "AdminLabel"
-        Me.AdminLabel.Size = New System.Drawing.Size(124, 20)
+        Me.AdminLabel.Size = New System.Drawing.Size(149, 25)
         Me.AdminLabel.TabIndex = 14
         Me.AdminLabel.Text = "Administration"
         Me.AdminLabel.Visible = False
         '
         'MainForm
         '
-        Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
+        Me.AutoScaleDimensions = New System.Drawing.SizeF(8.0!, 16.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
-        Me.ClientSize = New System.Drawing.Size(1370, 703)
+        Me.ClientSize = New System.Drawing.Size(1827, 865)
         Me.Controls.Add(Me.AdminLabel)
         Me.Controls.Add(Me.PanelFooter)
         Me.Controls.Add(Me.PanelHeaderB)
         Me.Controls.Add(Me.ListUserPanel)
         Me.Controls.Add(Me.PanelSidebar)
         Me.Controls.Add(Me.LabelWelcome)
+        Me.Margin = New System.Windows.Forms.Padding(4, 4, 4, 4)
         Me.Name = "MainForm"
         Me.Text = "MainForm"
         Me.PanelSidebar.ResumeLayout(False)
