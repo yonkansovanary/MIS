@@ -36,9 +36,9 @@ Partial Class MainForm
         Me.PanelHeaderS = New System.Windows.Forms.Panel()
         Me.PanelFooter = New System.Windows.Forms.Panel()
         Me.ListUserPanel = New System.Windows.Forms.Panel()
+        Me.btnAddUser = New System.Windows.Forms.Button()
         Me.DataGridView_sec_user = New System.Windows.Forms.DataGridView()
         Me.AdminLabel = New System.Windows.Forms.Label()
-        Me.btnAddUser = New System.Windows.Forms.Button()
         Me.PanelSidebar.SuspendLayout()
         Me.PanelAdminBtn.SuspendLayout()
         CType(Me.PictureBox8, System.ComponentModel.ISupportInitialize).BeginInit()
@@ -183,6 +183,17 @@ Partial Class MainForm
         Me.ListUserPanel.TabIndex = 7
         Me.ListUserPanel.Visible = False
         '
+        'btnAddUser
+        '
+        Me.btnAddUser.BackColor = System.Drawing.Color.Blue
+        Me.btnAddUser.Font = New System.Drawing.Font("Microsoft Sans Serif", 18.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.btnAddUser.Image = CType(resources.GetObject("btnAddUser.Image"), System.Drawing.Image)
+        Me.btnAddUser.Location = New System.Drawing.Point(1083, 3)
+        Me.btnAddUser.Name = "btnAddUser"
+        Me.btnAddUser.Size = New System.Drawing.Size(75, 42)
+        Me.btnAddUser.TabIndex = 2
+        Me.btnAddUser.UseVisualStyleBackColor = False
+        '
         'DataGridView_sec_user
         '
         Me.DataGridView_sec_user.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize
@@ -202,17 +213,6 @@ Partial Class MainForm
         Me.AdminLabel.TabIndex = 14
         Me.AdminLabel.Text = "Administration"
         Me.AdminLabel.Visible = False
-        '
-        'btnAddUser
-        '
-        Me.btnAddUser.BackColor = System.Drawing.Color.Blue
-        Me.btnAddUser.Font = New System.Drawing.Font("Microsoft Sans Serif", 18.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.btnAddUser.Image = CType(resources.GetObject("btnAddUser.Image"), System.Drawing.Image)
-        Me.btnAddUser.Location = New System.Drawing.Point(1083, 3)
-        Me.btnAddUser.Name = "btnAddUser"
-        Me.btnAddUser.Size = New System.Drawing.Size(75, 42)
-        Me.btnAddUser.TabIndex = 2
-        Me.btnAddUser.UseVisualStyleBackColor = False
         '
         'MainForm
         '

@@ -24,4 +24,8 @@
     Private Sub PanelSidebar_Paint(sender As Object, e As PaintEventArgs)
 
     End Sub
+
+    Private Sub btnAddUser_Click(sender As Object, e As EventArgs) Handles btnAddUser.Click
+        AddUserForm.Show()
+    End Sub
 End Class
