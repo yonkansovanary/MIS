@@ -35,3 +35,4 @@ D:\SRU\MIS\AssGroupIII\AssGroupIII\obj\Debug\AssGroupIII.xml
 D:\SRU\MIS\AssGroupIII\AssGroupIII\obj\Debug\AssGroupIII.pdb
 D:\Test\MIS\AssGroupIII\AssGroupIII\obj\Debug\AssGroupIII.AddUserForm.resources
 D:\SRU\MIS\AssGroupIII\AssGroupIII\obj\Debug\AssGroupIII.AddUserForm.resources
+D:\Test\MIS\AssGroupIII\AssGroupIII\obj\Debug\AssGroupIII.AddProductForm.resources

@@ -6,7 +6,7 @@ Public Class Connection
     Private myReader As SqlDataReader
     Private results As String
     Public Sub sqlConnector()
-        myConn = New SqlConnection("Server= DESKTOP-JTNSKEL; Database= MIS; Integrated Security=SSPI;")
+        myConn = New SqlConnection("Server=Localhost;Database=MIS;UID=sa;PWD=12345;")
         myCmd = myConn.CreateCommand
         Return
     End Sub
