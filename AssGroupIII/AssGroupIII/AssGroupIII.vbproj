@@ -84,6 +84,12 @@
     <Compile Include="AddUserForm.vb">
       <SubType>Form</SubType>
     </Compile>
+    <Compile Include="CategoryDetail.Designer.vb">
+      <DependentUpon>CategoryDetail.vb</DependentUpon>
+    </Compile>
+    <Compile Include="CategoryDetail.vb">
+      <SubType>Form</SubType>
+    </Compile>
     <Compile Include="Connection.vb" />
     <Compile Include="Form1.vb">
       <SubType>Form</SubType>
@@ -120,6 +126,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="AddUserForm.resx">
       <DependentUpon>AddUserForm.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="CategoryDetail.resx">
+      <DependentUpon>CategoryDetail.vb</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Form1.resx">
       <DependentUpon>Form1.vb</DependentUpon>
