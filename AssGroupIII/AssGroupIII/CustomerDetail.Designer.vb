@@ -29,14 +29,13 @@ Partial Class CustomerDetail
         Me.txtAddress = New System.Windows.Forms.TextBox()
         Me.txtQty = New System.Windows.Forms.TextBox()
         Me.txtEmail = New System.Windows.Forms.TextBox()
-        Me.txtCustomerName = New System.Windows.Forms.TextBox()
         Me.LabelAddCustomerTitle = New System.Windows.Forms.Label()
         Me.Labeldescription = New System.Windows.Forms.Label()
         Me.LabelDate = New System.Windows.Forms.Label()
         Me.LabelComapnyName = New System.Windows.Forms.Label()
         Me.LabelEmail = New System.Windows.Forms.Label()
         Me.LabelPhone = New System.Windows.Forms.Label()
-        Me.LabelProductName = New System.Windows.Forms.Label()
+        Me.LabelCustomerName = New System.Windows.Forms.Label()
         Me.TextBoxPhone = New System.Windows.Forms.TextBox()
         Me.SuspendLayout()
         '
@@ -92,14 +91,6 @@ Partial Class CustomerDetail
         Me.txtEmail.Name = "txtEmail"
         Me.txtEmail.Size = New System.Drawing.Size(201, 26)
         Me.txtEmail.TabIndex = 49
-        '
-        'txtCustomerName
-        '
-        Me.txtCustomerName.Font = New System.Drawing.Font("Microsoft Sans Serif", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.txtCustomerName.Location = New System.Drawing.Point(190, 75)
-        Me.txtCustomerName.Name = "txtCustomerName"
-        Me.txtCustomerName.Size = New System.Drawing.Size(201, 26)
-        Me.txtCustomerName.TabIndex = 48
         '
         'LabelAddCustomerTitle
         '
@@ -161,15 +152,15 @@ Partial Class CustomerDetail
         Me.LabelPhone.TabIndex = 42
         Me.LabelPhone.Text = "Phone"
         '
-        'LabelProductName
+        'LabelCustomerName
         '
-        Me.LabelProductName.AutoSize = True
-        Me.LabelProductName.Font = New System.Drawing.Font("Microsoft Sans Serif", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.LabelProductName.Location = New System.Drawing.Point(57, 75)
-        Me.LabelProductName.Name = "LabelProductName"
-        Me.LabelProductName.Size = New System.Drawing.Size(51, 20)
-        Me.LabelProductName.TabIndex = 41
-        Me.LabelProductName.Text = "Name"
+        Me.LabelCustomerName.AutoSize = True
+        Me.LabelCustomerName.Font = New System.Drawing.Font("Microsoft Sans Serif", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.LabelCustomerName.Location = New System.Drawing.Point(57, 75)
+        Me.LabelCustomerName.Name = "LabelCustomerName"
+        Me.LabelCustomerName.Size = New System.Drawing.Size(51, 20)
+        Me.LabelCustomerName.TabIndex = 41
+        Me.LabelCustomerName.Text = "Name"
         '
         'TextBoxPhone
         '
@@ -191,14 +182,13 @@ Partial Class CustomerDetail
         Me.Controls.Add(Me.txtAddress)
         Me.Controls.Add(Me.txtQty)
         Me.Controls.Add(Me.txtEmail)
-        Me.Controls.Add(Me.txtCustomerName)
         Me.Controls.Add(Me.LabelAddCustomerTitle)
         Me.Controls.Add(Me.Labeldescription)
         Me.Controls.Add(Me.LabelDate)
         Me.Controls.Add(Me.LabelComapnyName)
         Me.Controls.Add(Me.LabelEmail)
         Me.Controls.Add(Me.LabelPhone)
-        Me.Controls.Add(Me.LabelProductName)
+        Me.Controls.Add(Me.LabelCustomerName)
         Me.Name = "CustomerDetail"
         Me.Text = "CustomerDetail"
         Me.ResumeLayout(False)
@@ -211,13 +201,12 @@ Partial Class CustomerDetail
     Friend WithEvents txtAddress As TextBox
     Friend WithEvents txtQty As TextBox
     Friend WithEvents txtEmail As TextBox
-    Friend WithEvents txtCustomerName As TextBox
     Friend WithEvents LabelAddCustomerTitle As Label
     Friend WithEvents Labeldescription As Label
     Friend WithEvents LabelDate As Label
     Friend WithEvents LabelComapnyName As Label
     Friend WithEvents LabelEmail As Label
     Friend WithEvents LabelPhone As Label
-    Friend WithEvents LabelProductName As Label
+    Friend WithEvents LabelCustomerName As Label
     Friend WithEvents TextBoxPhone As TextBox
 End Class

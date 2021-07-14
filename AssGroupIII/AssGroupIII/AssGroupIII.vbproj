@@ -84,6 +84,12 @@
     <Compile Include="AddUserForm.vb">
       <SubType>Form</SubType>
     </Compile>
+    <Compile Include="BrandDetail.Designer.vb">
+      <DependentUpon>BrandDetail.vb</DependentUpon>
+    </Compile>
+    <Compile Include="BrandDetail.vb">
+      <SubType>Form</SubType>
+    </Compile>
     <Compile Include="CategoryDetail.Designer.vb">
       <DependentUpon>CategoryDetail.vb</DependentUpon>
     </Compile>
@@ -91,6 +97,12 @@
       <SubType>Form</SubType>
     </Compile>
     <Compile Include="Connection.vb" />
+    <Compile Include="CustomerDetail.Designer.vb">
+      <DependentUpon>CustomerDetail.vb</DependentUpon>
+    </Compile>
+    <Compile Include="CustomerDetail.vb">
+      <SubType>Form</SubType>
+    </Compile>
     <Compile Include="Form1.vb">
       <SubType>Form</SubType>
     </Compile>
@@ -119,6 +131,18 @@
       <DependentUpon>Settings.settings</DependentUpon>
       <DesignTimeSharedInput>True</DesignTimeSharedInput>
     </Compile>
+    <Compile Include="OrderForm.Designer.vb">
+      <DependentUpon>OrderForm.vb</DependentUpon>
+    </Compile>
+    <Compile Include="OrderForm.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="PurchaseDetail.Designer.vb">
+      <DependentUpon>PurchaseDetail.vb</DependentUpon>
+    </Compile>
+    <Compile Include="PurchaseDetail.vb">
+      <SubType>Form</SubType>
+    </Compile>
   </ItemGroup>
   <ItemGroup>
     <EmbeddedResource Include="AddProductForm.resx">
@@ -127,8 +151,14 @@
     <EmbeddedResource Include="AddUserForm.resx">
       <DependentUpon>AddUserForm.vb</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="BrandDetail.resx">
+      <DependentUpon>BrandDetail.vb</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="CategoryDetail.resx">
       <DependentUpon>CategoryDetail.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="CustomerDetail.resx">
+      <DependentUpon>CustomerDetail.vb</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Form1.resx">
       <DependentUpon>Form1.vb</DependentUpon>
@@ -141,6 +171,12 @@
       <LastGenOutput>Resources.Designer.vb</LastGenOutput>
       <CustomToolNamespace>My.Resources</CustomToolNamespace>
       <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="OrderForm.resx">
+      <DependentUpon>OrderForm.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="PurchaseDetail.resx">
+      <DependentUpon>PurchaseDetail.vb</DependentUpon>
     </EmbeddedResource>
   </ItemGroup>
   <ItemGroup>
