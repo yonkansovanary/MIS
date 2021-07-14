@@ -26,17 +26,17 @@ Partial Class CategoryDetail
         Me.btnCancel = New System.Windows.Forms.Button()
         Me.btnSave = New System.Windows.Forms.Button()
         Me.txtDescription = New System.Windows.Forms.TextBox()
-        Me.txtQty = New System.Windows.Forms.TextBox()
-        Me.LabelAddProductTitle = New System.Windows.Forms.Label()
+        Me.txtName = New System.Windows.Forms.TextBox()
+        Me.LabelAddCategoryTitle = New System.Windows.Forms.Label()
         Me.Labeldescription = New System.Windows.Forms.Label()
-        Me.LabelQty = New System.Windows.Forms.Label()
+        Me.LabelName = New System.Windows.Forms.Label()
         Me.SuspendLayout()
         '
         'btnCancel
         '
         Me.btnCancel.BackColor = System.Drawing.Color.White
         Me.btnCancel.Image = CType(resources.GetObject("btnCancel.Image"), System.Drawing.Image)
-        Me.btnCancel.Location = New System.Drawing.Point(149, 30)
+        Me.btnCancel.Location = New System.Drawing.Point(201, 30)
         Me.btnCancel.Name = "btnCancel"
         Me.btnCancel.Size = New System.Drawing.Size(90, 42)
         Me.btnCancel.TabIndex = 54
@@ -45,7 +45,7 @@ Partial Class CategoryDetail
         'btnSave
         '
         Me.btnSave.Image = CType(resources.GetObject("btnSave.Image"), System.Drawing.Image)
-        Me.btnSave.Location = New System.Drawing.Point(254, 30)
+        Me.btnSave.Location = New System.Drawing.Point(306, 30)
         Me.btnSave.Name = "btnSave"
         Me.btnSave.Size = New System.Drawing.Size(90, 42)
         Me.btnSave.TabIndex = 53
@@ -54,63 +54,63 @@ Partial Class CategoryDetail
         'txtDescription
         '
         Me.txtDescription.Font = New System.Drawing.Font("Microsoft Sans Serif", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.txtDescription.Location = New System.Drawing.Point(143, 143)
+        Me.txtDescription.Location = New System.Drawing.Point(195, 139)
         Me.txtDescription.Multiline = True
         Me.txtDescription.Name = "txtDescription"
         Me.txtDescription.Size = New System.Drawing.Size(201, 79)
         Me.txtDescription.TabIndex = 49
         '
-        'txtQty
+        'txtName
         '
-        Me.txtQty.Font = New System.Drawing.Font("Microsoft Sans Serif", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.txtQty.Location = New System.Drawing.Point(143, 111)
-        Me.txtQty.Name = "txtQty"
-        Me.txtQty.Size = New System.Drawing.Size(201, 26)
-        Me.txtQty.TabIndex = 48
-        Me.txtQty.UseSystemPasswordChar = True
+        Me.txtName.Font = New System.Drawing.Font("Microsoft Sans Serif", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.txtName.Location = New System.Drawing.Point(195, 107)
+        Me.txtName.Name = "txtName"
+        Me.txtName.Size = New System.Drawing.Size(201, 26)
+        Me.txtName.TabIndex = 48
+        Me.txtName.UseSystemPasswordChar = True
         '
-        'LabelAddProductTitle
+        'LabelAddCategoryTitle
         '
-        Me.LabelAddProductTitle.AutoSize = True
-        Me.LabelAddProductTitle.Font = New System.Drawing.Font("Microsoft Sans Serif", 14.25!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.LabelAddProductTitle.Location = New System.Drawing.Point(10, 30)
-        Me.LabelAddProductTitle.Name = "LabelAddProductTitle"
-        Me.LabelAddProductTitle.Size = New System.Drawing.Size(126, 24)
-        Me.LabelAddProductTitle.TabIndex = 46
-        Me.LabelAddProductTitle.Text = "Add Product"
+        Me.LabelAddCategoryTitle.AutoSize = True
+        Me.LabelAddCategoryTitle.Font = New System.Drawing.Font("Microsoft Sans Serif", 14.25!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.LabelAddCategoryTitle.Location = New System.Drawing.Point(10, 30)
+        Me.LabelAddCategoryTitle.Name = "LabelAddCategoryTitle"
+        Me.LabelAddCategoryTitle.Size = New System.Drawing.Size(137, 24)
+        Me.LabelAddCategoryTitle.TabIndex = 46
+        Me.LabelAddCategoryTitle.Text = "Add Category"
         '
         'Labeldescription
         '
         Me.Labeldescription.AutoSize = True
         Me.Labeldescription.Font = New System.Drawing.Font("Microsoft Sans Serif", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Labeldescription.Location = New System.Drawing.Point(35, 146)
+        Me.Labeldescription.Location = New System.Drawing.Point(87, 142)
         Me.Labeldescription.Name = "Labeldescription"
         Me.Labeldescription.Size = New System.Drawing.Size(89, 20)
         Me.Labeldescription.TabIndex = 45
         Me.Labeldescription.Text = "Description"
         '
-        'LabelQty
+        'LabelName
         '
-        Me.LabelQty.AutoSize = True
-        Me.LabelQty.Font = New System.Drawing.Font("Microsoft Sans Serif", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.LabelQty.Location = New System.Drawing.Point(33, 117)
-        Me.LabelQty.Name = "LabelQty"
-        Me.LabelQty.Size = New System.Drawing.Size(68, 20)
-        Me.LabelQty.TabIndex = 43
-        Me.LabelQty.Text = "Quantity"
+        Me.LabelName.AutoSize = True
+        Me.LabelName.Font = New System.Drawing.Font("Microsoft Sans Serif", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.LabelName.Location = New System.Drawing.Point(85, 113)
+        Me.LabelName.Name = "LabelName"
+        Me.LabelName.Size = New System.Drawing.Size(51, 20)
+        Me.LabelName.TabIndex = 43
+        Me.LabelName.Text = "Name"
         '
         'CategoryDetail
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
-        Me.ClientSize = New System.Drawing.Size(396, 330)
+        Me.ClientSize = New System.Drawing.Size(544, 330)
         Me.Controls.Add(Me.btnCancel)
         Me.Controls.Add(Me.btnSave)
         Me.Controls.Add(Me.txtDescription)
-        Me.Controls.Add(Me.txtQty)
-        Me.Controls.Add(Me.LabelAddProductTitle)
+        Me.Controls.Add(Me.txtName)
+        Me.Controls.Add(Me.LabelAddCategoryTitle)
         Me.Controls.Add(Me.Labeldescription)
-        Me.Controls.Add(Me.LabelQty)
+        Me.Controls.Add(Me.LabelName)
         Me.Name = "CategoryDetail"
         Me.Text = "CategoryDetail"
         Me.ResumeLayout(False)
@@ -120,8 +120,8 @@ Partial Class CategoryDetail
     Friend WithEvents btnCancel As Button
     Friend WithEvents btnSave As Button
     Friend WithEvents txtDescription As TextBox
-    Friend WithEvents txtQty As TextBox
-    Friend WithEvents LabelAddProductTitle As Label
+    Friend WithEvents txtName As TextBox
+    Friend WithEvents LabelAddCategoryTitle As Label
     Friend WithEvents Labeldescription As Label
-    Friend WithEvents LabelQty As Label
+    Friend WithEvents LabelName As Label
 End Class
