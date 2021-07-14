@@ -45,13 +45,18 @@ Partial Class AddUserForm
         Me.CheckBoxLock = New System.Windows.Forms.CheckBox()
         Me.txtAddress = New System.Windows.Forms.TextBox()
         Me.Label1 = New System.Windows.Forms.Label()
+        Me.txtCode = New System.Windows.Forms.TextBox()
+        Me.Label2 = New System.Windows.Forms.Label()
+        Me.txtConPassword = New System.Windows.Forms.TextBox()
+        Me.Label3 = New System.Windows.Forms.Label()
+        Me.btnUpdate = New System.Windows.Forms.Button()
         Me.SuspendLayout()
         '
         'LabelFirstName
         '
         Me.LabelFirstName.AutoSize = True
         Me.LabelFirstName.Font = New System.Drawing.Font("Microsoft Sans Serif", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.LabelFirstName.Location = New System.Drawing.Point(76, 122)
+        Me.LabelFirstName.Location = New System.Drawing.Point(72, 180)
         Me.LabelFirstName.Margin = New System.Windows.Forms.Padding(4, 0, 4, 0)
         Me.LabelFirstName.Name = "LabelFirstName"
         Me.LabelFirstName.Size = New System.Drawing.Size(106, 25)
@@ -62,7 +67,7 @@ Partial Class AddUserForm
         '
         Me.LabelLastName.AutoSize = True
         Me.LabelLastName.Font = New System.Drawing.Font("Microsoft Sans Serif", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.LabelLastName.Location = New System.Drawing.Point(76, 186)
+        Me.LabelLastName.Location = New System.Drawing.Point(72, 244)
         Me.LabelLastName.Margin = New System.Windows.Forms.Padding(4, 0, 4, 0)
         Me.LabelLastName.Name = "LabelLastName"
         Me.LabelLastName.Size = New System.Drawing.Size(106, 25)
@@ -73,7 +78,7 @@ Partial Class AddUserForm
         '
         Me.LabelUsername.AutoSize = True
         Me.LabelUsername.Font = New System.Drawing.Font("Microsoft Sans Serif", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.LabelUsername.Location = New System.Drawing.Point(76, 252)
+        Me.LabelUsername.Location = New System.Drawing.Point(72, 310)
         Me.LabelUsername.Margin = New System.Windows.Forms.Padding(4, 0, 4, 0)
         Me.LabelUsername.Name = "LabelUsername"
         Me.LabelUsername.Size = New System.Drawing.Size(102, 25)
@@ -84,7 +89,7 @@ Partial Class AddUserForm
         '
         Me.LabelPassword.AutoSize = True
         Me.LabelPassword.Font = New System.Drawing.Font("Microsoft Sans Serif", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.LabelPassword.Location = New System.Drawing.Point(76, 318)
+        Me.LabelPassword.Location = New System.Drawing.Point(72, 376)
         Me.LabelPassword.Margin = New System.Windows.Forms.Padding(4, 0, 4, 0)
         Me.LabelPassword.Name = "LabelPassword"
         Me.LabelPassword.Size = New System.Drawing.Size(98, 25)
@@ -95,7 +100,7 @@ Partial Class AddUserForm
         '
         Me.LabelDOB.AutoSize = True
         Me.LabelDOB.Font = New System.Drawing.Font("Microsoft Sans Serif", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.LabelDOB.Location = New System.Drawing.Point(527, 122)
+        Me.LabelDOB.Location = New System.Drawing.Point(590, 122)
         Me.LabelDOB.Margin = New System.Windows.Forms.Padding(4, 0, 4, 0)
         Me.LabelDOB.Name = "LabelDOB"
         Me.LabelDOB.Size = New System.Drawing.Size(123, 25)
@@ -106,7 +111,7 @@ Partial Class AddUserForm
         '
         Me.LabelEmail.AutoSize = True
         Me.LabelEmail.Font = New System.Drawing.Font("Microsoft Sans Serif", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.LabelEmail.Location = New System.Drawing.Point(527, 186)
+        Me.LabelEmail.Location = New System.Drawing.Point(590, 186)
         Me.LabelEmail.Margin = New System.Windows.Forms.Padding(4, 0, 4, 0)
         Me.LabelEmail.Name = "LabelEmail"
         Me.LabelEmail.Size = New System.Drawing.Size(60, 25)
@@ -117,7 +122,7 @@ Partial Class AddUserForm
         '
         Me.LabelPhone.AutoSize = True
         Me.LabelPhone.Font = New System.Drawing.Font("Microsoft Sans Serif", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.LabelPhone.Location = New System.Drawing.Point(527, 252)
+        Me.LabelPhone.Location = New System.Drawing.Point(590, 252)
         Me.LabelPhone.Margin = New System.Windows.Forms.Padding(4, 0, 4, 0)
         Me.LabelPhone.Name = "LabelPhone"
         Me.LabelPhone.Size = New System.Drawing.Size(69, 25)
@@ -138,8 +143,8 @@ Partial Class AddUserForm
         'txtFirstname
         '
         Me.txtFirstname.Font = New System.Drawing.Font("Microsoft Sans Serif", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.txtFirstname.Location = New System.Drawing.Point(200, 122)
-        Me.txtFirstname.Margin = New System.Windows.Forms.Padding(4, 4, 4, 4)
+        Me.txtFirstname.Location = New System.Drawing.Point(254, 180)
+        Me.txtFirstname.Margin = New System.Windows.Forms.Padding(4)
         Me.txtFirstname.Name = "txtFirstname"
         Me.txtFirstname.Size = New System.Drawing.Size(267, 30)
         Me.txtFirstname.TabIndex = 9
@@ -147,8 +152,8 @@ Partial Class AddUserForm
         'txtLastname
         '
         Me.txtLastname.Font = New System.Drawing.Font("Microsoft Sans Serif", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.txtLastname.Location = New System.Drawing.Point(200, 182)
-        Me.txtLastname.Margin = New System.Windows.Forms.Padding(4, 4, 4, 4)
+        Me.txtLastname.Location = New System.Drawing.Point(254, 240)
+        Me.txtLastname.Margin = New System.Windows.Forms.Padding(4)
         Me.txtLastname.Name = "txtLastname"
         Me.txtLastname.Size = New System.Drawing.Size(267, 30)
         Me.txtLastname.TabIndex = 10
@@ -156,8 +161,8 @@ Partial Class AddUserForm
         'txtUsername
         '
         Me.txtUsername.Font = New System.Drawing.Font("Microsoft Sans Serif", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.txtUsername.Location = New System.Drawing.Point(200, 245)
-        Me.txtUsername.Margin = New System.Windows.Forms.Padding(4, 4, 4, 4)
+        Me.txtUsername.Location = New System.Drawing.Point(254, 303)
+        Me.txtUsername.Margin = New System.Windows.Forms.Padding(4)
         Me.txtUsername.Name = "txtUsername"
         Me.txtUsername.Size = New System.Drawing.Size(267, 30)
         Me.txtUsername.TabIndex = 11
@@ -165,8 +170,8 @@ Partial Class AddUserForm
         'txtPassword
         '
         Me.txtPassword.Font = New System.Drawing.Font("Microsoft Sans Serif", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.txtPassword.Location = New System.Drawing.Point(200, 310)
-        Me.txtPassword.Margin = New System.Windows.Forms.Padding(4, 4, 4, 4)
+        Me.txtPassword.Location = New System.Drawing.Point(254, 368)
+        Me.txtPassword.Margin = New System.Windows.Forms.Padding(4)
         Me.txtPassword.Name = "txtPassword"
         Me.txtPassword.Size = New System.Drawing.Size(267, 30)
         Me.txtPassword.TabIndex = 12
@@ -175,8 +180,8 @@ Partial Class AddUserForm
         'txtEmail
         '
         Me.txtEmail.Font = New System.Drawing.Font("Microsoft Sans Serif", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.txtEmail.Location = New System.Drawing.Point(671, 182)
-        Me.txtEmail.Margin = New System.Windows.Forms.Padding(4, 4, 4, 4)
+        Me.txtEmail.Location = New System.Drawing.Point(734, 182)
+        Me.txtEmail.Margin = New System.Windows.Forms.Padding(4)
         Me.txtEmail.Name = "txtEmail"
         Me.txtEmail.Size = New System.Drawing.Size(267, 30)
         Me.txtEmail.TabIndex = 14
@@ -184,8 +189,8 @@ Partial Class AddUserForm
         'txtPhone
         '
         Me.txtPhone.Font = New System.Drawing.Font("Microsoft Sans Serif", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.txtPhone.Location = New System.Drawing.Point(671, 245)
-        Me.txtPhone.Margin = New System.Windows.Forms.Padding(4, 4, 4, 4)
+        Me.txtPhone.Location = New System.Drawing.Point(734, 245)
+        Me.txtPhone.Margin = New System.Windows.Forms.Padding(4)
         Me.txtPhone.Name = "txtPhone"
         Me.txtPhone.Size = New System.Drawing.Size(267, 30)
         Me.txtPhone.TabIndex = 15
@@ -194,7 +199,7 @@ Partial Class AddUserForm
         '
         Me.LabelGender.AutoSize = True
         Me.LabelGender.Font = New System.Drawing.Font("Microsoft Sans Serif", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.LabelGender.Location = New System.Drawing.Point(527, 318)
+        Me.LabelGender.Location = New System.Drawing.Point(590, 318)
         Me.LabelGender.Margin = New System.Windows.Forms.Padding(4, 0, 4, 0)
         Me.LabelGender.Name = "LabelGender"
         Me.LabelGender.Size = New System.Drawing.Size(77, 25)
@@ -206,8 +211,8 @@ Partial Class AddUserForm
         Me.ComboBoxGender.Font = New System.Drawing.Font("Microsoft Sans Serif", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.ComboBoxGender.FormattingEnabled = True
         Me.ComboBoxGender.Items.AddRange(New Object() {"Male", "Female", "Other"})
-        Me.ComboBoxGender.Location = New System.Drawing.Point(671, 308)
-        Me.ComboBoxGender.Margin = New System.Windows.Forms.Padding(4, 4, 4, 4)
+        Me.ComboBoxGender.Location = New System.Drawing.Point(734, 308)
+        Me.ComboBoxGender.Margin = New System.Windows.Forms.Padding(4)
         Me.ComboBoxGender.Name = "ComboBoxGender"
         Me.ComboBoxGender.Size = New System.Drawing.Size(267, 33)
         Me.ComboBoxGender.TabIndex = 17
@@ -215,8 +220,8 @@ Partial Class AddUserForm
         'DOB
         '
         Me.DOB.Font = New System.Drawing.Font("Microsoft Sans Serif", 9.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.DOB.Location = New System.Drawing.Point(672, 122)
-        Me.DOB.Margin = New System.Windows.Forms.Padding(4, 4, 4, 4)
+        Me.DOB.Location = New System.Drawing.Point(735, 122)
+        Me.DOB.Margin = New System.Windows.Forms.Padding(4)
         Me.DOB.Name = "DOB"
         Me.DOB.Size = New System.Drawing.Size(265, 24)
         Me.DOB.TabIndex = 18
@@ -225,7 +230,7 @@ Partial Class AddUserForm
         '
         Me.btnSave.Image = CType(resources.GetObject("btnSave.Image"), System.Drawing.Image)
         Me.btnSave.Location = New System.Drawing.Point(819, 41)
-        Me.btnSave.Margin = New System.Windows.Forms.Padding(4, 4, 4, 4)
+        Me.btnSave.Margin = New System.Windows.Forms.Padding(4)
         Me.btnSave.Name = "btnSave"
         Me.btnSave.Size = New System.Drawing.Size(120, 52)
         Me.btnSave.TabIndex = 19
@@ -236,7 +241,7 @@ Partial Class AddUserForm
         Me.btnCancel.BackColor = System.Drawing.Color.White
         Me.btnCancel.Image = CType(resources.GetObject("btnCancel.Image"), System.Drawing.Image)
         Me.btnCancel.Location = New System.Drawing.Point(679, 41)
-        Me.btnCancel.Margin = New System.Windows.Forms.Padding(4, 4, 4, 4)
+        Me.btnCancel.Margin = New System.Windows.Forms.Padding(4)
         Me.btnCancel.Name = "btnCancel"
         Me.btnCancel.Size = New System.Drawing.Size(120, 52)
         Me.btnCancel.TabIndex = 20
@@ -246,8 +251,8 @@ Partial Class AddUserForm
         '
         Me.CheckBoxLock.AutoSize = True
         Me.CheckBoxLock.Font = New System.Drawing.Font("Microsoft Sans Serif", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.CheckBoxLock.Location = New System.Drawing.Point(81, 382)
-        Me.CheckBoxLock.Margin = New System.Windows.Forms.Padding(4, 4, 4, 4)
+        Me.CheckBoxLock.Location = New System.Drawing.Point(596, 438)
+        Me.CheckBoxLock.Margin = New System.Windows.Forms.Padding(4)
         Me.CheckBoxLock.Name = "CheckBoxLock"
         Me.CheckBoxLock.Size = New System.Drawing.Size(76, 29)
         Me.CheckBoxLock.TabIndex = 22
@@ -257,7 +262,7 @@ Partial Class AddUserForm
         'txtAddress
         '
         Me.txtAddress.Font = New System.Drawing.Font("Microsoft Sans Serif", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.txtAddress.Location = New System.Drawing.Point(672, 382)
+        Me.txtAddress.Location = New System.Drawing.Point(735, 382)
         Me.txtAddress.Margin = New System.Windows.Forms.Padding(4)
         Me.txtAddress.Name = "txtAddress"
         Me.txtAddress.Size = New System.Drawing.Size(267, 30)
@@ -267,18 +272,74 @@ Partial Class AddUserForm
         '
         Me.Label1.AutoSize = True
         Me.Label1.Font = New System.Drawing.Font("Microsoft Sans Serif", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Label1.Location = New System.Drawing.Point(528, 389)
+        Me.Label1.Location = New System.Drawing.Point(591, 389)
         Me.Label1.Margin = New System.Windows.Forms.Padding(4, 0, 4, 0)
         Me.Label1.Name = "Label1"
         Me.Label1.Size = New System.Drawing.Size(85, 25)
         Me.Label1.TabIndex = 23
         Me.Label1.Text = "Address"
         '
+        'txtCode
+        '
+        Me.txtCode.Font = New System.Drawing.Font("Microsoft Sans Serif", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.txtCode.Location = New System.Drawing.Point(254, 124)
+        Me.txtCode.Margin = New System.Windows.Forms.Padding(4)
+        Me.txtCode.Name = "txtCode"
+        Me.txtCode.Size = New System.Drawing.Size(267, 30)
+        Me.txtCode.TabIndex = 25
+        '
+        'Label2
+        '
+        Me.Label2.AutoSize = True
+        Me.Label2.Font = New System.Drawing.Font("Microsoft Sans Serif", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Label2.Location = New System.Drawing.Point(72, 124)
+        Me.Label2.Margin = New System.Windows.Forms.Padding(4, 0, 4, 0)
+        Me.Label2.Name = "Label2"
+        Me.Label2.Size = New System.Drawing.Size(60, 25)
+        Me.Label2.TabIndex = 26
+        Me.Label2.Text = "Code"
+        '
+        'txtConPassword
+        '
+        Me.txtConPassword.Font = New System.Drawing.Font("Microsoft Sans Serif", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.txtConPassword.Location = New System.Drawing.Point(254, 434)
+        Me.txtConPassword.Margin = New System.Windows.Forms.Padding(4)
+        Me.txtConPassword.Name = "txtConPassword"
+        Me.txtConPassword.Size = New System.Drawing.Size(267, 30)
+        Me.txtConPassword.TabIndex = 28
+        Me.txtConPassword.UseSystemPasswordChar = True
+        '
+        'Label3
+        '
+        Me.Label3.AutoSize = True
+        Me.Label3.Font = New System.Drawing.Font("Microsoft Sans Serif", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Label3.Location = New System.Drawing.Point(72, 432)
+        Me.Label3.Margin = New System.Windows.Forms.Padding(4, 0, 4, 0)
+        Me.Label3.Name = "Label3"
+        Me.Label3.Size = New System.Drawing.Size(171, 25)
+        Me.Label3.TabIndex = 27
+        Me.Label3.Text = "Confirm Password"
+        '
+        'btnUpdate
+        '
+        Me.btnUpdate.Image = CType(resources.GetObject("btnUpdate.Image"), System.Drawing.Image)
+        Me.btnUpdate.Location = New System.Drawing.Point(547, 41)
+        Me.btnUpdate.Margin = New System.Windows.Forms.Padding(4)
+        Me.btnUpdate.Name = "btnUpdate"
+        Me.btnUpdate.Size = New System.Drawing.Size(120, 52)
+        Me.btnUpdate.TabIndex = 29
+        Me.btnUpdate.UseVisualStyleBackColor = True
+        '
         'AddUserForm
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(8.0!, 16.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
-        Me.ClientSize = New System.Drawing.Size(1033, 468)
+        Me.ClientSize = New System.Drawing.Size(1033, 527)
+        Me.Controls.Add(Me.btnUpdate)
+        Me.Controls.Add(Me.txtConPassword)
+        Me.Controls.Add(Me.Label3)
+        Me.Controls.Add(Me.Label2)
+        Me.Controls.Add(Me.txtCode)
         Me.Controls.Add(Me.txtAddress)
         Me.Controls.Add(Me.Label1)
         Me.Controls.Add(Me.CheckBoxLock)
@@ -301,7 +362,7 @@ Partial Class AddUserForm
         Me.Controls.Add(Me.LabelUsername)
         Me.Controls.Add(Me.LabelLastName)
         Me.Controls.Add(Me.LabelFirstName)
-        Me.Margin = New System.Windows.Forms.Padding(4, 4, 4, 4)
+        Me.Margin = New System.Windows.Forms.Padding(4)
         Me.Name = "AddUserForm"
         Me.Text = "AddUserForm"
         Me.ResumeLayout(False)
@@ -331,4 +392,9 @@ Partial Class AddUserForm
     Friend WithEvents CheckBoxLock As CheckBox
     Friend WithEvents txtAddress As TextBox
     Friend WithEvents Label1 As Label
+    Friend WithEvents txtCode As TextBox
+    Friend WithEvents Label2 As Label
+    Friend WithEvents txtConPassword As TextBox
+    Friend WithEvents Label3 As Label
+    Friend WithEvents btnUpdate As Button
 End Class
