@@ -41,3 +41,9 @@ D:\Test\MIS\AssGroupIII\AssGroupIII\obj\Debug\AssGroupIII.CategoryDetail.resourc
 D:\Test\MIS\AssGroupIII\AssGroupIII\obj\Debug\AssGroupIII.CustomerDetail.resources
 D:\Test\MIS\AssGroupIII\AssGroupIII\obj\Debug\AssGroupIII.OrderForm.resources
 D:\Test\MIS\AssGroupIII\AssGroupIII\obj\Debug\AssGroupIII.PurchaseDetail.resources
+D:\SRU\MIS\AssGroupIII\AssGroupIII\obj\Debug\AssGroupIII.AddProductForm.resources
+D:\SRU\MIS\AssGroupIII\AssGroupIII\obj\Debug\AssGroupIII.BrandDetail.resources
+D:\SRU\MIS\AssGroupIII\AssGroupIII\obj\Debug\AssGroupIII.CategoryDetail.resources
+D:\SRU\MIS\AssGroupIII\AssGroupIII\obj\Debug\AssGroupIII.CustomerDetail.resources
+D:\SRU\MIS\AssGroupIII\AssGroupIII\obj\Debug\AssGroupIII.OrderForm.resources
+D:\SRU\MIS\AssGroupIII\AssGroupIII\obj\Debug\AssGroupIII.PurchaseDetail.resources

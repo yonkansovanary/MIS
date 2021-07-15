@@ -1,12 +1,15 @@
 ﻿
 Imports System.Data.SqlClient
+Imports System.Security.Cryptography
+Imports System.Text
+
 Public Class Connection
     Private myConn As SqlConnection
     Private myCmd As SqlCommand
     Private myReader As SqlDataReader
     Private results As String
     Public Sub sqlConnector()
-        myConn = New SqlConnection("Server=Localhost;Database=MIS;UID=sa;PWD=12345;")
+        myConn = New SqlConnection("Server= DESKTOP-JTNSKEL; Database= MIS; Integrated Security=SSPI;")
         myCmd = myConn.CreateCommand
         Return
     End Sub
@@ -39,6 +42,22 @@ Public Class Connection
         myConn.Open()
         myReader = myCmd.ExecuteReader()
         Return myReader
+    End Function
+
+    Public Function EncryptPasword(pass As String)
+        Dim Bytes() As Byte
+        Dim sb As New StringBuilder()
+
+        Bytes = Encoding.Default.GetBytes(pass)
+
+        'Get md5 hash
+        Bytes = MD5.Create().ComputeHash(Bytes)
+
+        'Loop though the byte array and convert each byte to hex.
+        For x As Integer = 0 To Bytes.Length - 1
+            sb.Append(Bytes(x).ToString("x2"))
+        Next
+        Return sb.ToString
     End Function
 
 End Class

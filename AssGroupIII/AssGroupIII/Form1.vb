@@ -18,13 +18,14 @@ Public Class Form1
         Dim myReader As SqlDataReader
         Dim username As String
         Dim password As String
-
+        Dim pass As String
+        pass = myCon.EncryptPasword(txtPassword.Text)
         Try
             myReader = myCon.myReaderFunction("select * from sec_user where username = '" + txtUsername.Text + "'")
             myReader.Read()
             username = myReader("username").ToString()
             password = myReader("password").ToString()
-            If ((username <> txtUsername.Text) OrElse (password <> txtPassword.TextAlign)) Then
+            If ((username = txtUsername.Text) And (password = pass)) Then
                 MainForm.Show()
                 Me.Hide()
 
