@@ -43,62 +43,69 @@ Partial Class CustomerDetail
         '
         Me.btnCancel.BackColor = System.Drawing.Color.White
         Me.btnCancel.Image = CType(resources.GetObject("btnCancel.Image"), System.Drawing.Image)
-        Me.btnCancel.Location = New System.Drawing.Point(532, 9)
+        Me.btnCancel.Location = New System.Drawing.Point(709, 11)
+        Me.btnCancel.Margin = New System.Windows.Forms.Padding(4, 4, 4, 4)
         Me.btnCancel.Name = "btnCancel"
-        Me.btnCancel.Size = New System.Drawing.Size(90, 42)
+        Me.btnCancel.Size = New System.Drawing.Size(120, 52)
         Me.btnCancel.TabIndex = 56
         Me.btnCancel.UseVisualStyleBackColor = False
         '
         'btnSave
         '
         Me.btnSave.Image = CType(resources.GetObject("btnSave.Image"), System.Drawing.Image)
-        Me.btnSave.Location = New System.Drawing.Point(637, 9)
+        Me.btnSave.Location = New System.Drawing.Point(849, 11)
+        Me.btnSave.Margin = New System.Windows.Forms.Padding(4, 4, 4, 4)
         Me.btnSave.Name = "btnSave"
-        Me.btnSave.Size = New System.Drawing.Size(90, 42)
+        Me.btnSave.Size = New System.Drawing.Size(120, 52)
         Me.btnSave.TabIndex = 55
         Me.btnSave.UseVisualStyleBackColor = True
         '
         'DateCreated
         '
         Me.DateCreated.Font = New System.Drawing.Font("Microsoft Sans Serif", 9.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.DateCreated.Location = New System.Drawing.Point(527, 80)
+        Me.DateCreated.Location = New System.Drawing.Point(703, 98)
+        Me.DateCreated.Margin = New System.Windows.Forms.Padding(4, 4, 4, 4)
         Me.DateCreated.Name = "DateCreated"
-        Me.DateCreated.Size = New System.Drawing.Size(200, 21)
+        Me.DateCreated.Size = New System.Drawing.Size(265, 24)
         Me.DateCreated.TabIndex = 54
         '
         'txtAddress
         '
         Me.txtAddress.Font = New System.Drawing.Font("Microsoft Sans Serif", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.txtAddress.Location = New System.Drawing.Point(526, 122)
+        Me.txtAddress.Location = New System.Drawing.Point(701, 150)
+        Me.txtAddress.Margin = New System.Windows.Forms.Padding(4, 4, 4, 4)
         Me.txtAddress.Multiline = True
         Me.txtAddress.Name = "txtAddress"
-        Me.txtAddress.Size = New System.Drawing.Size(201, 118)
+        Me.txtAddress.Size = New System.Drawing.Size(267, 144)
         Me.txtAddress.TabIndex = 51
         '
         'txtQty
         '
         Me.txtQty.Font = New System.Drawing.Font("Microsoft Sans Serif", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.txtQty.Location = New System.Drawing.Point(190, 214)
+        Me.txtQty.Location = New System.Drawing.Point(253, 263)
+        Me.txtQty.Margin = New System.Windows.Forms.Padding(4, 4, 4, 4)
         Me.txtQty.Name = "txtQty"
-        Me.txtQty.Size = New System.Drawing.Size(201, 26)
+        Me.txtQty.Size = New System.Drawing.Size(267, 30)
         Me.txtQty.TabIndex = 50
         Me.txtQty.UseSystemPasswordChar = True
         '
         'txtEmail
         '
         Me.txtEmail.Font = New System.Drawing.Font("Microsoft Sans Serif", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.txtEmail.Location = New System.Drawing.Point(190, 171)
+        Me.txtEmail.Location = New System.Drawing.Point(253, 210)
+        Me.txtEmail.Margin = New System.Windows.Forms.Padding(4, 4, 4, 4)
         Me.txtEmail.Name = "txtEmail"
-        Me.txtEmail.Size = New System.Drawing.Size(201, 26)
+        Me.txtEmail.Size = New System.Drawing.Size(267, 30)
         Me.txtEmail.TabIndex = 49
         '
         'LabelAddCustomerTitle
         '
         Me.LabelAddCustomerTitle.AutoSize = True
         Me.LabelAddCustomerTitle.Font = New System.Drawing.Font("Microsoft Sans Serif", 14.25!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.LabelAddCustomerTitle.Location = New System.Drawing.Point(12, 9)
+        Me.LabelAddCustomerTitle.Location = New System.Drawing.Point(16, 11)
+        Me.LabelAddCustomerTitle.Margin = New System.Windows.Forms.Padding(4, 0, 4, 0)
         Me.LabelAddCustomerTitle.Name = "LabelAddCustomerTitle"
-        Me.LabelAddCustomerTitle.Size = New System.Drawing.Size(143, 24)
+        Me.LabelAddCustomerTitle.Size = New System.Drawing.Size(178, 29)
         Me.LabelAddCustomerTitle.TabIndex = 47
         Me.LabelAddCustomerTitle.Text = "Add Customer"
         '
@@ -106,9 +113,10 @@ Partial Class CustomerDetail
         '
         Me.Labeldescription.AutoSize = True
         Me.Labeldescription.Font = New System.Drawing.Font("Microsoft Sans Serif", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Labeldescription.Location = New System.Drawing.Point(418, 125)
+        Me.Labeldescription.Location = New System.Drawing.Point(557, 154)
+        Me.Labeldescription.Margin = New System.Windows.Forms.Padding(4, 0, 4, 0)
         Me.Labeldescription.Name = "Labeldescription"
-        Me.Labeldescription.Size = New System.Drawing.Size(68, 20)
+        Me.Labeldescription.Size = New System.Drawing.Size(85, 25)
         Me.Labeldescription.TabIndex = 46
         Me.Labeldescription.Text = "Address"
         '
@@ -116,9 +124,10 @@ Partial Class CustomerDetail
         '
         Me.LabelDate.AutoSize = True
         Me.LabelDate.Font = New System.Drawing.Font("Microsoft Sans Serif", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.LabelDate.Location = New System.Drawing.Point(418, 80)
+        Me.LabelDate.Location = New System.Drawing.Point(557, 98)
+        Me.LabelDate.Margin = New System.Windows.Forms.Padding(4, 0, 4, 0)
         Me.LabelDate.Name = "LabelDate"
-        Me.LabelDate.Size = New System.Drawing.Size(44, 20)
+        Me.LabelDate.Size = New System.Drawing.Size(53, 25)
         Me.LabelDate.TabIndex = 45
         Me.LabelDate.Text = "Date"
         '
@@ -126,9 +135,10 @@ Partial Class CustomerDetail
         '
         Me.LabelComapnyName.AutoSize = True
         Me.LabelComapnyName.Font = New System.Drawing.Font("Microsoft Sans Serif", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.LabelComapnyName.Location = New System.Drawing.Point(57, 220)
+        Me.LabelComapnyName.Location = New System.Drawing.Point(76, 271)
+        Me.LabelComapnyName.Margin = New System.Windows.Forms.Padding(4, 0, 4, 0)
         Me.LabelComapnyName.Name = "LabelComapnyName"
-        Me.LabelComapnyName.Size = New System.Drawing.Size(122, 20)
+        Me.LabelComapnyName.Size = New System.Drawing.Size(154, 25)
         Me.LabelComapnyName.TabIndex = 44
         Me.LabelComapnyName.Text = "Company Name"
         '
@@ -136,9 +146,10 @@ Partial Class CustomerDetail
         '
         Me.LabelEmail.AutoSize = True
         Me.LabelEmail.Font = New System.Drawing.Font("Microsoft Sans Serif", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.LabelEmail.Location = New System.Drawing.Point(57, 177)
+        Me.LabelEmail.Location = New System.Drawing.Point(76, 218)
+        Me.LabelEmail.Margin = New System.Windows.Forms.Padding(4, 0, 4, 0)
         Me.LabelEmail.Name = "LabelEmail"
-        Me.LabelEmail.Size = New System.Drawing.Size(48, 20)
+        Me.LabelEmail.Size = New System.Drawing.Size(60, 25)
         Me.LabelEmail.TabIndex = 43
         Me.LabelEmail.Text = "Email"
         '
@@ -146,9 +157,10 @@ Partial Class CustomerDetail
         '
         Me.LabelPhone.AutoSize = True
         Me.LabelPhone.Font = New System.Drawing.Font("Microsoft Sans Serif", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.LabelPhone.Location = New System.Drawing.Point(57, 127)
+        Me.LabelPhone.Location = New System.Drawing.Point(76, 156)
+        Me.LabelPhone.Margin = New System.Windows.Forms.Padding(4, 0, 4, 0)
         Me.LabelPhone.Name = "LabelPhone"
-        Me.LabelPhone.Size = New System.Drawing.Size(55, 20)
+        Me.LabelPhone.Size = New System.Drawing.Size(69, 25)
         Me.LabelPhone.TabIndex = 42
         Me.LabelPhone.Text = "Phone"
         '
@@ -156,25 +168,27 @@ Partial Class CustomerDetail
         '
         Me.LabelCustomerName.AutoSize = True
         Me.LabelCustomerName.Font = New System.Drawing.Font("Microsoft Sans Serif", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.LabelCustomerName.Location = New System.Drawing.Point(57, 75)
+        Me.LabelCustomerName.Location = New System.Drawing.Point(76, 92)
+        Me.LabelCustomerName.Margin = New System.Windows.Forms.Padding(4, 0, 4, 0)
         Me.LabelCustomerName.Name = "LabelCustomerName"
-        Me.LabelCustomerName.Size = New System.Drawing.Size(51, 20)
+        Me.LabelCustomerName.Size = New System.Drawing.Size(64, 25)
         Me.LabelCustomerName.TabIndex = 41
         Me.LabelCustomerName.Text = "Name"
         '
         'TextBoxPhone
         '
         Me.TextBoxPhone.Font = New System.Drawing.Font("Microsoft Sans Serif", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.TextBoxPhone.Location = New System.Drawing.Point(190, 122)
+        Me.TextBoxPhone.Location = New System.Drawing.Point(253, 150)
+        Me.TextBoxPhone.Margin = New System.Windows.Forms.Padding(4, 4, 4, 4)
         Me.TextBoxPhone.Name = "TextBoxPhone"
-        Me.TextBoxPhone.Size = New System.Drawing.Size(201, 26)
+        Me.TextBoxPhone.Size = New System.Drawing.Size(267, 30)
         Me.TextBoxPhone.TabIndex = 57
         '
         'CustomerDetail
         '
-        Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
+        Me.AutoScaleDimensions = New System.Drawing.SizeF(8.0!, 16.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
-        Me.ClientSize = New System.Drawing.Size(776, 287)
+        Me.ClientSize = New System.Drawing.Size(1035, 353)
         Me.Controls.Add(Me.TextBoxPhone)
         Me.Controls.Add(Me.btnCancel)
         Me.Controls.Add(Me.btnSave)
@@ -189,6 +203,7 @@ Partial Class CustomerDetail
         Me.Controls.Add(Me.LabelEmail)
         Me.Controls.Add(Me.LabelPhone)
         Me.Controls.Add(Me.LabelCustomerName)
+        Me.Margin = New System.Windows.Forms.Padding(4, 4, 4, 4)
         Me.Name = "CustomerDetail"
         Me.Text = "CustomerDetail"
         Me.ResumeLayout(False)

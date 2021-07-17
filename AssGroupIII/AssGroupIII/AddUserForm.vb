@@ -24,7 +24,7 @@ Public Class AddUserForm
 
         Try
             If txtPassword.Text = txtConPassword.Text Then
-                myReader = myCon.listAllData("INSERT INTO sec_user (id, first_name, last_name, username, password,confirm_password, DOB, email, phone, address,
+                myReader = myCon.listAllData("INSERT INTO sec_user (code, first_name, last_name, username, password,confirm_password, DOB, email, phone, address,
                 is_lock, date_created, last_updated, version, full_name,gender) VALUES('" + txtCode.Text + "','" + txtFirstname.Text + "','" + txtLastname.Text + "','" + txtUsername.Text + "','" + pass + "','" + conPass + "','" + DOB.Text + "',
 		        '" + txtEmail.Text + "','" + txtPhone.Text + "','" + txtAddress.Text + "','" + lock + "','" + now + "','" + now + "','0','" + txtFirstname.Text + " " + txtLastname.Text + "', '" + ComboBoxGender.Text + "')")
                 MsgBox("Successfully")
@@ -41,6 +41,7 @@ Public Class AddUserForm
     End Sub
 
     Private Sub AddUserForm_Load(sender As Object, e As EventArgs) Handles MyBase.Load
+        Me.CenterToScreen()
         DOB.Format = DateTimePickerFormat.Custom
         DOB.CustomFormat = "yyyy-MM-dd"
         Try
@@ -65,6 +66,8 @@ Public Class AddUserForm
     Private Sub Button1_Click(sender As Object, e As EventArgs) Handles btnUpdate.Click
         Dim lock As String
         Dim dataReader As SqlDataReader
+        now = myDt.ToString("yyyy-MM-dd")
+
 
         If CheckBoxLock.Checked = True Then
             lock = "1"
@@ -73,11 +76,12 @@ Public Class AddUserForm
         End If
 
         Try
-            dataReader = myCon.myReaderFunction("Update sec_user Set  first_name = '" + txtFirstname.Text + "', 
+            dataReader = myCon.myReaderFunction("Update sec_user Set last_updated ='" + now + "' , first_name = '" + txtFirstname.Text + "', 
            last_name = '" + txtLastname.Text + "', DOB='" + DOB.Value.ToString("yyyy-MM-dd") + "', email='" + txtEmail.Text + "', 
             phone='" + txtPhone.Text + "', address ='" + txtAddress.Text + "',is_lock='" + lock + "',
-           full_name='" + txtFirstname.Text + " " + txtLastname.Text + "', gender='" + ComboBoxGender.Text + "' where id='" + txtCode.Text + "'")
-            MsgBox("Successfully")
+           full_name='" + txtFirstname.Text + " " + txtLastname.Text + "', gender='" + ComboBoxGender.Text + "',
+            role_Id = (select role.id from role where role.name = '" + ComboBoxRole.Text + "') where id='" + txtCode.Text + "'")
+            MsgBox("Updated successfully")
             Me.Hide()
         Catch ex As Exception
             MsgBox(ex.Message)
@@ -89,12 +93,12 @@ Public Class AddUserForm
         Try
             If MessageBox.Show("Do you really want to Delete this Record?", "Delete", MessageBoxButtons.YesNo, MessageBoxIcon.Warning) = DialogResult.No Then
 
-                MsgBox("Operation Cancelled")
+                MsgBox("Cancelled")
 
                 Exit Sub
 
             End If
-            myReader = myCon.listAllData(" Delete from sec_user Where id = " + txtCode.Text + " ")
+            myReader = myCon.listAllData(" Delete from sec_user Where code = " + txtCode.Text + " ")
             Me.Close()
         Catch ex As Exception
             MsgBox(ex.Message)

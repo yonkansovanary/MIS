@@ -137,10 +137,22 @@
     <Compile Include="OrderForm.vb">
       <SubType>Form</SubType>
     </Compile>
+    <Compile Include="Position.Designer.vb">
+      <DependentUpon>Position.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Position.vb">
+      <SubType>Form</SubType>
+    </Compile>
     <Compile Include="PurchaseDetail.Designer.vb">
       <DependentUpon>PurchaseDetail.vb</DependentUpon>
     </Compile>
     <Compile Include="PurchaseDetail.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Role.Designer.vb">
+      <DependentUpon>Role.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Role.vb">
       <SubType>Form</SubType>
     </Compile>
   </ItemGroup>
@@ -175,8 +187,14 @@
     <EmbeddedResource Include="OrderForm.resx">
       <DependentUpon>OrderForm.vb</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="Position.resx">
+      <DependentUpon>Position.vb</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="PurchaseDetail.resx">
       <DependentUpon>PurchaseDetail.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Role.resx">
+      <DependentUpon>Role.vb</DependentUpon>
     </EmbeddedResource>
   </ItemGroup>
   <ItemGroup>

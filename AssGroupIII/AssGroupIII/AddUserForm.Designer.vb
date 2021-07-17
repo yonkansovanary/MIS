@@ -348,6 +348,7 @@ Partial Class AddUserForm
         '
         Me.ComboBoxRole.Font = New System.Drawing.Font("Microsoft Sans Serif", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.ComboBoxRole.FormattingEnabled = True
+        Me.ComboBoxRole.Items.AddRange(New Object() {""})
         Me.ComboBoxRole.Location = New System.Drawing.Point(270, 488)
         Me.ComboBoxRole.Margin = New System.Windows.Forms.Padding(4)
         Me.ComboBoxRole.Name = "ComboBoxRole"

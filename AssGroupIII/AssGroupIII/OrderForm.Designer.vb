@@ -44,36 +44,40 @@ Partial Class OrderForm
         '
         Me.btnCancel.BackColor = System.Drawing.Color.White
         Me.btnCancel.Image = CType(resources.GetObject("btnCancel.Image"), System.Drawing.Image)
-        Me.btnCancel.Location = New System.Drawing.Point(556, 12)
+        Me.btnCancel.Location = New System.Drawing.Point(741, 15)
+        Me.btnCancel.Margin = New System.Windows.Forms.Padding(4, 4, 4, 4)
         Me.btnCancel.Name = "btnCancel"
-        Me.btnCancel.Size = New System.Drawing.Size(90, 42)
+        Me.btnCancel.Size = New System.Drawing.Size(120, 52)
         Me.btnCancel.TabIndex = 71
         Me.btnCancel.UseVisualStyleBackColor = False
         '
         'btnSave
         '
         Me.btnSave.Image = CType(resources.GetObject("btnSave.Image"), System.Drawing.Image)
-        Me.btnSave.Location = New System.Drawing.Point(661, 12)
+        Me.btnSave.Location = New System.Drawing.Point(881, 15)
+        Me.btnSave.Margin = New System.Windows.Forms.Padding(4, 4, 4, 4)
         Me.btnSave.Name = "btnSave"
-        Me.btnSave.Size = New System.Drawing.Size(90, 42)
+        Me.btnSave.Size = New System.Drawing.Size(120, 52)
         Me.btnSave.TabIndex = 70
         Me.btnSave.UseVisualStyleBackColor = True
         '
         'DateCreated
         '
         Me.DateCreated.Font = New System.Drawing.Font("Microsoft Sans Serif", 9.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.DateCreated.Location = New System.Drawing.Point(551, 122)
+        Me.DateCreated.Location = New System.Drawing.Point(735, 150)
+        Me.DateCreated.Margin = New System.Windows.Forms.Padding(4, 4, 4, 4)
         Me.DateCreated.Name = "DateCreated"
-        Me.DateCreated.Size = New System.Drawing.Size(200, 21)
+        Me.DateCreated.Size = New System.Drawing.Size(265, 24)
         Me.DateCreated.TabIndex = 69
         '
         'LabelAddOrderTitle
         '
         Me.LabelAddOrderTitle.AutoSize = True
         Me.LabelAddOrderTitle.Font = New System.Drawing.Font("Microsoft Sans Serif", 14.25!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.LabelAddOrderTitle.Location = New System.Drawing.Point(12, 9)
+        Me.LabelAddOrderTitle.Location = New System.Drawing.Point(16, 11)
+        Me.LabelAddOrderTitle.Margin = New System.Windows.Forms.Padding(4, 0, 4, 0)
         Me.LabelAddOrderTitle.Name = "LabelAddOrderTitle"
-        Me.LabelAddOrderTitle.Size = New System.Drawing.Size(108, 24)
+        Me.LabelAddOrderTitle.Size = New System.Drawing.Size(134, 29)
         Me.LabelAddOrderTitle.TabIndex = 64
         Me.LabelAddOrderTitle.Text = "Add Order"
         '
@@ -81,9 +85,10 @@ Partial Class OrderForm
         '
         Me.LabelDate.AutoSize = True
         Me.LabelDate.Font = New System.Drawing.Font("Microsoft Sans Serif", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.LabelDate.Location = New System.Drawing.Point(418, 122)
+        Me.LabelDate.Location = New System.Drawing.Point(557, 150)
+        Me.LabelDate.Margin = New System.Windows.Forms.Padding(4, 0, 4, 0)
         Me.LabelDate.Name = "LabelDate"
-        Me.LabelDate.Size = New System.Drawing.Size(44, 20)
+        Me.LabelDate.Size = New System.Drawing.Size(53, 25)
         Me.LabelDate.TabIndex = 62
         Me.LabelDate.Text = "Date"
         '
@@ -91,9 +96,10 @@ Partial Class OrderForm
         '
         Me.LabelProductName.AutoSize = True
         Me.LabelProductName.Font = New System.Drawing.Font("Microsoft Sans Serif", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.LabelProductName.Location = New System.Drawing.Point(57, 75)
+        Me.LabelProductName.Location = New System.Drawing.Point(76, 92)
+        Me.LabelProductName.Margin = New System.Windows.Forms.Padding(4, 0, 4, 0)
         Me.LabelProductName.Name = "LabelProductName"
-        Me.LabelProductName.Size = New System.Drawing.Size(110, 20)
+        Me.LabelProductName.Size = New System.Drawing.Size(136, 25)
         Me.LabelProductName.TabIndex = 58
         Me.LabelProductName.Text = "Product Name"
         '
@@ -102,43 +108,48 @@ Partial Class OrderForm
         Me.ComboBoxProName.Font = New System.Drawing.Font("Microsoft Sans Serif", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.ComboBoxProName.FormattingEnabled = True
         Me.ComboBoxProName.Items.AddRange(New Object() {"Male", "Female", "Other"})
-        Me.ComboBoxProName.Location = New System.Drawing.Point(190, 73)
+        Me.ComboBoxProName.Location = New System.Drawing.Point(253, 90)
+        Me.ComboBoxProName.Margin = New System.Windows.Forms.Padding(4, 4, 4, 4)
         Me.ComboBoxProName.Name = "ComboBoxProName"
-        Me.ComboBoxProName.Size = New System.Drawing.Size(201, 28)
+        Me.ComboBoxProName.Size = New System.Drawing.Size(267, 33)
         Me.ComboBoxProName.TabIndex = 73
         '
         'TextBox1
         '
         Me.TextBox1.Font = New System.Drawing.Font("Microsoft Sans Serif", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.TextBox1.Location = New System.Drawing.Point(190, 165)
+        Me.TextBox1.Location = New System.Drawing.Point(253, 203)
+        Me.TextBox1.Margin = New System.Windows.Forms.Padding(4, 4, 4, 4)
         Me.TextBox1.Name = "TextBox1"
-        Me.TextBox1.Size = New System.Drawing.Size(201, 26)
+        Me.TextBox1.Size = New System.Drawing.Size(267, 30)
         Me.TextBox1.TabIndex = 79
         Me.TextBox1.UseSystemPasswordChar = True
         '
         'txtUnitprice
         '
         Me.txtUnitprice.Font = New System.Drawing.Font("Microsoft Sans Serif", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.txtUnitprice.Location = New System.Drawing.Point(190, 116)
+        Me.txtUnitprice.Location = New System.Drawing.Point(253, 143)
+        Me.txtUnitprice.Margin = New System.Windows.Forms.Padding(4, 4, 4, 4)
         Me.txtUnitprice.Name = "txtUnitprice"
-        Me.txtUnitprice.Size = New System.Drawing.Size(201, 26)
+        Me.txtUnitprice.Size = New System.Drawing.Size(267, 30)
         Me.txtUnitprice.TabIndex = 78
         '
         'txtTotalPrice
         '
         Me.txtTotalPrice.Font = New System.Drawing.Font("Microsoft Sans Serif", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.txtTotalPrice.Location = New System.Drawing.Point(550, 165)
+        Me.txtTotalPrice.Location = New System.Drawing.Point(733, 203)
+        Me.txtTotalPrice.Margin = New System.Windows.Forms.Padding(4, 4, 4, 4)
         Me.txtTotalPrice.Name = "txtTotalPrice"
-        Me.txtTotalPrice.Size = New System.Drawing.Size(201, 26)
+        Me.txtTotalPrice.Size = New System.Drawing.Size(267, 30)
         Me.txtTotalPrice.TabIndex = 77
         '
         'LabelQty
         '
         Me.LabelQty.AutoSize = True
         Me.LabelQty.Font = New System.Drawing.Font("Microsoft Sans Serif", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.LabelQty.Location = New System.Drawing.Point(57, 168)
+        Me.LabelQty.Location = New System.Drawing.Point(76, 207)
+        Me.LabelQty.Margin = New System.Windows.Forms.Padding(4, 0, 4, 0)
         Me.LabelQty.Name = "LabelQty"
-        Me.LabelQty.Size = New System.Drawing.Size(68, 20)
+        Me.LabelQty.Size = New System.Drawing.Size(85, 25)
         Me.LabelQty.TabIndex = 76
         Me.LabelQty.Text = "Quantity"
         '
@@ -146,9 +157,10 @@ Partial Class OrderForm
         '
         Me.LabelUnitprice.AutoSize = True
         Me.LabelUnitprice.Font = New System.Drawing.Font("Microsoft Sans Serif", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.LabelUnitprice.Location = New System.Drawing.Point(57, 122)
+        Me.LabelUnitprice.Location = New System.Drawing.Point(76, 150)
+        Me.LabelUnitprice.Margin = New System.Windows.Forms.Padding(4, 0, 4, 0)
         Me.LabelUnitprice.Name = "LabelUnitprice"
-        Me.LabelUnitprice.Size = New System.Drawing.Size(77, 20)
+        Me.LabelUnitprice.Size = New System.Drawing.Size(95, 25)
         Me.LabelUnitprice.TabIndex = 75
         Me.LabelUnitprice.Text = "Unit Price"
         '
@@ -156,9 +168,10 @@ Partial Class OrderForm
         '
         Me.LabelTotalPrice.AutoSize = True
         Me.LabelTotalPrice.Font = New System.Drawing.Font("Microsoft Sans Serif", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.LabelTotalPrice.Location = New System.Drawing.Point(417, 168)
+        Me.LabelTotalPrice.Location = New System.Drawing.Point(556, 207)
+        Me.LabelTotalPrice.Margin = New System.Windows.Forms.Padding(4, 0, 4, 0)
         Me.LabelTotalPrice.Name = "LabelTotalPrice"
-        Me.LabelTotalPrice.Size = New System.Drawing.Size(83, 20)
+        Me.LabelTotalPrice.Size = New System.Drawing.Size(105, 25)
         Me.LabelTotalPrice.TabIndex = 74
         Me.LabelTotalPrice.Text = "Total Price"
         '
@@ -167,26 +180,28 @@ Partial Class OrderForm
         Me.ComboBoxCustomerName.Font = New System.Drawing.Font("Microsoft Sans Serif", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.ComboBoxCustomerName.FormattingEnabled = True
         Me.ComboBoxCustomerName.Items.AddRange(New Object() {"Male", "Female", "Other"})
-        Me.ComboBoxCustomerName.Location = New System.Drawing.Point(551, 72)
+        Me.ComboBoxCustomerName.Location = New System.Drawing.Point(735, 89)
+        Me.ComboBoxCustomerName.Margin = New System.Windows.Forms.Padding(4, 4, 4, 4)
         Me.ComboBoxCustomerName.Name = "ComboBoxCustomerName"
-        Me.ComboBoxCustomerName.Size = New System.Drawing.Size(201, 28)
+        Me.ComboBoxCustomerName.Size = New System.Drawing.Size(267, 33)
         Me.ComboBoxCustomerName.TabIndex = 81
         '
         'LabelCustomerName
         '
         Me.LabelCustomerName.AutoSize = True
         Me.LabelCustomerName.Font = New System.Drawing.Font("Microsoft Sans Serif", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.LabelCustomerName.Location = New System.Drawing.Point(418, 74)
+        Me.LabelCustomerName.Location = New System.Drawing.Point(557, 91)
+        Me.LabelCustomerName.Margin = New System.Windows.Forms.Padding(4, 0, 4, 0)
         Me.LabelCustomerName.Name = "LabelCustomerName"
-        Me.LabelCustomerName.Size = New System.Drawing.Size(124, 20)
+        Me.LabelCustomerName.Size = New System.Drawing.Size(154, 25)
         Me.LabelCustomerName.TabIndex = 80
         Me.LabelCustomerName.Text = "Customer Name"
         '
         'OrderForm
         '
-        Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
+        Me.AutoScaleDimensions = New System.Drawing.SizeF(8.0!, 16.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
-        Me.ClientSize = New System.Drawing.Size(856, 273)
+        Me.ClientSize = New System.Drawing.Size(1090, 336)
         Me.Controls.Add(Me.ComboBoxCustomerName)
         Me.Controls.Add(Me.LabelCustomerName)
         Me.Controls.Add(Me.TextBox1)
@@ -202,6 +217,7 @@ Partial Class OrderForm
         Me.Controls.Add(Me.LabelAddOrderTitle)
         Me.Controls.Add(Me.LabelDate)
         Me.Controls.Add(Me.LabelProductName)
+        Me.Margin = New System.Windows.Forms.Padding(4, 4, 4, 4)
         Me.Name = "OrderForm"
         Me.Text = "OrderForm"
         Me.ResumeLayout(False)
