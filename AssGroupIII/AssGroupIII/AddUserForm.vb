@@ -25,9 +25,12 @@ Public Class AddUserForm
         Try
             If txtPassword.Text = txtConPassword.Text Then
                 myReader = myCon.listAllData("INSERT INTO sec_user (code, first_name, last_name, username, password,confirm_password, DOB, email, phone, address,
-                is_lock, date_created, last_updated, version, full_name,gender) VALUES('" + txtCode.Text + "','" + txtFirstname.Text + "','" + txtLastname.Text + "','" + txtUsername.Text + "','" + pass + "','" + conPass + "','" + DOB.Text + "',
-		        '" + txtEmail.Text + "','" + txtPhone.Text + "','" + txtAddress.Text + "','" + lock + "','" + now + "','" + now + "','0','" + txtFirstname.Text + " " + txtLastname.Text + "', '" + ComboBoxGender.Text + "')")
-                MsgBox("Successfully")
+                is_lock, date_created, last_updated, version, full_name,gender,role_id,position_id) VALUES('" + txtCode.Text + "','" + txtFirstname.Text + "',
+                '" + txtLastname.Text + "','" + txtUsername.Text + "','" + pass + "','" + conPass + "','" + DOB.Text + "',
+		        '" + txtEmail.Text + "','" + txtPhone.Text + "','" + txtAddress.Text + "','" + lock + "','" + now + "','" + now + "','0','" + txtFirstname.Text + " " + txtLastname.Text + "',
+                '" + ComboBoxGender.Text + "',(select role.id from role where role.name = '" + ComboBoxRole.Text + "'),
+                (select position.id from position where position.name = '" + ComboBoxPosition.Text + "'))")
+                MsgBox("Create user successfully")
                 Me.Close()
             Else
                 MsgBox("Password is not match!")
@@ -36,22 +39,33 @@ Public Class AddUserForm
         Catch ex As Exception
             MsgBox(ex.Message)
         End Try
-        MainForm.DataGridView_sec_user.DataSource = myCon.listAllData("select * from sec_user")
-
+        listAllUser()
     End Sub
 
-    Private Sub AddUserForm_Load(sender As Object, e As EventArgs) Handles MyBase.Load
-        Me.CenterToScreen()
-        DOB.Format = DateTimePickerFormat.Custom
-        DOB.CustomFormat = "yyyy-MM-dd"
-        Try
-            myReader = myCon.listAllData("Select * from role")
-            ComboBoxRole.DisplayMember = "name"
-            ComboBoxRole.ValueMember = "id"
-            ComboBoxRole.DataSource = myReader
-        Catch ex As Exception
-            MsgBox(ex.Message)
-        End Try
+    Sub AddUserForm_Load(sender As Object, e As EventArgs) Handles MyBase.Load
+            Me.CenterToScreen()
+            DOB.Format = DateTimePickerFormat.Custom
+            DOB.CustomFormat = "yyyy-MM-dd"
+            Dim role, position As DataTable
+
+            Try
+                role = myCon.listAllData("Select * from role")
+                ComboBoxRole.DisplayMember = "name"
+                ComboBoxRole.ValueMember = "id"
+                ComboBoxRole.DataSource = role
+            Catch ex As Exception
+                MsgBox(ex.Message)
+            End Try
+
+            Try
+                position = myCon.listAllData("Select * from position")
+                ComboBoxPosition.DisplayMember = "name"
+                ComboBoxPosition.ValueMember = "id"
+                ComboBoxPosition.DataSource = position
+            Catch ex As Exception
+                MsgBox(ex.Message)
+            End Try
+
 
     End Sub
 
@@ -80,33 +94,40 @@ Public Class AddUserForm
            last_name = '" + txtLastname.Text + "', DOB='" + DOB.Value.ToString("yyyy-MM-dd") + "', email='" + txtEmail.Text + "', 
             phone='" + txtPhone.Text + "', address ='" + txtAddress.Text + "',is_lock='" + lock + "',
            full_name='" + txtFirstname.Text + " " + txtLastname.Text + "', gender='" + ComboBoxGender.Text + "',
-            role_Id = (select role.id from role where role.name = '" + ComboBoxRole.Text + "') where id='" + txtCode.Text + "'")
-            MsgBox("Updated successfully")
+            role_Id = (select role.id from role where role.name = '" + ComboBoxRole.Text + "'),position_id =  (select position.id from position where position.name = '" + ComboBoxPosition.Text + "')
+           where code='" + txtCode.Text + "'")
+            MsgBox("Updated Employee successfully")
             Me.Hide()
         Catch ex As Exception
             MsgBox(ex.Message)
         End Try
-        MainForm.DataGridView_sec_user.DataSource = myCon.listAllData("select * from sec_user")
+        listAllUser()
     End Sub
 
     Private Sub btnUserDelete_Click(sender As Object, e As EventArgs) Handles btnUserDelete.Click
+        If MessageBox.Show("Do you really want to Delete this Record?", "Delete", MessageBoxButtons.YesNo, MessageBoxIcon.Warning) = DialogResult.No Then
+
+            MsgBox("Cancelled")
+
+            Exit Sub
+
+        End If
         Try
-            If MessageBox.Show("Do you really want to Delete this Record?", "Delete", MessageBoxButtons.YesNo, MessageBoxIcon.Warning) = DialogResult.No Then
-
-                MsgBox("Cancelled")
-
-                Exit Sub
-
-            End If
-            myReader = myCon.listAllData(" Delete from sec_user Where code = " + txtCode.Text + " ")
+            myReader = myCon.listAllData(" Delete from sec_user Where code = '" + txtCode.Text + "' ")
+            MsgBox("Employee is deleted sucessfully")
             Me.Close()
         Catch ex As Exception
             MsgBox(ex.Message)
         End Try
-        MainForm.DataGridView_sec_user.DataSource = myCon.listAllData("select * from sec_user")
+        listAllUser()
     End Sub
 
     Private Sub ComboBoxRole_SelectedIndexChanged(sender As Object, e As EventArgs) Handles ComboBoxRole.SelectedIndexChanged
 
     End Sub
+    Private Function listAllUser()
+        MainForm.DataGridView_sec_user.DataSource = myCon.listAllData("SELECT sec_user.code as Code,first_name as 'First Name',last_name as 'Last Name',
+        username 'User Name',password 'Password',dob 'Date of Birth',email 'Email',phone 'Phone',address 'Address',date_created 'Create Date',full_name 'Full Name',
+        gender 'Gender',role.name 'Role',position.name 'Position' ,is_lock 'Lock' FROM sec_user left join role on sec_user.role_Id= role.id left join position on sec_user.position_id = position.id ")
+    End Function
 End Class

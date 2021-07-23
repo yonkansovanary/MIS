@@ -217,6 +217,7 @@ Partial Class AddProductForm
         Me.txtProductCode.Location = New System.Drawing.Point(211, 116)
         Me.txtProductCode.Margin = New System.Windows.Forms.Padding(4)
         Me.txtProductCode.Name = "txtProductCode"
+        Me.txtProductCode.ReadOnly = True
         Me.txtProductCode.Size = New System.Drawing.Size(267, 30)
         Me.txtProductCode.TabIndex = 42
         '

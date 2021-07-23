@@ -38,6 +38,8 @@ Partial Class OrderForm
         Me.LabelTotalPrice = New System.Windows.Forms.Label()
         Me.ComboBoxCustomerName = New System.Windows.Forms.ComboBox()
         Me.LabelCustomerName = New System.Windows.Forms.Label()
+        Me.DataGridView1 = New System.Windows.Forms.DataGridView()
+        CType(Me.DataGridView1, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.SuspendLayout()
         '
         'btnCancel
@@ -45,7 +47,7 @@ Partial Class OrderForm
         Me.btnCancel.BackColor = System.Drawing.Color.White
         Me.btnCancel.Image = CType(resources.GetObject("btnCancel.Image"), System.Drawing.Image)
         Me.btnCancel.Location = New System.Drawing.Point(741, 15)
-        Me.btnCancel.Margin = New System.Windows.Forms.Padding(4, 4, 4, 4)
+        Me.btnCancel.Margin = New System.Windows.Forms.Padding(4)
         Me.btnCancel.Name = "btnCancel"
         Me.btnCancel.Size = New System.Drawing.Size(120, 52)
         Me.btnCancel.TabIndex = 71
@@ -55,7 +57,7 @@ Partial Class OrderForm
         '
         Me.btnSave.Image = CType(resources.GetObject("btnSave.Image"), System.Drawing.Image)
         Me.btnSave.Location = New System.Drawing.Point(881, 15)
-        Me.btnSave.Margin = New System.Windows.Forms.Padding(4, 4, 4, 4)
+        Me.btnSave.Margin = New System.Windows.Forms.Padding(4)
         Me.btnSave.Name = "btnSave"
         Me.btnSave.Size = New System.Drawing.Size(120, 52)
         Me.btnSave.TabIndex = 70
@@ -65,7 +67,7 @@ Partial Class OrderForm
         '
         Me.DateCreated.Font = New System.Drawing.Font("Microsoft Sans Serif", 9.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.DateCreated.Location = New System.Drawing.Point(735, 150)
-        Me.DateCreated.Margin = New System.Windows.Forms.Padding(4, 4, 4, 4)
+        Me.DateCreated.Margin = New System.Windows.Forms.Padding(4)
         Me.DateCreated.Name = "DateCreated"
         Me.DateCreated.Size = New System.Drawing.Size(265, 24)
         Me.DateCreated.TabIndex = 69
@@ -109,7 +111,7 @@ Partial Class OrderForm
         Me.ComboBoxProName.FormattingEnabled = True
         Me.ComboBoxProName.Items.AddRange(New Object() {"Male", "Female", "Other"})
         Me.ComboBoxProName.Location = New System.Drawing.Point(253, 90)
-        Me.ComboBoxProName.Margin = New System.Windows.Forms.Padding(4, 4, 4, 4)
+        Me.ComboBoxProName.Margin = New System.Windows.Forms.Padding(4)
         Me.ComboBoxProName.Name = "ComboBoxProName"
         Me.ComboBoxProName.Size = New System.Drawing.Size(267, 33)
         Me.ComboBoxProName.TabIndex = 73
@@ -118,7 +120,7 @@ Partial Class OrderForm
         '
         Me.TextBox1.Font = New System.Drawing.Font("Microsoft Sans Serif", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.TextBox1.Location = New System.Drawing.Point(253, 203)
-        Me.TextBox1.Margin = New System.Windows.Forms.Padding(4, 4, 4, 4)
+        Me.TextBox1.Margin = New System.Windows.Forms.Padding(4)
         Me.TextBox1.Name = "TextBox1"
         Me.TextBox1.Size = New System.Drawing.Size(267, 30)
         Me.TextBox1.TabIndex = 79
@@ -128,7 +130,7 @@ Partial Class OrderForm
         '
         Me.txtUnitprice.Font = New System.Drawing.Font("Microsoft Sans Serif", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.txtUnitprice.Location = New System.Drawing.Point(253, 143)
-        Me.txtUnitprice.Margin = New System.Windows.Forms.Padding(4, 4, 4, 4)
+        Me.txtUnitprice.Margin = New System.Windows.Forms.Padding(4)
         Me.txtUnitprice.Name = "txtUnitprice"
         Me.txtUnitprice.Size = New System.Drawing.Size(267, 30)
         Me.txtUnitprice.TabIndex = 78
@@ -137,7 +139,7 @@ Partial Class OrderForm
         '
         Me.txtTotalPrice.Font = New System.Drawing.Font("Microsoft Sans Serif", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.txtTotalPrice.Location = New System.Drawing.Point(733, 203)
-        Me.txtTotalPrice.Margin = New System.Windows.Forms.Padding(4, 4, 4, 4)
+        Me.txtTotalPrice.Margin = New System.Windows.Forms.Padding(4)
         Me.txtTotalPrice.Name = "txtTotalPrice"
         Me.txtTotalPrice.Size = New System.Drawing.Size(267, 30)
         Me.txtTotalPrice.TabIndex = 77
@@ -181,7 +183,7 @@ Partial Class OrderForm
         Me.ComboBoxCustomerName.FormattingEnabled = True
         Me.ComboBoxCustomerName.Items.AddRange(New Object() {"Male", "Female", "Other"})
         Me.ComboBoxCustomerName.Location = New System.Drawing.Point(735, 89)
-        Me.ComboBoxCustomerName.Margin = New System.Windows.Forms.Padding(4, 4, 4, 4)
+        Me.ComboBoxCustomerName.Margin = New System.Windows.Forms.Padding(4)
         Me.ComboBoxCustomerName.Name = "ComboBoxCustomerName"
         Me.ComboBoxCustomerName.Size = New System.Drawing.Size(267, 33)
         Me.ComboBoxCustomerName.TabIndex = 81
@@ -197,11 +199,21 @@ Partial Class OrderForm
         Me.LabelCustomerName.TabIndex = 80
         Me.LabelCustomerName.Text = "Customer Name"
         '
+        'DataGridView1
+        '
+        Me.DataGridView1.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize
+        Me.DataGridView1.Location = New System.Drawing.Point(81, 271)
+        Me.DataGridView1.Name = "DataGridView1"
+        Me.DataGridView1.RowTemplate.Height = 24
+        Me.DataGridView1.Size = New System.Drawing.Size(1067, 449)
+        Me.DataGridView1.TabIndex = 82
+        '
         'OrderForm
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(8.0!, 16.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
-        Me.ClientSize = New System.Drawing.Size(1090, 336)
+        Me.ClientSize = New System.Drawing.Size(1294, 727)
+        Me.Controls.Add(Me.DataGridView1)
         Me.Controls.Add(Me.ComboBoxCustomerName)
         Me.Controls.Add(Me.LabelCustomerName)
         Me.Controls.Add(Me.TextBox1)
@@ -217,9 +229,10 @@ Partial Class OrderForm
         Me.Controls.Add(Me.LabelAddOrderTitle)
         Me.Controls.Add(Me.LabelDate)
         Me.Controls.Add(Me.LabelProductName)
-        Me.Margin = New System.Windows.Forms.Padding(4, 4, 4, 4)
+        Me.Margin = New System.Windows.Forms.Padding(4)
         Me.Name = "OrderForm"
         Me.Text = "OrderForm"
+        CType(Me.DataGridView1, System.ComponentModel.ISupportInitialize).EndInit()
         Me.ResumeLayout(False)
         Me.PerformLayout()
 
@@ -239,4 +252,5 @@ Partial Class OrderForm
     Friend WithEvents LabelTotalPrice As Label
     Friend WithEvents ComboBoxCustomerName As ComboBox
     Friend WithEvents LabelCustomerName As Label
+    Friend WithEvents DataGridView1 As DataGridView
 End Class

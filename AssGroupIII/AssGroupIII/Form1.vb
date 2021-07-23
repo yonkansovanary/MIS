@@ -47,4 +47,8 @@ Public Class Form1
             Button2_Click(sender, e)
         End If
     End Sub
+
+    Private Sub txtPassword_TextChanged(sender As Object, e As EventArgs) Handles txtPassword.TextChanged
+
+    End Sub
 End Class

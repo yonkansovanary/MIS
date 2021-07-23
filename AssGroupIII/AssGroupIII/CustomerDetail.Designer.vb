@@ -37,6 +37,8 @@ Partial Class CustomerDetail
         Me.LabelPhone = New System.Windows.Forms.Label()
         Me.LabelCustomerName = New System.Windows.Forms.Label()
         Me.TextBoxPhone = New System.Windows.Forms.TextBox()
+        Me.DataGridView1 = New System.Windows.Forms.DataGridView()
+        CType(Me.DataGridView1, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.SuspendLayout()
         '
         'btnCancel
@@ -44,7 +46,7 @@ Partial Class CustomerDetail
         Me.btnCancel.BackColor = System.Drawing.Color.White
         Me.btnCancel.Image = CType(resources.GetObject("btnCancel.Image"), System.Drawing.Image)
         Me.btnCancel.Location = New System.Drawing.Point(709, 11)
-        Me.btnCancel.Margin = New System.Windows.Forms.Padding(4, 4, 4, 4)
+        Me.btnCancel.Margin = New System.Windows.Forms.Padding(4)
         Me.btnCancel.Name = "btnCancel"
         Me.btnCancel.Size = New System.Drawing.Size(120, 52)
         Me.btnCancel.TabIndex = 56
@@ -54,7 +56,7 @@ Partial Class CustomerDetail
         '
         Me.btnSave.Image = CType(resources.GetObject("btnSave.Image"), System.Drawing.Image)
         Me.btnSave.Location = New System.Drawing.Point(849, 11)
-        Me.btnSave.Margin = New System.Windows.Forms.Padding(4, 4, 4, 4)
+        Me.btnSave.Margin = New System.Windows.Forms.Padding(4)
         Me.btnSave.Name = "btnSave"
         Me.btnSave.Size = New System.Drawing.Size(120, 52)
         Me.btnSave.TabIndex = 55
@@ -64,7 +66,7 @@ Partial Class CustomerDetail
         '
         Me.DateCreated.Font = New System.Drawing.Font("Microsoft Sans Serif", 9.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.DateCreated.Location = New System.Drawing.Point(703, 98)
-        Me.DateCreated.Margin = New System.Windows.Forms.Padding(4, 4, 4, 4)
+        Me.DateCreated.Margin = New System.Windows.Forms.Padding(4)
         Me.DateCreated.Name = "DateCreated"
         Me.DateCreated.Size = New System.Drawing.Size(265, 24)
         Me.DateCreated.TabIndex = 54
@@ -73,7 +75,7 @@ Partial Class CustomerDetail
         '
         Me.txtAddress.Font = New System.Drawing.Font("Microsoft Sans Serif", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.txtAddress.Location = New System.Drawing.Point(701, 150)
-        Me.txtAddress.Margin = New System.Windows.Forms.Padding(4, 4, 4, 4)
+        Me.txtAddress.Margin = New System.Windows.Forms.Padding(4)
         Me.txtAddress.Multiline = True
         Me.txtAddress.Name = "txtAddress"
         Me.txtAddress.Size = New System.Drawing.Size(267, 144)
@@ -83,7 +85,7 @@ Partial Class CustomerDetail
         '
         Me.txtQty.Font = New System.Drawing.Font("Microsoft Sans Serif", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.txtQty.Location = New System.Drawing.Point(253, 263)
-        Me.txtQty.Margin = New System.Windows.Forms.Padding(4, 4, 4, 4)
+        Me.txtQty.Margin = New System.Windows.Forms.Padding(4)
         Me.txtQty.Name = "txtQty"
         Me.txtQty.Size = New System.Drawing.Size(267, 30)
         Me.txtQty.TabIndex = 50
@@ -93,7 +95,7 @@ Partial Class CustomerDetail
         '
         Me.txtEmail.Font = New System.Drawing.Font("Microsoft Sans Serif", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.txtEmail.Location = New System.Drawing.Point(253, 210)
-        Me.txtEmail.Margin = New System.Windows.Forms.Padding(4, 4, 4, 4)
+        Me.txtEmail.Margin = New System.Windows.Forms.Padding(4)
         Me.txtEmail.Name = "txtEmail"
         Me.txtEmail.Size = New System.Drawing.Size(267, 30)
         Me.txtEmail.TabIndex = 49
@@ -179,16 +181,26 @@ Partial Class CustomerDetail
         '
         Me.TextBoxPhone.Font = New System.Drawing.Font("Microsoft Sans Serif", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.TextBoxPhone.Location = New System.Drawing.Point(253, 150)
-        Me.TextBoxPhone.Margin = New System.Windows.Forms.Padding(4, 4, 4, 4)
+        Me.TextBoxPhone.Margin = New System.Windows.Forms.Padding(4)
         Me.TextBoxPhone.Name = "TextBoxPhone"
         Me.TextBoxPhone.Size = New System.Drawing.Size(267, 30)
         Me.TextBoxPhone.TabIndex = 57
+        '
+        'DataGridView1
+        '
+        Me.DataGridView1.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize
+        Me.DataGridView1.Location = New System.Drawing.Point(81, 331)
+        Me.DataGridView1.Name = "DataGridView1"
+        Me.DataGridView1.RowTemplate.Height = 24
+        Me.DataGridView1.Size = New System.Drawing.Size(1022, 568)
+        Me.DataGridView1.TabIndex = 58
         '
         'CustomerDetail
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(8.0!, 16.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
-        Me.ClientSize = New System.Drawing.Size(1035, 353)
+        Me.ClientSize = New System.Drawing.Size(1256, 902)
+        Me.Controls.Add(Me.DataGridView1)
         Me.Controls.Add(Me.TextBoxPhone)
         Me.Controls.Add(Me.btnCancel)
         Me.Controls.Add(Me.btnSave)
@@ -203,9 +215,10 @@ Partial Class CustomerDetail
         Me.Controls.Add(Me.LabelEmail)
         Me.Controls.Add(Me.LabelPhone)
         Me.Controls.Add(Me.LabelCustomerName)
-        Me.Margin = New System.Windows.Forms.Padding(4, 4, 4, 4)
+        Me.Margin = New System.Windows.Forms.Padding(4)
         Me.Name = "CustomerDetail"
         Me.Text = "CustomerDetail"
+        CType(Me.DataGridView1, System.ComponentModel.ISupportInitialize).EndInit()
         Me.ResumeLayout(False)
         Me.PerformLayout()
 
@@ -224,4 +237,5 @@ Partial Class CustomerDetail
     Friend WithEvents LabelPhone As Label
     Friend WithEvents LabelCustomerName As Label
     Friend WithEvents TextBoxPhone As TextBox
+    Friend WithEvents DataGridView1 As DataGridView
 End Class

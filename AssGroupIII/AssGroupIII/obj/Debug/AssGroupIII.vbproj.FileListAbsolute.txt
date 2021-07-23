@@ -49,3 +49,5 @@ D:\SRU\MIS\AssGroupIII\AssGroupIII\obj\Debug\AssGroupIII.OrderForm.resources
 D:\SRU\MIS\AssGroupIII\AssGroupIII\obj\Debug\AssGroupIII.PurchaseDetail.resources
 D:\SRU\MIS\AssGroupIII\AssGroupIII\obj\Debug\AssGroupIII.Position.resources
 D:\SRU\MIS\AssGroupIII\AssGroupIII\obj\Debug\AssGroupIII.Role.resources
+D:\SRU\MIS\AssGroupIII\AssGroupIII\obj\Debug\AssGroupIII.Supplier.resources
+D:\SRU\MIS\AssGroupIII\AssGroupIII\obj\Debug\AssGroupIII.SaleManagment.resources

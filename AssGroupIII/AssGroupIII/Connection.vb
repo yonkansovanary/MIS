@@ -13,6 +13,9 @@ Public Class Connection
         myCmd = myConn.CreateCommand
         Return
     End Sub
+    Public Sub sqlConnection()
+        myConn = New SqlConnection("Server= DESKTOP-JTNSKEL; Database= MIS; Integrated Security=SSPI;")
+    End Sub
     Public Function listAllData(sql As String)
         Dim data As New DataTable
         Try
@@ -60,4 +63,7 @@ Public Class Connection
         Return sb.ToString
     End Function
 
+    Friend Function qlConnection() As SqlConnection
+        Return New SqlConnection("Server= DESKTOP-JTNSKEL; Database= MIS; Integrated Security=SSPI;")
+    End Function
 End Class
