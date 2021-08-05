@@ -37,8 +37,8 @@ Partial Class CustomerDetail
         Me.LabelPhone = New System.Windows.Forms.Label()
         Me.LabelCustomerName = New System.Windows.Forms.Label()
         Me.TextBoxPhone = New System.Windows.Forms.TextBox()
-        Me.DataGridView1 = New System.Windows.Forms.DataGridView()
-        CType(Me.DataGridView1, System.ComponentModel.ISupportInitialize).BeginInit()
+        Me.DataGridViewCustomer = New System.Windows.Forms.DataGridView()
+        CType(Me.DataGridViewCustomer, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.SuspendLayout()
         '
         'btnCancel
@@ -186,21 +186,21 @@ Partial Class CustomerDetail
         Me.TextBoxPhone.Size = New System.Drawing.Size(267, 30)
         Me.TextBoxPhone.TabIndex = 57
         '
-        'DataGridView1
+        'DataGridViewCustomer
         '
-        Me.DataGridView1.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize
-        Me.DataGridView1.Location = New System.Drawing.Point(81, 331)
-        Me.DataGridView1.Name = "DataGridView1"
-        Me.DataGridView1.RowTemplate.Height = 24
-        Me.DataGridView1.Size = New System.Drawing.Size(1022, 568)
-        Me.DataGridView1.TabIndex = 58
+        Me.DataGridViewCustomer.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize
+        Me.DataGridViewCustomer.Location = New System.Drawing.Point(81, 331)
+        Me.DataGridViewCustomer.Name = "DataGridViewCustomer"
+        Me.DataGridViewCustomer.RowTemplate.Height = 24
+        Me.DataGridViewCustomer.Size = New System.Drawing.Size(1022, 568)
+        Me.DataGridViewCustomer.TabIndex = 58
         '
         'CustomerDetail
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(8.0!, 16.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
         Me.ClientSize = New System.Drawing.Size(1256, 902)
-        Me.Controls.Add(Me.DataGridView1)
+        Me.Controls.Add(Me.DataGridViewCustomer)
         Me.Controls.Add(Me.TextBoxPhone)
         Me.Controls.Add(Me.btnCancel)
         Me.Controls.Add(Me.btnSave)
@@ -218,7 +218,7 @@ Partial Class CustomerDetail
         Me.Margin = New System.Windows.Forms.Padding(4)
         Me.Name = "CustomerDetail"
         Me.Text = "CustomerDetail"
-        CType(Me.DataGridView1, System.ComponentModel.ISupportInitialize).EndInit()
+        CType(Me.DataGridViewCustomer, System.ComponentModel.ISupportInitialize).EndInit()
         Me.ResumeLayout(False)
         Me.PerformLayout()
 
@@ -237,5 +237,5 @@ Partial Class CustomerDetail
     Friend WithEvents LabelPhone As Label
     Friend WithEvents LabelCustomerName As Label
     Friend WithEvents TextBoxPhone As TextBox
-    Friend WithEvents DataGridView1 As DataGridView
+    Friend WithEvents DataGridViewCustomer As DataGridView
 End Class

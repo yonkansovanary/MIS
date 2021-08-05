@@ -73,7 +73,6 @@ Partial Class Position
         Me.txtName.Name = "txtName"
         Me.txtName.Size = New System.Drawing.Size(267, 30)
         Me.txtName.TabIndex = 65
-        Me.txtName.UseSystemPasswordChar = True
         '
         'LabelAddBrandTitle
         '

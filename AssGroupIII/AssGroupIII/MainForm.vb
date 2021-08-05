@@ -6,12 +6,18 @@ Public Class MainForm
     End Sub
 
     Public Sub Adminbtn_Click(sender As Object, e As EventArgs) Handles Adminbtn.Click
+        btnAddProduct.Visible = False
+        btnAddUser.Visible = True
         ListUserPanel.Visible = True
         AdminLabel.Visible = True
+        labelProduct.Visible = False
         DataGridView_sec_user.Visible = True
+        LabelSearch.Visible = False
+        LabelEmployee.Visible = True
+        TextBoxSearch.Visible = True
         DataGridView_sec_user.DataSource = myCon.listAllData("SELECT sec_user.code as Code,first_name as 'First Name',last_name as 'Last Name',
         username 'User Name',password 'Password',dob 'Date of Birth',email 'Email',phone 'Phone',address 'Address',date_created 'Create Date',full_name 'Full Name',
-        gender 'Gender',role.name 'Role',position.name 'Position' ,is_lock 'Lock' FROM sec_user left join role on sec_user.role_Id= role.id left join position on sec_user.position_id = position.id ")
+        gender 'Gender',role.name 'Role',position.name 'Position' ,is_lock 'Lock' FROM sec_user left join role on sec_user.role_Id= role.id left join position on sec_user.position_id = position.id where sec_user.is_deleted = '0' ")
         DataGridViewProduct.Visible = False
     End Sub
 
@@ -36,6 +42,8 @@ Public Class MainForm
         AddUserForm.btnUserDelete.Visible = False
         AddUserForm.btnUpdate.Visible = False
         AddUserForm.btnSave.Visible = True
+        labelProduct.Visible = False
+        AdminLabel.Visible = False
 
         Dim myReader As SqlDataReader
         Dim nextCode As Integer
@@ -51,6 +59,9 @@ Public Class MainForm
         DataGridViewProduct.Visible = False
         LabelUserAdminName.Text = Form1.txtUsername.Text
         PanelHR.Visible = False
+        TextBoxSearch.Visible = False
+        LabelSearch.Visible = False
+        LabelEmployee.Visible = False
     End Sub
 
     Private Sub DataGridView_sec_user_CellContentClick(sender As Object, e As DataGridViewCellEventArgs) Handles DataGridView_sec_user.CellContentClick
@@ -101,11 +112,17 @@ Public Class MainForm
     End Sub
 
     Private Sub Label1_Click(sender As Object, e As EventArgs) Handles Label1.Click
+        TextBoxSearch.Visible = True
+        LabelSearch.Visible = True
+        LabelEmployee.Visible = False
+        btnAddUser.Visible = False
+        btnAddProduct.Visible = True
         ListUserPanel.Visible = True
+        labelProduct.Visible = True
         DataGridViewProduct.DataSource = myCon.listAllData("SELECT product.id 'Id',code 'Code',product.name 'Name',product.description 'Description',unit_price 'Unit Price',qty_agree 'Qty Agree',
         date_created 'Date Created',last_udpated 'Last Updated',is_deleted 'Deleted',created_by 'Created By',updated_by 'Updated By',
         deleted_by 'Deleted By',category.name 'Category',brand.name 'Brand'FROM product left join category on product.category_id = category.id
-        left join brand on product.brand_id = brand.id where is_deleted = '0'")
+        left join brand on product.brand_id = brand.id where is_deleted = '0' and product.name like '%" + TextBoxSearch.Text + "%'")
         DataGridViewProduct.Visible = True
         DataGridView_sec_user.Visible = False
 
@@ -134,8 +151,9 @@ Public Class MainForm
     End Sub
 
     Private Sub DataGridViewProduct_CellContentClick(sender As Object, e As DataGridViewCellEventArgs) Handles DataGridViewProduct.CellContentClick
-        Dim code, Name, description, price, qty As String
+        Dim code, Name, description, price, qty, category, brand As String
         Dim dateCreated As Date
+        AddProductForm.Show()
 
         Try
             code = DataGridViewProduct.CurrentRow.Cells(1).Value.ToString()
@@ -144,6 +162,8 @@ Public Class MainForm
             price = DataGridViewProduct.CurrentRow.Cells(4).Value.ToString()
             qty = DataGridViewProduct.CurrentRow.Cells(5).Value.ToString()
             dateCreated = DataGridViewProduct.CurrentRow.Cells(6).Value.ToString()
+            category = DataGridViewProduct.CurrentRow.Cells(12).Value.ToString()
+            brand = DataGridViewProduct.CurrentRow.Cells(13).Value.ToString()
 
             AddProductForm.txtProductCode.Text = code
             AddProductForm.txtProductName.Text = Name
@@ -151,9 +171,10 @@ Public Class MainForm
             AddProductForm.txtUnitprice.Text = price
             AddProductForm.txtQty.Text = qty
             AddProductForm.DateCreated.Value = dateCreated.ToString("yyyy-MM-dd")
+            AddProductForm.ComboBoxcategory.Text = category
+            AddProductForm.ComboBoxBrand.Text = brand
 
             AddProductForm.txtProductCode.ReadOnly = True
-            AddProductForm.Show()
             AddUserForm.btnSave.Visible = False
         Catch ex As Exception
             MsgBox(ex.Message)
@@ -226,9 +247,20 @@ Public Class MainForm
     End Sub
 
     Private Sub PictureBox5_Click(sender As Object, e As EventArgs) Handles PictureBox5.Click
-        PanelHR.Visible = True
-        PictureBox5.Visible = False
-        PictureBox7.Visible = True
+        Dim myReader As SqlDataReader
+        myReader = myCon.myReaderFunction("select role.name  from sec_user inner join role on role_id = role.id  where username = '" + LabelUserAdminName.Text + "'")
+        myReader.Read()
+        Dim role As String
+        role = myReader("name").ToString()
+        If (role <> "ROLE_ADMIN") Then
+            PictureBox5.Enabled = False
+            MsgBox("Access denied")
+        Else
+            PanelHR.Visible = True
+            PictureBox5.Visible = False
+            PictureBox7.Visible = True
+        End If
+
     End Sub
 
     Private Sub Label8_Click(sender As Object, e As EventArgs) Handles Label8.Click
@@ -241,5 +273,30 @@ Public Class MainForm
 
     Private Sub Label16_Click(sender As Object, e As EventArgs) Handles Label16.Click
         SaleManagment.Show()
+    End Sub
+
+    Private Sub Label13_Click(sender As Object, e As EventArgs) Handles Label13.Click
+        StockInDetail.Show()
+    End Sub
+
+    Private Sub PanelHeaderS_Paint(sender As Object, e As PaintEventArgs) Handles PanelHeaderS.Paint
+
+    End Sub
+
+    Private Sub Label3_Click(sender As Object, e As EventArgs) Handles LabelSearch.Click
+        Dim search As String
+        search = TextBoxSearch.Text
+        DataGridViewProduct.DataSource = myCon.listAllData("SELECT product.id 'Id',code 'Code',product.name 'Name',product.description 'Description',unit_price 'Unit Price',qty_agree 'Qty Agree',
+        date_created 'Date Created',last_udpated 'Last Updated',is_deleted 'Deleted',created_by 'Created By',updated_by 'Updated By',
+        deleted_by 'Deleted By',category.name 'Category',brand.name 'Brand'FROM product left join category on product.category_id = category.id
+        left join brand on product.brand_id = brand.id where is_deleted = '0' and product.name like '%" + search + "%'")
+    End Sub
+
+    Private Sub LabelEmployee_Click(sender As Object, e As EventArgs) Handles LabelEmployee.Click
+        Dim search As String
+        search = TextBoxSearch.Text
+        DataGridView_sec_user.DataSource = myCon.listAllData("SELECT sec_user.code as Code,first_name as 'First Name',last_name as 'Last Name',
+        username 'User Name',password 'Password',dob 'Date of Birth',email 'Email',phone 'Phone',address 'Address',date_created 'Create Date',full_name 'Full Name',
+        gender 'Gender',role.name 'Role',position.name 'Position' ,is_lock 'Lock' FROM sec_user left join role on sec_user.role_Id= role.id left join position on sec_user.position_id = position.id where sec_user.is_deleted = '0' and (username  like '%" + search + "%' OR first_name  like '%" + search + "%' OR last_name  like '%" + search + "%'  ) ")
     End Sub
 End Class

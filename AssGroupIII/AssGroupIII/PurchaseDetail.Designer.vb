@@ -43,6 +43,8 @@ Partial Class PurchaseDetail
         Me.Panel4 = New System.Windows.Forms.Panel()
         Me.DataGridViewPurchaseDetail = New System.Windows.Forms.DataGridView()
         Me.Panel2 = New System.Windows.Forms.Panel()
+        Me.Label6 = New System.Windows.Forms.Label()
+        Me.ComboBoxUom = New System.Windows.Forms.ComboBox()
         Me.Button3 = New System.Windows.Forms.Button()
         Me.PurchaseDeProId = New System.Windows.Forms.ComboBox()
         Me.Label9 = New System.Windows.Forms.Label()
@@ -63,8 +65,6 @@ Partial Class PurchaseDetail
         Me.LabelQty = New System.Windows.Forms.Label()
         Me.btnSave = New System.Windows.Forms.Button()
         Me.txtTotalPrice = New System.Windows.Forms.TextBox()
-        Me.Label6 = New System.Windows.Forms.Label()
-        Me.ComboBoxUom = New System.Windows.Forms.ComboBox()
         Me.Panel3.SuspendLayout()
         CType(Me.DataGridViewPurchase, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.Panel1.SuspendLayout()
@@ -310,6 +310,28 @@ Partial Class PurchaseDetail
         Me.Panel2.Size = New System.Drawing.Size(1215, 402)
         Me.Panel2.TabIndex = 65
         '
+        'Label6
+        '
+        Me.Label6.AutoSize = True
+        Me.Label6.Font = New System.Drawing.Font("Microsoft Sans Serif", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Label6.Location = New System.Drawing.Point(22, 221)
+        Me.Label6.Margin = New System.Windows.Forms.Padding(4, 0, 4, 0)
+        Me.Label6.Name = "Label6"
+        Me.Label6.Size = New System.Drawing.Size(149, 25)
+        Me.Label6.TabIndex = 71
+        Me.Label6.Text = "Unit of Measure"
+        '
+        'ComboBoxUom
+        '
+        Me.ComboBoxUom.Font = New System.Drawing.Font("Microsoft Sans Serif", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.ComboBoxUom.FormattingEnabled = True
+        Me.ComboBoxUom.Items.AddRange(New Object() {"Male", "Female", "Other"})
+        Me.ComboBoxUom.Location = New System.Drawing.Point(198, 217)
+        Me.ComboBoxUom.Margin = New System.Windows.Forms.Padding(4)
+        Me.ComboBoxUom.Name = "ComboBoxUom"
+        Me.ComboBoxUom.Size = New System.Drawing.Size(266, 33)
+        Me.ComboBoxUom.TabIndex = 70
+        '
         'Button3
         '
         Me.Button3.BackColor = System.Drawing.Color.White
@@ -518,28 +540,6 @@ Partial Class PurchaseDetail
         Me.txtTotalPrice.Name = "txtTotalPrice"
         Me.txtTotalPrice.Size = New System.Drawing.Size(298, 30)
         Me.txtTotalPrice.TabIndex = 48
-        '
-        'Label6
-        '
-        Me.Label6.AutoSize = True
-        Me.Label6.Font = New System.Drawing.Font("Microsoft Sans Serif", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Label6.Location = New System.Drawing.Point(22, 221)
-        Me.Label6.Margin = New System.Windows.Forms.Padding(4, 0, 4, 0)
-        Me.Label6.Name = "Label6"
-        Me.Label6.Size = New System.Drawing.Size(149, 25)
-        Me.Label6.TabIndex = 71
-        Me.Label6.Text = "Unit of Measure"
-        '
-        'ComboBoxUom
-        '
-        Me.ComboBoxUom.Font = New System.Drawing.Font("Microsoft Sans Serif", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.ComboBoxUom.FormattingEnabled = True
-        Me.ComboBoxUom.Items.AddRange(New Object() {"Male", "Female", "Other"})
-        Me.ComboBoxUom.Location = New System.Drawing.Point(198, 217)
-        Me.ComboBoxUom.Margin = New System.Windows.Forms.Padding(4)
-        Me.ComboBoxUom.Name = "ComboBoxUom"
-        Me.ComboBoxUom.Size = New System.Drawing.Size(266, 33)
-        Me.ComboBoxUom.TabIndex = 70
         '
         'PurchaseDetail
         '

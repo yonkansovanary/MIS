@@ -39,7 +39,7 @@ Partial Class CategoryDetail
         Me.btnCancel.BackColor = System.Drawing.Color.White
         Me.btnCancel.Image = CType(resources.GetObject("btnCancel.Image"), System.Drawing.Image)
         Me.btnCancel.Location = New System.Drawing.Point(566, 52)
-        Me.btnCancel.Margin = New System.Windows.Forms.Padding(4, 4, 4, 4)
+        Me.btnCancel.Margin = New System.Windows.Forms.Padding(4)
         Me.btnCancel.Name = "btnCancel"
         Me.btnCancel.Size = New System.Drawing.Size(120, 52)
         Me.btnCancel.TabIndex = 54
@@ -49,7 +49,7 @@ Partial Class CategoryDetail
         '
         Me.btnSave.Image = CType(resources.GetObject("btnSave.Image"), System.Drawing.Image)
         Me.btnSave.Location = New System.Drawing.Point(706, 52)
-        Me.btnSave.Margin = New System.Windows.Forms.Padding(4, 4, 4, 4)
+        Me.btnSave.Margin = New System.Windows.Forms.Padding(4)
         Me.btnSave.Name = "btnSave"
         Me.btnSave.Size = New System.Drawing.Size(120, 52)
         Me.btnSave.TabIndex = 53
@@ -59,7 +59,7 @@ Partial Class CategoryDetail
         '
         Me.txtDescription.Font = New System.Drawing.Font("Microsoft Sans Serif", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.txtDescription.Location = New System.Drawing.Point(258, 170)
-        Me.txtDescription.Margin = New System.Windows.Forms.Padding(4, 4, 4, 4)
+        Me.txtDescription.Margin = New System.Windows.Forms.Padding(4)
         Me.txtDescription.Multiline = True
         Me.txtDescription.Name = "txtDescription"
         Me.txtDescription.Size = New System.Drawing.Size(267, 96)
@@ -69,11 +69,10 @@ Partial Class CategoryDetail
         '
         Me.txtName.Font = New System.Drawing.Font("Microsoft Sans Serif", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.txtName.Location = New System.Drawing.Point(258, 131)
-        Me.txtName.Margin = New System.Windows.Forms.Padding(4, 4, 4, 4)
+        Me.txtName.Margin = New System.Windows.Forms.Padding(4)
         Me.txtName.Name = "txtName"
         Me.txtName.Size = New System.Drawing.Size(267, 30)
         Me.txtName.TabIndex = 48
-        Me.txtName.UseSystemPasswordChar = True
         '
         'LabelAddCategoryTitle
         '
@@ -130,7 +129,7 @@ Partial Class CategoryDetail
         Me.Controls.Add(Me.LabelAddCategoryTitle)
         Me.Controls.Add(Me.Labeldescription)
         Me.Controls.Add(Me.LabelName)
-        Me.Margin = New System.Windows.Forms.Padding(4, 4, 4, 4)
+        Me.Margin = New System.Windows.Forms.Padding(4)
         Me.Name = "CategoryDetail"
         Me.Text = "CategoryDetail"
         CType(Me.DataGridViewCategory, System.ComponentModel.ISupportInitialize).EndInit()

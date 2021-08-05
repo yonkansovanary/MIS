@@ -34,7 +34,7 @@ Partial Class SaleManagment
         Me.Label7 = New System.Windows.Forms.Label()
         Me.ComboBoxShipping = New System.Windows.Forms.ComboBox()
         Me.Label5 = New System.Windows.Forms.Label()
-        Me.ComboBoxSupplier = New System.Windows.Forms.ComboBox()
+        Me.ComboBoxCustomer = New System.Windows.Forms.ComboBox()
         Me.Label4 = New System.Windows.Forms.Label()
         Me.ComboBoxSaleDeId = New System.Windows.Forms.ComboBox()
         Me.Label2 = New System.Windows.Forms.Label()
@@ -82,7 +82,7 @@ Partial Class SaleManagment
         Me.Panel2.Controls.Add(Me.Label7)
         Me.Panel2.Controls.Add(Me.ComboBoxShipping)
         Me.Panel2.Controls.Add(Me.Label5)
-        Me.Panel2.Controls.Add(Me.ComboBoxSupplier)
+        Me.Panel2.Controls.Add(Me.ComboBoxCustomer)
         Me.Panel2.Controls.Add(Me.Label4)
         Me.Panel2.Controls.Add(Me.ComboBoxSaleDeId)
         Me.Panel2.Controls.Add(Me.Label2)
@@ -94,7 +94,7 @@ Partial Class SaleManagment
         Me.Panel2.Controls.Add(Me.LabelQty)
         Me.Panel2.Controls.Add(Me.btnSave)
         Me.Panel2.Controls.Add(Me.txtTotalPrice)
-        Me.Panel2.Location = New System.Drawing.Point(679, 12)
+        Me.Panel2.Location = New System.Drawing.Point(725, 12)
         Me.Panel2.Name = "Panel2"
         Me.Panel2.Size = New System.Drawing.Size(1191, 402)
         Me.Panel2.TabIndex = 66
@@ -206,15 +206,15 @@ Partial Class SaleManagment
         Me.Label5.TabIndex = 63
         Me.Label5.Text = "Shipping ID"
         '
-        'ComboBoxSupplier
+        'ComboBoxCustomer
         '
-        Me.ComboBoxSupplier.Font = New System.Drawing.Font("Microsoft Sans Serif", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.ComboBoxSupplier.FormattingEnabled = True
-        Me.ComboBoxSupplier.Location = New System.Drawing.Point(803, 216)
-        Me.ComboBoxSupplier.Margin = New System.Windows.Forms.Padding(4)
-        Me.ComboBoxSupplier.Name = "ComboBoxSupplier"
-        Me.ComboBoxSupplier.Size = New System.Drawing.Size(298, 33)
-        Me.ComboBoxSupplier.TabIndex = 62
+        Me.ComboBoxCustomer.Font = New System.Drawing.Font("Microsoft Sans Serif", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.ComboBoxCustomer.FormattingEnabled = True
+        Me.ComboBoxCustomer.Location = New System.Drawing.Point(803, 216)
+        Me.ComboBoxCustomer.Margin = New System.Windows.Forms.Padding(4)
+        Me.ComboBoxCustomer.Name = "ComboBoxCustomer"
+        Me.ComboBoxCustomer.Size = New System.Drawing.Size(298, 33)
+        Me.ComboBoxCustomer.TabIndex = 62
         '
         'Label4
         '
@@ -348,7 +348,7 @@ Partial Class SaleManagment
         Me.Panel1.Controls.Add(Me.SaleDate)
         Me.Panel1.Location = New System.Drawing.Point(12, 12)
         Me.Panel1.Name = "Panel1"
-        Me.Panel1.Size = New System.Drawing.Size(640, 402)
+        Me.Panel1.Size = New System.Drawing.Size(686, 402)
         Me.Panel1.TabIndex = 67
         '
         'Label10
@@ -504,13 +504,13 @@ Partial Class SaleManagment
         Me.DataGridViewSale.Location = New System.Drawing.Point(12, 452)
         Me.DataGridViewSale.Name = "DataGridViewSale"
         Me.DataGridViewSale.RowTemplate.Height = 24
-        Me.DataGridViewSale.Size = New System.Drawing.Size(640, 487)
+        Me.DataGridViewSale.Size = New System.Drawing.Size(686, 487)
         Me.DataGridViewSale.TabIndex = 68
         '
         'DataGridViewSaleDetail
         '
         Me.DataGridViewSaleDetail.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize
-        Me.DataGridViewSaleDetail.Location = New System.Drawing.Point(679, 452)
+        Me.DataGridViewSaleDetail.Location = New System.Drawing.Point(724, 452)
         Me.DataGridViewSaleDetail.Name = "DataGridViewSaleDetail"
         Me.DataGridViewSaleDetail.RowTemplate.Height = 24
         Me.DataGridViewSaleDetail.Size = New System.Drawing.Size(1191, 487)
@@ -520,6 +520,7 @@ Partial Class SaleManagment
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(8.0!, 16.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
+        Me.BackColor = System.Drawing.Color.MidnightBlue
         Me.ClientSize = New System.Drawing.Size(1924, 976)
         Me.Controls.Add(Me.DataGridViewSaleDetail)
         Me.Controls.Add(Me.DataGridViewSale)
@@ -545,7 +546,7 @@ Partial Class SaleManagment
     Friend WithEvents Label7 As Label
     Friend WithEvents ComboBoxShipping As ComboBox
     Friend WithEvents Label5 As Label
-    Friend WithEvents ComboBoxSupplier As ComboBox
+    Friend WithEvents ComboBoxCustomer As ComboBox
     Friend WithEvents Label4 As Label
     Friend WithEvents ComboBoxSaleDeId As ComboBox
     Friend WithEvents Label2 As Label

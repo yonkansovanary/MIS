@@ -22,29 +22,10 @@ Partial Class MainForm
     'Do not modify it using the code editor.
     <System.Diagnostics.DebuggerStepThrough()>
     Private Sub InitializeComponent()
+        Dim PanelSidebar As System.Windows.Forms.Panel
         Dim resources As System.ComponentModel.ComponentResourceManager = New System.ComponentModel.ComponentResourceManager(GetType(MainForm))
-        Me.LabelWelcome = New System.Windows.Forms.Label()
-        Me.PanelHeaderB = New System.Windows.Forms.Panel()
-        Me.PanelHeaderS = New System.Windows.Forms.Panel()
-        Me.Label17 = New System.Windows.Forms.Label()
-        Me.PictureBox16 = New System.Windows.Forms.PictureBox()
-        Me.PanelFooter = New System.Windows.Forms.Panel()
-        Me.ListUserPanel = New System.Windows.Forms.Panel()
-        Me.btnAddProduct = New System.Windows.Forms.Button()
-        Me.DataGridViewProduct = New System.Windows.Forms.DataGridView()
-        Me.btnAddUser = New System.Windows.Forms.Button()
-        Me.DataGridView_sec_user = New System.Windows.Forms.DataGridView()
-        Me.AdminLabel = New System.Windows.Forms.Label()
-        Me.LabelUserAdminName = New System.Windows.Forms.Label()
-        Me.LabelProjectTitle = New System.Windows.Forms.Label()
-        Me.PictureBox1 = New System.Windows.Forms.PictureBox()
-        Me.PictureBox2 = New System.Windows.Forms.PictureBox()
-        Me.PanelSidebar = New System.Windows.Forms.Panel()
-        Me.PictureBox5 = New System.Windows.Forms.PictureBox()
         Me.Label16 = New System.Windows.Forms.Label()
         Me.PictureBox15 = New System.Windows.Forms.PictureBox()
-        Me.Label14 = New System.Windows.Forms.Label()
-        Me.PictureBox13 = New System.Windows.Forms.PictureBox()
         Me.Label13 = New System.Windows.Forms.Label()
         Me.PictureBox12 = New System.Windows.Forms.PictureBox()
         Me.Label12 = New System.Windows.Forms.Label()
@@ -66,18 +47,32 @@ Partial Class MainForm
         Me.PictureBox4 = New System.Windows.Forms.PictureBox()
         Me.Label1 = New System.Windows.Forms.Label()
         Me.PictureBox3 = New System.Windows.Forms.PictureBox()
-        Me.PanelHeaderB.SuspendLayout()
-        Me.PanelHeaderS.SuspendLayout()
-        CType(Me.PictureBox16, System.ComponentModel.ISupportInitialize).BeginInit()
-        Me.ListUserPanel.SuspendLayout()
-        CType(Me.DataGridViewProduct, System.ComponentModel.ISupportInitialize).BeginInit()
-        CType(Me.DataGridView_sec_user, System.ComponentModel.ISupportInitialize).BeginInit()
-        CType(Me.PictureBox1, System.ComponentModel.ISupportInitialize).BeginInit()
-        CType(Me.PictureBox2, System.ComponentModel.ISupportInitialize).BeginInit()
-        Me.PanelSidebar.SuspendLayout()
-        CType(Me.PictureBox5, System.ComponentModel.ISupportInitialize).BeginInit()
+        Me.PictureBox2 = New System.Windows.Forms.PictureBox()
+        Me.PictureBox1 = New System.Windows.Forms.PictureBox()
+        Me.LabelProjectTitle = New System.Windows.Forms.Label()
+        Me.LabelUserAdminName = New System.Windows.Forms.Label()
+        Me.LabelWelcome = New System.Windows.Forms.Label()
+        Me.PanelHeaderB = New System.Windows.Forms.Panel()
+        Me.PanelHeaderS = New System.Windows.Forms.Panel()
+        Me.Label17 = New System.Windows.Forms.Label()
+        Me.PictureBox16 = New System.Windows.Forms.PictureBox()
+        Me.PanelFooter = New System.Windows.Forms.Panel()
+        Me.ListUserPanel = New System.Windows.Forms.Panel()
+        Me.LabelEmployee = New System.Windows.Forms.Label()
+        Me.LabelSearch = New System.Windows.Forms.Label()
+        Me.TextBoxSearch = New System.Windows.Forms.TextBox()
+        Me.btnAddProduct = New System.Windows.Forms.Button()
+        Me.DataGridViewProduct = New System.Windows.Forms.DataGridView()
+        Me.btnAddUser = New System.Windows.Forms.Button()
+        Me.DataGridView_sec_user = New System.Windows.Forms.DataGridView()
+        Me.AdminLabel = New System.Windows.Forms.Label()
+        Me.labelProduct = New System.Windows.Forms.Label()
+        Me.PictureBox5 = New System.Windows.Forms.PictureBox()
+        Me.PictureBox13 = New System.Windows.Forms.PictureBox()
+        Me.Label14 = New System.Windows.Forms.Label()
+        PanelSidebar = New System.Windows.Forms.Panel()
+        PanelSidebar.SuspendLayout()
         CType(Me.PictureBox15, System.ComponentModel.ISupportInitialize).BeginInit()
-        CType(Me.PictureBox13, System.ComponentModel.ISupportInitialize).BeginInit()
         CType(Me.PictureBox12, System.ComponentModel.ISupportInitialize).BeginInit()
         CType(Me.PictureBox11, System.ComponentModel.ISupportInitialize).BeginInit()
         CType(Me.PictureBox9, System.ComponentModel.ISupportInitialize).BeginInit()
@@ -87,236 +82,52 @@ Partial Class MainForm
         CType(Me.PictureBox6, System.ComponentModel.ISupportInitialize).BeginInit()
         CType(Me.PictureBox4, System.ComponentModel.ISupportInitialize).BeginInit()
         CType(Me.PictureBox3, System.ComponentModel.ISupportInitialize).BeginInit()
+        CType(Me.PictureBox2, System.ComponentModel.ISupportInitialize).BeginInit()
+        CType(Me.PictureBox1, System.ComponentModel.ISupportInitialize).BeginInit()
+        Me.PanelHeaderB.SuspendLayout()
+        Me.PanelHeaderS.SuspendLayout()
+        CType(Me.PictureBox16, System.ComponentModel.ISupportInitialize).BeginInit()
+        Me.ListUserPanel.SuspendLayout()
+        CType(Me.DataGridViewProduct, System.ComponentModel.ISupportInitialize).BeginInit()
+        CType(Me.DataGridView_sec_user, System.ComponentModel.ISupportInitialize).BeginInit()
+        CType(Me.PictureBox5, System.ComponentModel.ISupportInitialize).BeginInit()
+        CType(Me.PictureBox13, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.SuspendLayout()
-        '
-        'LabelWelcome
-        '
-        Me.LabelWelcome.AutoSize = True
-        Me.LabelWelcome.Font = New System.Drawing.Font("Microsoft Sans Serif", 14.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.LabelWelcome.Location = New System.Drawing.Point(968, 423)
-        Me.LabelWelcome.Margin = New System.Windows.Forms.Padding(4, 0, 4, 0)
-        Me.LabelWelcome.Name = "LabelWelcome"
-        Me.LabelWelcome.Size = New System.Drawing.Size(115, 29)
-        Me.LabelWelcome.TabIndex = 0
-        Me.LabelWelcome.Text = "Welcome"
-        '
-        'PanelHeaderB
-        '
-        Me.PanelHeaderB.BackColor = System.Drawing.SystemColors.AppWorkspace
-        Me.PanelHeaderB.Controls.Add(Me.PanelHeaderS)
-        Me.PanelHeaderB.Dock = System.Windows.Forms.DockStyle.Top
-        Me.PanelHeaderB.Location = New System.Drawing.Point(267, 0)
-        Me.PanelHeaderB.Margin = New System.Windows.Forms.Padding(4)
-        Me.PanelHeaderB.Name = "PanelHeaderB"
-        Me.PanelHeaderB.Size = New System.Drawing.Size(1560, 58)
-        Me.PanelHeaderB.TabIndex = 2
-        '
-        'PanelHeaderS
-        '
-        Me.PanelHeaderS.BackColor = System.Drawing.SystemColors.Control
-        Me.PanelHeaderS.Controls.Add(Me.Label17)
-        Me.PanelHeaderS.Controls.Add(Me.PictureBox16)
-        Me.PanelHeaderS.Dock = System.Windows.Forms.DockStyle.Top
-        Me.PanelHeaderS.Location = New System.Drawing.Point(0, 0)
-        Me.PanelHeaderS.Margin = New System.Windows.Forms.Padding(4)
-        Me.PanelHeaderS.Name = "PanelHeaderS"
-        Me.PanelHeaderS.Size = New System.Drawing.Size(1560, 57)
-        Me.PanelHeaderS.TabIndex = 3
-        '
-        'Label17
-        '
-        Me.Label17.AutoSize = True
-        Me.Label17.Font = New System.Drawing.Font("Times New Roman", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Label17.Location = New System.Drawing.Point(1446, 17)
-        Me.Label17.Name = "Label17"
-        Me.Label17.Size = New System.Drawing.Size(78, 22)
-        Me.Label17.TabIndex = 44
-        Me.Label17.Text = "Sign Out"
-        '
-        'PictureBox16
-        '
-        Me.PictureBox16.Image = CType(resources.GetObject("PictureBox16.Image"), System.Drawing.Image)
-        Me.PictureBox16.Location = New System.Drawing.Point(1525, 13)
-        Me.PictureBox16.Margin = New System.Windows.Forms.Padding(4)
-        Me.PictureBox16.Name = "PictureBox16"
-        Me.PictureBox16.Size = New System.Drawing.Size(35, 29)
-        Me.PictureBox16.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage
-        Me.PictureBox16.TabIndex = 43
-        Me.PictureBox16.TabStop = False
-        '
-        'PanelFooter
-        '
-        Me.PanelFooter.BackColor = System.Drawing.Color.MidnightBlue
-        Me.PanelFooter.Dock = System.Windows.Forms.DockStyle.Bottom
-        Me.PanelFooter.Location = New System.Drawing.Point(267, 867)
-        Me.PanelFooter.Margin = New System.Windows.Forms.Padding(4)
-        Me.PanelFooter.Name = "PanelFooter"
-        Me.PanelFooter.Size = New System.Drawing.Size(1560, 57)
-        Me.PanelFooter.TabIndex = 3
-        '
-        'ListUserPanel
-        '
-        Me.ListUserPanel.Controls.Add(Me.btnAddProduct)
-        Me.ListUserPanel.Controls.Add(Me.DataGridViewProduct)
-        Me.ListUserPanel.Controls.Add(Me.btnAddUser)
-        Me.ListUserPanel.Controls.Add(Me.DataGridView_sec_user)
-        Me.ListUserPanel.Location = New System.Drawing.Point(267, 116)
-        Me.ListUserPanel.Margin = New System.Windows.Forms.Padding(4)
-        Me.ListUserPanel.Name = "ListUserPanel"
-        Me.ListUserPanel.Size = New System.Drawing.Size(1560, 686)
-        Me.ListUserPanel.TabIndex = 7
-        Me.ListUserPanel.Visible = False
-        '
-        'btnAddProduct
-        '
-        Me.btnAddProduct.BackColor = System.Drawing.Color.MidnightBlue
-        Me.btnAddProduct.Font = New System.Drawing.Font("Microsoft Sans Serif", 18.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.btnAddProduct.Image = CType(resources.GetObject("btnAddProduct.Image"), System.Drawing.Image)
-        Me.btnAddProduct.Location = New System.Drawing.Point(1325, 4)
-        Me.btnAddProduct.Margin = New System.Windows.Forms.Padding(4)
-        Me.btnAddProduct.Name = "btnAddProduct"
-        Me.btnAddProduct.Size = New System.Drawing.Size(100, 52)
-        Me.btnAddProduct.TabIndex = 4
-        Me.btnAddProduct.UseVisualStyleBackColor = False
-        '
-        'DataGridViewProduct
-        '
-        Me.DataGridViewProduct.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize
-        Me.DataGridViewProduct.GridColor = System.Drawing.SystemColors.Control
-        Me.DataGridViewProduct.Location = New System.Drawing.Point(13, 88)
-        Me.DataGridViewProduct.Margin = New System.Windows.Forms.Padding(4)
-        Me.DataGridViewProduct.Name = "DataGridViewProduct"
-        Me.DataGridViewProduct.Size = New System.Drawing.Size(1531, 716)
-        Me.DataGridViewProduct.TabIndex = 3
-        Me.DataGridViewProduct.Visible = False
-        '
-        'btnAddUser
-        '
-        Me.btnAddUser.BackColor = System.Drawing.Color.MidnightBlue
-        Me.btnAddUser.Font = New System.Drawing.Font("Microsoft Sans Serif", 18.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.btnAddUser.Image = CType(resources.GetObject("btnAddUser.Image"), System.Drawing.Image)
-        Me.btnAddUser.Location = New System.Drawing.Point(1444, 4)
-        Me.btnAddUser.Margin = New System.Windows.Forms.Padding(4)
-        Me.btnAddUser.Name = "btnAddUser"
-        Me.btnAddUser.Size = New System.Drawing.Size(100, 52)
-        Me.btnAddUser.TabIndex = 2
-        Me.btnAddUser.UseVisualStyleBackColor = False
-        '
-        'DataGridView_sec_user
-        '
-        Me.DataGridView_sec_user.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize
-        Me.DataGridView_sec_user.Location = New System.Drawing.Point(13, 63)
-        Me.DataGridView_sec_user.Margin = New System.Windows.Forms.Padding(4)
-        Me.DataGridView_sec_user.Name = "DataGridView_sec_user"
-        Me.DataGridView_sec_user.Size = New System.Drawing.Size(1531, 601)
-        Me.DataGridView_sec_user.TabIndex = 0
-        Me.DataGridView_sec_user.Visible = False
-        '
-        'AdminLabel
-        '
-        Me.AdminLabel.AutoSize = True
-        Me.AdminLabel.Font = New System.Drawing.Font("Microsoft Sans Serif", 12.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.AdminLabel.ForeColor = System.Drawing.Color.Black
-        Me.AdminLabel.Location = New System.Drawing.Point(275, 87)
-        Me.AdminLabel.Margin = New System.Windows.Forms.Padding(4, 0, 4, 0)
-        Me.AdminLabel.Name = "AdminLabel"
-        Me.AdminLabel.Size = New System.Drawing.Size(149, 25)
-        Me.AdminLabel.TabIndex = 14
-        Me.AdminLabel.Text = "Administration"
-        Me.AdminLabel.Visible = False
-        '
-        'LabelUserAdminName
-        '
-        Me.LabelUserAdminName.AutoSize = True
-        Me.LabelUserAdminName.Font = New System.Drawing.Font("Times New Roman", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.LabelUserAdminName.ForeColor = System.Drawing.Color.White
-        Me.LabelUserAdminName.Location = New System.Drawing.Point(107, 195)
-        Me.LabelUserAdminName.Margin = New System.Windows.Forms.Padding(4, 0, 4, 0)
-        Me.LabelUserAdminName.Name = "LabelUserAdminName"
-        Me.LabelUserAdminName.Size = New System.Drawing.Size(0, 22)
-        Me.LabelUserAdminName.TabIndex = 7
-        '
-        'LabelProjectTitle
-        '
-        Me.LabelProjectTitle.AutoSize = True
-        Me.LabelProjectTitle.Font = New System.Drawing.Font("Microsoft Sans Serif", 14.25!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.LabelProjectTitle.ForeColor = System.Drawing.Color.White
-        Me.LabelProjectTitle.Location = New System.Drawing.Point(16, 27)
-        Me.LabelProjectTitle.Margin = New System.Windows.Forms.Padding(4, 0, 4, 0)
-        Me.LabelProjectTitle.Name = "LabelProjectTitle"
-        Me.LabelProjectTitle.Size = New System.Drawing.Size(210, 29)
-        Me.LabelProjectTitle.TabIndex = 4
-        Me.LabelProjectTitle.Text = "Inventory System"
-        '
-        'PictureBox1
-        '
-        Me.PictureBox1.Image = CType(resources.GetObject("PictureBox1.Image"), System.Drawing.Image)
-        Me.PictureBox1.Location = New System.Drawing.Point(64, 66)
-        Me.PictureBox1.Margin = New System.Windows.Forms.Padding(4)
-        Me.PictureBox1.Name = "PictureBox1"
-        Me.PictureBox1.Size = New System.Drawing.Size(127, 122)
-        Me.PictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage
-        Me.PictureBox1.TabIndex = 6
-        Me.PictureBox1.TabStop = False
-        '
-        'PictureBox2
-        '
-        Me.PictureBox2.Image = CType(resources.GetObject("PictureBox2.Image"), System.Drawing.Image)
-        Me.PictureBox2.Location = New System.Drawing.Point(76, 193)
-        Me.PictureBox2.Margin = New System.Windows.Forms.Padding(4)
-        Me.PictureBox2.Name = "PictureBox2"
-        Me.PictureBox2.Size = New System.Drawing.Size(22, 22)
-        Me.PictureBox2.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom
-        Me.PictureBox2.TabIndex = 8
-        Me.PictureBox2.TabStop = False
         '
         'PanelSidebar
         '
-        Me.PanelSidebar.BackColor = System.Drawing.Color.MidnightBlue
-        Me.PanelSidebar.Controls.Add(Me.PictureBox5)
-        Me.PanelSidebar.Controls.Add(Me.Label16)
-        Me.PanelSidebar.Controls.Add(Me.PictureBox15)
-        Me.PanelSidebar.Controls.Add(Me.Label14)
-        Me.PanelSidebar.Controls.Add(Me.PictureBox13)
-        Me.PanelSidebar.Controls.Add(Me.Label13)
-        Me.PanelSidebar.Controls.Add(Me.PictureBox12)
-        Me.PanelSidebar.Controls.Add(Me.Label12)
-        Me.PanelSidebar.Controls.Add(Me.PictureBox11)
-        Me.PanelSidebar.Controls.Add(Me.Label10)
-        Me.PanelSidebar.Controls.Add(Me.PictureBox9)
-        Me.PanelSidebar.Controls.Add(Me.Label8)
-        Me.PanelSidebar.Controls.Add(Me.PictureBox8)
-        Me.PanelSidebar.Controls.Add(Me.PictureBox7)
-        Me.PanelSidebar.Controls.Add(Me.PanelHR)
-        Me.PanelSidebar.Controls.Add(Me.Label4)
-        Me.PanelSidebar.Controls.Add(Me.PictureBox6)
-        Me.PanelSidebar.Controls.Add(Me.Label2)
-        Me.PanelSidebar.Controls.Add(Me.PictureBox4)
-        Me.PanelSidebar.Controls.Add(Me.Label1)
-        Me.PanelSidebar.Controls.Add(Me.PictureBox3)
-        Me.PanelSidebar.Controls.Add(Me.PictureBox2)
-        Me.PanelSidebar.Controls.Add(Me.PictureBox1)
-        Me.PanelSidebar.Controls.Add(Me.LabelProjectTitle)
-        Me.PanelSidebar.Controls.Add(Me.LabelUserAdminName)
-        Me.PanelSidebar.Dock = System.Windows.Forms.DockStyle.Left
-        Me.PanelSidebar.Location = New System.Drawing.Point(0, 0)
-        Me.PanelSidebar.Margin = New System.Windows.Forms.Padding(4)
-        Me.PanelSidebar.Name = "PanelSidebar"
-        Me.PanelSidebar.Size = New System.Drawing.Size(267, 924)
-        Me.PanelSidebar.TabIndex = 1
-        '
-        'PictureBox5
-        '
-        Me.PictureBox5.Anchor = CType(((System.Windows.Forms.AnchorStyles.Top Or System.Windows.Forms.AnchorStyles.Left) _
-            Or System.Windows.Forms.AnchorStyles.Right), System.Windows.Forms.AnchorStyles)
-        Me.PictureBox5.Image = CType(resources.GetObject("PictureBox5.Image"), System.Drawing.Image)
-        Me.PictureBox5.Location = New System.Drawing.Point(188, 694)
-        Me.PictureBox5.Margin = New System.Windows.Forms.Padding(4)
-        Me.PictureBox5.Name = "PictureBox5"
-        Me.PictureBox5.Size = New System.Drawing.Size(35, 20)
-        Me.PictureBox5.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom
-        Me.PictureBox5.TabIndex = 43
-        Me.PictureBox5.TabStop = False
+        PanelSidebar.BackColor = System.Drawing.Color.MidnightBlue
+        PanelSidebar.Controls.Add(Me.PictureBox5)
+        PanelSidebar.Controls.Add(Me.Label16)
+        PanelSidebar.Controls.Add(Me.PictureBox15)
+        PanelSidebar.Controls.Add(Me.Label14)
+        PanelSidebar.Controls.Add(Me.PictureBox13)
+        PanelSidebar.Controls.Add(Me.Label13)
+        PanelSidebar.Controls.Add(Me.PictureBox12)
+        PanelSidebar.Controls.Add(Me.Label12)
+        PanelSidebar.Controls.Add(Me.PictureBox11)
+        PanelSidebar.Controls.Add(Me.Label10)
+        PanelSidebar.Controls.Add(Me.PictureBox9)
+        PanelSidebar.Controls.Add(Me.Label8)
+        PanelSidebar.Controls.Add(Me.PictureBox8)
+        PanelSidebar.Controls.Add(Me.PictureBox7)
+        PanelSidebar.Controls.Add(Me.PanelHR)
+        PanelSidebar.Controls.Add(Me.Label4)
+        PanelSidebar.Controls.Add(Me.PictureBox6)
+        PanelSidebar.Controls.Add(Me.Label2)
+        PanelSidebar.Controls.Add(Me.PictureBox4)
+        PanelSidebar.Controls.Add(Me.Label1)
+        PanelSidebar.Controls.Add(Me.PictureBox3)
+        PanelSidebar.Controls.Add(Me.PictureBox2)
+        PanelSidebar.Controls.Add(Me.PictureBox1)
+        PanelSidebar.Controls.Add(Me.LabelProjectTitle)
+        PanelSidebar.Controls.Add(Me.LabelUserAdminName)
+        PanelSidebar.Dock = System.Windows.Forms.DockStyle.Left
+        PanelSidebar.Location = New System.Drawing.Point(0, 0)
+        PanelSidebar.Margin = New System.Windows.Forms.Padding(4)
+        PanelSidebar.Name = "PanelSidebar"
+        PanelSidebar.Size = New System.Drawing.Size(267, 924)
+        PanelSidebar.TabIndex = 1
         '
         'Label16
         '
@@ -336,40 +147,17 @@ Partial Class MainForm
         Me.PictureBox15.Location = New System.Drawing.Point(14, 364)
         Me.PictureBox15.Margin = New System.Windows.Forms.Padding(4)
         Me.PictureBox15.Name = "PictureBox15"
-        Me.PictureBox15.Size = New System.Drawing.Size(22, 22)
+        Me.PictureBox15.Size = New System.Drawing.Size(25, 25)
         Me.PictureBox15.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom
         Me.PictureBox15.TabIndex = 41
         Me.PictureBox15.TabStop = False
-        '
-        'Label14
-        '
-        Me.Label14.AutoSize = True
-        Me.Label14.Font = New System.Drawing.Font("Times New Roman", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Label14.ForeColor = System.Drawing.Color.White
-        Me.Label14.Location = New System.Drawing.Point(60, 425)
-        Me.Label14.Margin = New System.Windows.Forms.Padding(4, 0, 4, 0)
-        Me.Label14.Name = "Label14"
-        Me.Label14.Size = New System.Drawing.Size(161, 22)
-        Me.Label14.TabIndex = 38
-        Me.Label14.Text = "Order Management"
-        '
-        'PictureBox13
-        '
-        Me.PictureBox13.Image = CType(resources.GetObject("PictureBox13.Image"), System.Drawing.Image)
-        Me.PictureBox13.Location = New System.Drawing.Point(14, 425)
-        Me.PictureBox13.Margin = New System.Windows.Forms.Padding(4)
-        Me.PictureBox13.Name = "PictureBox13"
-        Me.PictureBox13.Size = New System.Drawing.Size(22, 22)
-        Me.PictureBox13.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom
-        Me.PictureBox13.TabIndex = 37
-        Me.PictureBox13.TabStop = False
         '
         'Label13
         '
         Me.Label13.AutoSize = True
         Me.Label13.Font = New System.Drawing.Font("Times New Roman", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.Label13.ForeColor = System.Drawing.Color.White
-        Me.Label13.Location = New System.Drawing.Point(60, 652)
+        Me.Label13.Location = New System.Drawing.Point(60, 645)
         Me.Label13.Margin = New System.Windows.Forms.Padding(4, 0, 4, 0)
         Me.Label13.Name = "Label13"
         Me.Label13.Size = New System.Drawing.Size(54, 22)
@@ -379,10 +167,10 @@ Partial Class MainForm
         'PictureBox12
         '
         Me.PictureBox12.Image = CType(resources.GetObject("PictureBox12.Image"), System.Drawing.Image)
-        Me.PictureBox12.Location = New System.Drawing.Point(14, 652)
+        Me.PictureBox12.Location = New System.Drawing.Point(14, 645)
         Me.PictureBox12.Margin = New System.Windows.Forms.Padding(4)
         Me.PictureBox12.Name = "PictureBox12"
-        Me.PictureBox12.Size = New System.Drawing.Size(22, 22)
+        Me.PictureBox12.Size = New System.Drawing.Size(25, 25)
         Me.PictureBox12.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom
         Me.PictureBox12.TabIndex = 35
         Me.PictureBox12.TabStop = False
@@ -392,7 +180,7 @@ Partial Class MainForm
         Me.Label12.AutoSize = True
         Me.Label12.Font = New System.Drawing.Font("Times New Roman", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.Label12.ForeColor = System.Drawing.Color.White
-        Me.Label12.Location = New System.Drawing.Point(61, 606)
+        Me.Label12.Location = New System.Drawing.Point(61, 595)
         Me.Label12.Margin = New System.Windows.Forms.Padding(4, 0, 4, 0)
         Me.Label12.Name = "Label12"
         Me.Label12.Size = New System.Drawing.Size(140, 22)
@@ -402,10 +190,10 @@ Partial Class MainForm
         'PictureBox11
         '
         Me.PictureBox11.Image = CType(resources.GetObject("PictureBox11.Image"), System.Drawing.Image)
-        Me.PictureBox11.Location = New System.Drawing.Point(14, 605)
+        Me.PictureBox11.Location = New System.Drawing.Point(14, 594)
         Me.PictureBox11.Margin = New System.Windows.Forms.Padding(4)
         Me.PictureBox11.Name = "PictureBox11"
-        Me.PictureBox11.Size = New System.Drawing.Size(22, 22)
+        Me.PictureBox11.Size = New System.Drawing.Size(25, 25)
         Me.PictureBox11.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom
         Me.PictureBox11.TabIndex = 33
         Me.PictureBox11.TabStop = False
@@ -415,7 +203,7 @@ Partial Class MainForm
         Me.Label10.AutoSize = True
         Me.Label10.Font = New System.Drawing.Font("Times New Roman", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.Label10.ForeColor = System.Drawing.Color.White
-        Me.Label10.Location = New System.Drawing.Point(60, 544)
+        Me.Label10.Location = New System.Drawing.Point(60, 540)
         Me.Label10.Margin = New System.Windows.Forms.Padding(4, 0, 4, 0)
         Me.Label10.Name = "Label10"
         Me.Label10.Size = New System.Drawing.Size(85, 22)
@@ -425,10 +213,10 @@ Partial Class MainForm
         'PictureBox9
         '
         Me.PictureBox9.Image = CType(resources.GetObject("PictureBox9.Image"), System.Drawing.Image)
-        Me.PictureBox9.Location = New System.Drawing.Point(14, 542)
+        Me.PictureBox9.Location = New System.Drawing.Point(14, 538)
         Me.PictureBox9.Margin = New System.Windows.Forms.Padding(4)
         Me.PictureBox9.Name = "PictureBox9"
-        Me.PictureBox9.Size = New System.Drawing.Size(22, 22)
+        Me.PictureBox9.Size = New System.Drawing.Size(25, 25)
         Me.PictureBox9.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom
         Me.PictureBox9.TabIndex = 29
         Me.PictureBox9.TabStop = False
@@ -438,7 +226,7 @@ Partial Class MainForm
         Me.Label8.AutoSize = True
         Me.Label8.Font = New System.Drawing.Font("Times New Roman", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.Label8.ForeColor = System.Drawing.Color.White
-        Me.Label8.Location = New System.Drawing.Point(61, 496)
+        Me.Label8.Location = New System.Drawing.Point(61, 481)
         Me.Label8.Margin = New System.Windows.Forms.Padding(4, 0, 4, 0)
         Me.Label8.Name = "Label8"
         Me.Label8.Size = New System.Drawing.Size(78, 22)
@@ -448,10 +236,10 @@ Partial Class MainForm
         'PictureBox8
         '
         Me.PictureBox8.Image = CType(resources.GetObject("PictureBox8.Image"), System.Drawing.Image)
-        Me.PictureBox8.Location = New System.Drawing.Point(14, 495)
+        Me.PictureBox8.Location = New System.Drawing.Point(14, 480)
         Me.PictureBox8.Margin = New System.Windows.Forms.Padding(4)
         Me.PictureBox8.Name = "PictureBox8"
-        Me.PictureBox8.Size = New System.Drawing.Size(22, 22)
+        Me.PictureBox8.Size = New System.Drawing.Size(25, 25)
         Me.PictureBox8.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom
         Me.PictureBox8.TabIndex = 27
         Me.PictureBox8.TabStop = False
@@ -476,7 +264,7 @@ Partial Class MainForm
         Me.PanelHR.Controls.Add(Me.Label7)
         Me.PanelHR.Controls.Add(Me.Label5)
         Me.PanelHR.Controls.Add(Me.Label6)
-        Me.PanelHR.Location = New System.Drawing.Point(82, 722)
+        Me.PanelHR.Location = New System.Drawing.Point(82, 728)
         Me.PanelHR.Name = "PanelHR"
         Me.PanelHR.Size = New System.Drawing.Size(116, 189)
         Me.PanelHR.TabIndex = 25
@@ -559,7 +347,7 @@ Partial Class MainForm
         Me.PictureBox6.Location = New System.Drawing.Point(14, 692)
         Me.PictureBox6.Margin = New System.Windows.Forms.Padding(4)
         Me.PictureBox6.Name = "PictureBox6"
-        Me.PictureBox6.Size = New System.Drawing.Size(22, 22)
+        Me.PictureBox6.Size = New System.Drawing.Size(25, 25)
         Me.PictureBox6.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom
         Me.PictureBox6.TabIndex = 20
         Me.PictureBox6.TabStop = False
@@ -570,7 +358,7 @@ Partial Class MainForm
         Me.Label2.FlatStyle = System.Windows.Forms.FlatStyle.System
         Me.Label2.Font = New System.Drawing.Font("Times New Roman", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.Label2.ForeColor = System.Drawing.Color.White
-        Me.Label2.Location = New System.Drawing.Point(65, 299)
+        Me.Label2.Location = New System.Drawing.Point(66, 299)
         Me.Label2.Margin = New System.Windows.Forms.Padding(4, 0, 4, 0)
         Me.Label2.Name = "Label2"
         Me.Label2.Size = New System.Drawing.Size(185, 22)
@@ -583,7 +371,7 @@ Partial Class MainForm
         Me.PictureBox4.Location = New System.Drawing.Point(14, 299)
         Me.PictureBox4.Margin = New System.Windows.Forms.Padding(4)
         Me.PictureBox4.Name = "PictureBox4"
-        Me.PictureBox4.Size = New System.Drawing.Size(22, 22)
+        Me.PictureBox4.Size = New System.Drawing.Size(25, 25)
         Me.PictureBox4.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom
         Me.PictureBox4.TabIndex = 16
         Me.PictureBox4.TabStop = False
@@ -606,39 +394,291 @@ Partial Class MainForm
         Me.PictureBox3.Location = New System.Drawing.Point(14, 241)
         Me.PictureBox3.Margin = New System.Windows.Forms.Padding(4)
         Me.PictureBox3.Name = "PictureBox3"
-        Me.PictureBox3.Size = New System.Drawing.Size(22, 22)
+        Me.PictureBox3.Size = New System.Drawing.Size(25, 25)
         Me.PictureBox3.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom
         Me.PictureBox3.TabIndex = 14
         Me.PictureBox3.TabStop = False
+        '
+        'PictureBox2
+        '
+        Me.PictureBox2.Image = CType(resources.GetObject("PictureBox2.Image"), System.Drawing.Image)
+        Me.PictureBox2.Location = New System.Drawing.Point(76, 193)
+        Me.PictureBox2.Margin = New System.Windows.Forms.Padding(4)
+        Me.PictureBox2.Name = "PictureBox2"
+        Me.PictureBox2.Size = New System.Drawing.Size(22, 22)
+        Me.PictureBox2.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom
+        Me.PictureBox2.TabIndex = 8
+        Me.PictureBox2.TabStop = False
+        '
+        'PictureBox1
+        '
+        Me.PictureBox1.Image = CType(resources.GetObject("PictureBox1.Image"), System.Drawing.Image)
+        Me.PictureBox1.Location = New System.Drawing.Point(64, 66)
+        Me.PictureBox1.Margin = New System.Windows.Forms.Padding(4)
+        Me.PictureBox1.Name = "PictureBox1"
+        Me.PictureBox1.Size = New System.Drawing.Size(127, 122)
+        Me.PictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage
+        Me.PictureBox1.TabIndex = 6
+        Me.PictureBox1.TabStop = False
+        '
+        'LabelProjectTitle
+        '
+        Me.LabelProjectTitle.AutoSize = True
+        Me.LabelProjectTitle.Font = New System.Drawing.Font("Microsoft Sans Serif", 14.25!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.LabelProjectTitle.ForeColor = System.Drawing.Color.White
+        Me.LabelProjectTitle.Location = New System.Drawing.Point(16, 27)
+        Me.LabelProjectTitle.Margin = New System.Windows.Forms.Padding(4, 0, 4, 0)
+        Me.LabelProjectTitle.Name = "LabelProjectTitle"
+        Me.LabelProjectTitle.Size = New System.Drawing.Size(210, 29)
+        Me.LabelProjectTitle.TabIndex = 4
+        Me.LabelProjectTitle.Text = "Inventory System"
+        '
+        'LabelUserAdminName
+        '
+        Me.LabelUserAdminName.AutoSize = True
+        Me.LabelUserAdminName.Font = New System.Drawing.Font("Times New Roman", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.LabelUserAdminName.ForeColor = System.Drawing.Color.White
+        Me.LabelUserAdminName.Location = New System.Drawing.Point(107, 195)
+        Me.LabelUserAdminName.Margin = New System.Windows.Forms.Padding(4, 0, 4, 0)
+        Me.LabelUserAdminName.Name = "LabelUserAdminName"
+        Me.LabelUserAdminName.Size = New System.Drawing.Size(0, 22)
+        Me.LabelUserAdminName.TabIndex = 7
+        '
+        'LabelWelcome
+        '
+        Me.LabelWelcome.AutoSize = True
+        Me.LabelWelcome.Font = New System.Drawing.Font("Microsoft Sans Serif", 14.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.LabelWelcome.Location = New System.Drawing.Point(968, 423)
+        Me.LabelWelcome.Margin = New System.Windows.Forms.Padding(4, 0, 4, 0)
+        Me.LabelWelcome.Name = "LabelWelcome"
+        Me.LabelWelcome.Size = New System.Drawing.Size(115, 29)
+        Me.LabelWelcome.TabIndex = 0
+        Me.LabelWelcome.Text = "Welcome"
+        '
+        'PanelHeaderB
+        '
+        Me.PanelHeaderB.BackColor = System.Drawing.SystemColors.AppWorkspace
+        Me.PanelHeaderB.Controls.Add(Me.PanelHeaderS)
+        Me.PanelHeaderB.Dock = System.Windows.Forms.DockStyle.Top
+        Me.PanelHeaderB.Location = New System.Drawing.Point(267, 0)
+        Me.PanelHeaderB.Margin = New System.Windows.Forms.Padding(4)
+        Me.PanelHeaderB.Name = "PanelHeaderB"
+        Me.PanelHeaderB.Size = New System.Drawing.Size(1560, 58)
+        Me.PanelHeaderB.TabIndex = 2
+        '
+        'PanelHeaderS
+        '
+        Me.PanelHeaderS.BackColor = System.Drawing.SystemColors.Control
+        Me.PanelHeaderS.Controls.Add(Me.Label17)
+        Me.PanelHeaderS.Controls.Add(Me.PictureBox16)
+        Me.PanelHeaderS.Dock = System.Windows.Forms.DockStyle.Top
+        Me.PanelHeaderS.Location = New System.Drawing.Point(0, 0)
+        Me.PanelHeaderS.Margin = New System.Windows.Forms.Padding(4)
+        Me.PanelHeaderS.Name = "PanelHeaderS"
+        Me.PanelHeaderS.Size = New System.Drawing.Size(1560, 57)
+        Me.PanelHeaderS.TabIndex = 3
+        '
+        'Label17
+        '
+        Me.Label17.AutoSize = True
+        Me.Label17.Font = New System.Drawing.Font("Times New Roman", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Label17.Location = New System.Drawing.Point(1446, 17)
+        Me.Label17.Name = "Label17"
+        Me.Label17.Size = New System.Drawing.Size(78, 22)
+        Me.Label17.TabIndex = 44
+        Me.Label17.Text = "Sign Out"
+        '
+        'PictureBox16
+        '
+        Me.PictureBox16.Image = CType(resources.GetObject("PictureBox16.Image"), System.Drawing.Image)
+        Me.PictureBox16.Location = New System.Drawing.Point(1525, 13)
+        Me.PictureBox16.Margin = New System.Windows.Forms.Padding(4)
+        Me.PictureBox16.Name = "PictureBox16"
+        Me.PictureBox16.Size = New System.Drawing.Size(35, 29)
+        Me.PictureBox16.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage
+        Me.PictureBox16.TabIndex = 43
+        Me.PictureBox16.TabStop = False
+        '
+        'PanelFooter
+        '
+        Me.PanelFooter.BackColor = System.Drawing.Color.MidnightBlue
+        Me.PanelFooter.Dock = System.Windows.Forms.DockStyle.Bottom
+        Me.PanelFooter.Location = New System.Drawing.Point(267, 867)
+        Me.PanelFooter.Margin = New System.Windows.Forms.Padding(4)
+        Me.PanelFooter.Name = "PanelFooter"
+        Me.PanelFooter.Size = New System.Drawing.Size(1560, 57)
+        Me.PanelFooter.TabIndex = 3
+        '
+        'ListUserPanel
+        '
+        Me.ListUserPanel.Controls.Add(Me.LabelEmployee)
+        Me.ListUserPanel.Controls.Add(Me.LabelSearch)
+        Me.ListUserPanel.Controls.Add(Me.TextBoxSearch)
+        Me.ListUserPanel.Controls.Add(Me.btnAddProduct)
+        Me.ListUserPanel.Controls.Add(Me.DataGridViewProduct)
+        Me.ListUserPanel.Controls.Add(Me.btnAddUser)
+        Me.ListUserPanel.Controls.Add(Me.DataGridView_sec_user)
+        Me.ListUserPanel.Location = New System.Drawing.Point(267, 116)
+        Me.ListUserPanel.Margin = New System.Windows.Forms.Padding(4)
+        Me.ListUserPanel.Name = "ListUserPanel"
+        Me.ListUserPanel.Size = New System.Drawing.Size(1560, 686)
+        Me.ListUserPanel.TabIndex = 7
+        Me.ListUserPanel.Visible = False
+        '
+        'LabelEmployee
+        '
+        Me.LabelEmployee.AutoSize = True
+        Me.LabelEmployee.Font = New System.Drawing.Font("Microsoft Sans Serif", 10.2!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.LabelEmployee.Location = New System.Drawing.Point(1314, 23)
+        Me.LabelEmployee.Name = "LabelEmployee"
+        Me.LabelEmployee.Size = New System.Drawing.Size(62, 20)
+        Me.LabelEmployee.TabIndex = 13
+        Me.LabelEmployee.Text = "Search"
+        '
+        'LabelSearch
+        '
+        Me.LabelSearch.AutoSize = True
+        Me.LabelSearch.Font = New System.Drawing.Font("Microsoft Sans Serif", 10.2!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.LabelSearch.Location = New System.Drawing.Point(1314, 21)
+        Me.LabelSearch.Name = "LabelSearch"
+        Me.LabelSearch.Size = New System.Drawing.Size(62, 20)
+        Me.LabelSearch.TabIndex = 12
+        Me.LabelSearch.Text = "Search"
+        '
+        'TextBoxSearch
+        '
+        Me.TextBoxSearch.Font = New System.Drawing.Font("Microsoft Sans Serif", 10.2!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.TextBoxSearch.Location = New System.Drawing.Point(1080, 15)
+        Me.TextBoxSearch.Multiline = True
+        Me.TextBoxSearch.Name = "TextBoxSearch"
+        Me.TextBoxSearch.Size = New System.Drawing.Size(223, 35)
+        Me.TextBoxSearch.TabIndex = 11
+        '
+        'btnAddProduct
+        '
+        Me.btnAddProduct.BackColor = System.Drawing.Color.MidnightBlue
+        Me.btnAddProduct.Font = New System.Drawing.Font("Microsoft Sans Serif", 18.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.btnAddProduct.Image = CType(resources.GetObject("btnAddProduct.Image"), System.Drawing.Image)
+        Me.btnAddProduct.Location = New System.Drawing.Point(1441, 4)
+        Me.btnAddProduct.Margin = New System.Windows.Forms.Padding(4)
+        Me.btnAddProduct.Name = "btnAddProduct"
+        Me.btnAddProduct.Size = New System.Drawing.Size(100, 52)
+        Me.btnAddProduct.TabIndex = 4
+        Me.btnAddProduct.UseVisualStyleBackColor = False
+        '
+        'DataGridViewProduct
+        '
+        Me.DataGridViewProduct.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize
+        Me.DataGridViewProduct.GridColor = System.Drawing.SystemColors.Control
+        Me.DataGridViewProduct.Location = New System.Drawing.Point(13, 64)
+        Me.DataGridViewProduct.Margin = New System.Windows.Forms.Padding(4)
+        Me.DataGridViewProduct.Name = "DataGridViewProduct"
+        Me.DataGridViewProduct.Size = New System.Drawing.Size(1531, 622)
+        Me.DataGridViewProduct.TabIndex = 3
+        Me.DataGridViewProduct.Visible = False
+        '
+        'btnAddUser
+        '
+        Me.btnAddUser.BackColor = System.Drawing.Color.MidnightBlue
+        Me.btnAddUser.Font = New System.Drawing.Font("Microsoft Sans Serif", 18.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.btnAddUser.Image = CType(resources.GetObject("btnAddUser.Image"), System.Drawing.Image)
+        Me.btnAddUser.Location = New System.Drawing.Point(1444, 4)
+        Me.btnAddUser.Margin = New System.Windows.Forms.Padding(4)
+        Me.btnAddUser.Name = "btnAddUser"
+        Me.btnAddUser.Size = New System.Drawing.Size(100, 52)
+        Me.btnAddUser.TabIndex = 2
+        Me.btnAddUser.UseVisualStyleBackColor = False
+        '
+        'DataGridView_sec_user
+        '
+        Me.DataGridView_sec_user.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize
+        Me.DataGridView_sec_user.Location = New System.Drawing.Point(13, 63)
+        Me.DataGridView_sec_user.Margin = New System.Windows.Forms.Padding(4)
+        Me.DataGridView_sec_user.Name = "DataGridView_sec_user"
+        Me.DataGridView_sec_user.Size = New System.Drawing.Size(1531, 601)
+        Me.DataGridView_sec_user.TabIndex = 0
+        Me.DataGridView_sec_user.Visible = False
+        '
+        'AdminLabel
+        '
+        Me.AdminLabel.AutoSize = True
+        Me.AdminLabel.Font = New System.Drawing.Font("Microsoft Sans Serif", 12.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.AdminLabel.ForeColor = System.Drawing.Color.Black
+        Me.AdminLabel.Location = New System.Drawing.Point(275, 87)
+        Me.AdminLabel.Margin = New System.Windows.Forms.Padding(4, 0, 4, 0)
+        Me.AdminLabel.Name = "AdminLabel"
+        Me.AdminLabel.Size = New System.Drawing.Size(149, 25)
+        Me.AdminLabel.TabIndex = 14
+        Me.AdminLabel.Text = "Administration"
+        Me.AdminLabel.Visible = False
+        '
+        'labelProduct
+        '
+        Me.labelProduct.AutoSize = True
+        Me.labelProduct.Font = New System.Drawing.Font("Microsoft Sans Serif", 12.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.labelProduct.ForeColor = System.Drawing.Color.Black
+        Me.labelProduct.Location = New System.Drawing.Point(275, 87)
+        Me.labelProduct.Margin = New System.Windows.Forms.Padding(4, 0, 4, 0)
+        Me.labelProduct.Name = "labelProduct"
+        Me.labelProduct.Size = New System.Drawing.Size(217, 25)
+        Me.labelProduct.TabIndex = 15
+        Me.labelProduct.Text = "Product Management"
+        Me.labelProduct.Visible = False
+        '
+        'PictureBox5
+        '
+        Me.PictureBox5.Anchor = CType(((System.Windows.Forms.AnchorStyles.Top Or System.Windows.Forms.AnchorStyles.Left) _
+            Or System.Windows.Forms.AnchorStyles.Right), System.Windows.Forms.AnchorStyles)
+        Me.PictureBox5.Image = CType(resources.GetObject("PictureBox5.Image"), System.Drawing.Image)
+        Me.PictureBox5.Location = New System.Drawing.Point(188, 694)
+        Me.PictureBox5.Margin = New System.Windows.Forms.Padding(4)
+        Me.PictureBox5.Name = "PictureBox5"
+        Me.PictureBox5.Size = New System.Drawing.Size(35, 20)
+        Me.PictureBox5.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom
+        Me.PictureBox5.TabIndex = 43
+        Me.PictureBox5.TabStop = False
+        '
+        'PictureBox13
+        '
+        Me.PictureBox13.Image = CType(resources.GetObject("PictureBox13.Image"), System.Drawing.Image)
+        Me.PictureBox13.Location = New System.Drawing.Point(14, 425)
+        Me.PictureBox13.Margin = New System.Windows.Forms.Padding(4)
+        Me.PictureBox13.Name = "PictureBox13"
+        Me.PictureBox13.Size = New System.Drawing.Size(25, 25)
+        Me.PictureBox13.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom
+        Me.PictureBox13.TabIndex = 37
+        Me.PictureBox13.TabStop = False
+        '
+        'Label14
+        '
+        Me.Label14.AutoSize = True
+        Me.Label14.Font = New System.Drawing.Font("Times New Roman", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Label14.ForeColor = System.Drawing.Color.White
+        Me.Label14.Location = New System.Drawing.Point(60, 425)
+        Me.Label14.Margin = New System.Windows.Forms.Padding(4, 0, 4, 0)
+        Me.Label14.Name = "Label14"
+        Me.Label14.Size = New System.Drawing.Size(161, 22)
+        Me.Label14.TabIndex = 38
+        Me.Label14.Text = "Order Management"
         '
         'MainForm
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(8.0!, 16.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
         Me.ClientSize = New System.Drawing.Size(1827, 924)
+        Me.Controls.Add(Me.labelProduct)
         Me.Controls.Add(Me.AdminLabel)
         Me.Controls.Add(Me.PanelFooter)
         Me.Controls.Add(Me.PanelHeaderB)
         Me.Controls.Add(Me.ListUserPanel)
-        Me.Controls.Add(Me.PanelSidebar)
+        Me.Controls.Add(PanelSidebar)
         Me.Controls.Add(Me.LabelWelcome)
         Me.Margin = New System.Windows.Forms.Padding(4)
         Me.Name = "MainForm"
         Me.Text = "MainForm"
-        Me.PanelHeaderB.ResumeLayout(False)
-        Me.PanelHeaderS.ResumeLayout(False)
-        Me.PanelHeaderS.PerformLayout()
-        CType(Me.PictureBox16, System.ComponentModel.ISupportInitialize).EndInit()
-        Me.ListUserPanel.ResumeLayout(False)
-        CType(Me.DataGridViewProduct, System.ComponentModel.ISupportInitialize).EndInit()
-        CType(Me.DataGridView_sec_user, System.ComponentModel.ISupportInitialize).EndInit()
-        CType(Me.PictureBox1, System.ComponentModel.ISupportInitialize).EndInit()
-        CType(Me.PictureBox2, System.ComponentModel.ISupportInitialize).EndInit()
-        Me.PanelSidebar.ResumeLayout(False)
-        Me.PanelSidebar.PerformLayout()
-        CType(Me.PictureBox5, System.ComponentModel.ISupportInitialize).EndInit()
+        PanelSidebar.ResumeLayout(False)
+        PanelSidebar.PerformLayout()
         CType(Me.PictureBox15, System.ComponentModel.ISupportInitialize).EndInit()
-        CType(Me.PictureBox13, System.ComponentModel.ISupportInitialize).EndInit()
         CType(Me.PictureBox12, System.ComponentModel.ISupportInitialize).EndInit()
         CType(Me.PictureBox11, System.ComponentModel.ISupportInitialize).EndInit()
         CType(Me.PictureBox9, System.ComponentModel.ISupportInitialize).EndInit()
@@ -649,6 +689,18 @@ Partial Class MainForm
         CType(Me.PictureBox6, System.ComponentModel.ISupportInitialize).EndInit()
         CType(Me.PictureBox4, System.ComponentModel.ISupportInitialize).EndInit()
         CType(Me.PictureBox3, System.ComponentModel.ISupportInitialize).EndInit()
+        CType(Me.PictureBox2, System.ComponentModel.ISupportInitialize).EndInit()
+        CType(Me.PictureBox1, System.ComponentModel.ISupportInitialize).EndInit()
+        Me.PanelHeaderB.ResumeLayout(False)
+        Me.PanelHeaderS.ResumeLayout(False)
+        Me.PanelHeaderS.PerformLayout()
+        CType(Me.PictureBox16, System.ComponentModel.ISupportInitialize).EndInit()
+        Me.ListUserPanel.ResumeLayout(False)
+        Me.ListUserPanel.PerformLayout()
+        CType(Me.DataGridViewProduct, System.ComponentModel.ISupportInitialize).EndInit()
+        CType(Me.DataGridView_sec_user, System.ComponentModel.ISupportInitialize).EndInit()
+        CType(Me.PictureBox5, System.ComponentModel.ISupportInitialize).EndInit()
+        CType(Me.PictureBox13, System.ComponentModel.ISupportInitialize).EndInit()
         Me.ResumeLayout(False)
         Me.PerformLayout()
 
@@ -670,12 +722,8 @@ Partial Class MainForm
     Friend WithEvents LabelProjectTitle As Label
     Friend WithEvents PictureBox1 As PictureBox
     Friend WithEvents PictureBox2 As PictureBox
-    Friend WithEvents PanelSidebar As Panel
-    Friend WithEvents PictureBox5 As PictureBox
     Friend WithEvents Label16 As Label
     Friend WithEvents PictureBox15 As PictureBox
-    Friend WithEvents Label14 As Label
-    Friend WithEvents PictureBox13 As PictureBox
     Friend WithEvents Label13 As Label
     Friend WithEvents PictureBox12 As PictureBox
     Friend WithEvents Label12 As Label
@@ -697,4 +745,11 @@ Partial Class MainForm
     Friend WithEvents PictureBox4 As PictureBox
     Friend WithEvents Label1 As Label
     Friend WithEvents PictureBox3 As PictureBox
+    Friend WithEvents labelProduct As Label
+    Friend WithEvents LabelSearch As Label
+    Friend WithEvents TextBoxSearch As TextBox
+    Friend WithEvents LabelEmployee As Label
+    Friend WithEvents PictureBox5 As PictureBox
+    Friend WithEvents Label14 As Label
+    Friend WithEvents PictureBox13 As PictureBox
 End Class

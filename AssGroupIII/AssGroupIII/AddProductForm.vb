@@ -29,7 +29,6 @@
     Private Sub AddProductForm_Load(sender As Object, e As EventArgs) Handles MyBase.Load
         Me.CenterToScreen()
         Dim category, brand As DataTable
-
         DateCreated.Format = DateTimePickerFormat.Custom
         DateCreated.CustomFormat = "yyyy-MM-dd"
 
@@ -38,7 +37,12 @@
             ComboBoxcategory.DisplayMember = "name"
             ComboBoxcategory.ValueMember = "id"
             ComboBoxcategory.DataSource = category
+        Catch ex As Exception
+            MsgBox(ex.Message)
+            Exit Sub
+        End Try
 
+        Try
             brand = myCon.listAllData("Select * from brand")
             ComboBoxBrand.DisplayMember = "name"
             ComboBoxBrand.ValueMember = "id"
@@ -76,17 +80,18 @@
         user = Form1.txtUsername.Text
 
         Try
-            myReader = myCon.listAllData(" Update product set name='" + txtProductName.Text + "',description='" + txtDescription.Text + "',
-            unit_price='" + txtUnitprice.Text + "',qty_agree='" + txtQty.Text + "',date_created='" + DateCreated.Text + "',updated_by='" + user + "',
+            myReader = myCon.listAllData(" Update product set product.name='" + txtProductName.Text + "',product.description='" + txtDescription.Text + "',
+            product.unit_price='" + txtUnitprice.Text + "',product.qty_agree='" + txtQty.Text + "',date_created='" + DateCreated.Text + "',updated_by='" + user + "',
             category_id = (select category.id from category where category.name = '" + ComboBoxcategory.Text + "'),
-            brand_id = (select brand.id from brand where brand.name = '" + ComboBoxBrand.Text + "') where id =" + txtProductCode.Text + "")
+            brand_id = (select brand.id from brand where brand.name = '" + ComboBoxBrand.Text + "') where product.code ='" + txtProductCode.Text + "'")
+            MsgBox("Product update successfully")
+            Me.Close()
+            getAllProduct()
         Catch ex As Exception
             MsgBox(ex.Message)
             Exit Sub
         End Try
-        MsgBox("Product update successfully")
-        Me.Close()
-        getAllProduct()
+
     End Sub
 
     Private Sub ComboBoxcategory_SelectedIndexChanged(sender As Object, e As EventArgs) Handles ComboBoxcategory.SelectedIndexChanged

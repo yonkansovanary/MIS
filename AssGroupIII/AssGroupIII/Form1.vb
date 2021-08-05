@@ -19,16 +19,23 @@ Public Class Form1
         Dim username As String
         Dim password As String
         Dim pass As String
+        Dim lock As Boolean
         pass = myCon.EncryptPasword(txtPassword.Text)
         Try
             myReader = myCon.myReaderFunction("select * from sec_user where username = '" + txtUsername.Text + "'")
             myReader.Read()
+            lock = myReader("is_lock").ToString()
             username = myReader("username").ToString()
             password = myReader("password").ToString()
-            If ((username = txtUsername.Text) And (password = pass)) Then
+
+            If (lock = True) Then
+                MsgBox("User is locked please contact to administration")
+                Me.Show()
+                txtUsername.Text = ""
+                txtPassword.Text = ""
+            ElseIf ((username = txtUsername.Text) And (password = pass)) Then
                 MainForm.Show()
                 Me.Hide()
-
             Else
                 MsgBox("Please check username and password again")
             End If

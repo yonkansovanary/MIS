@@ -26,21 +26,21 @@ Partial Class Supplier
         Me.btnUpdate = New System.Windows.Forms.Button()
         Me.btnDelete = New System.Windows.Forms.Button()
         Me.Button1 = New System.Windows.Forms.Button()
-        Me.txtProductCode = New System.Windows.Forms.TextBox()
+        Me.txtSuppCode = New System.Windows.Forms.TextBox()
         Me.Label1 = New System.Windows.Forms.Label()
         Me.btnSave = New System.Windows.Forms.Button()
         Me.LabelGender = New System.Windows.Forms.Label()
-        Me.txtUnitprice = New System.Windows.Forms.TextBox()
-        Me.txtProductName = New System.Windows.Forms.TextBox()
+        Me.txtLocation = New System.Windows.Forms.TextBox()
+        Me.txtSuppName = New System.Windows.Forms.TextBox()
         Me.LabelAddProductTitle = New System.Windows.Forms.Label()
         Me.LabelUnitprice = New System.Windows.Forms.Label()
         Me.LabelCategory = New System.Windows.Forms.Label()
         Me.LabelProductName = New System.Windows.Forms.Label()
-        Me.TextBox1 = New System.Windows.Forms.TextBox()
-        Me.TextBox2 = New System.Windows.Forms.TextBox()
-        Me.TextBox3 = New System.Windows.Forms.TextBox()
+        Me.txtEmail = New System.Windows.Forms.TextBox()
+        Me.txtPhone = New System.Windows.Forms.TextBox()
+        Me.txtComLocation = New System.Windows.Forms.TextBox()
         Me.Label2 = New System.Windows.Forms.Label()
-        Me.TextBox4 = New System.Windows.Forms.TextBox()
+        Me.txtCompanyName = New System.Windows.Forms.TextBox()
         Me.Label3 = New System.Windows.Forms.Label()
         Me.DataGridViewSupplier = New System.Windows.Forms.DataGridView()
         CType(Me.DataGridViewSupplier, System.ComponentModel.ISupportInitialize).BeginInit()
@@ -78,15 +78,15 @@ Partial Class Supplier
         Me.Button1.TabIndex = 64
         Me.Button1.UseVisualStyleBackColor = False
         '
-        'txtProductCode
+        'txtSuppCode
         '
-        Me.txtProductCode.Font = New System.Drawing.Font("Microsoft Sans Serif", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.txtProductCode.Location = New System.Drawing.Point(228, 139)
-        Me.txtProductCode.Margin = New System.Windows.Forms.Padding(4)
-        Me.txtProductCode.Name = "txtProductCode"
-        Me.txtProductCode.ReadOnly = True
-        Me.txtProductCode.Size = New System.Drawing.Size(267, 30)
-        Me.txtProductCode.TabIndex = 63
+        Me.txtSuppCode.Font = New System.Drawing.Font("Microsoft Sans Serif", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.txtSuppCode.Location = New System.Drawing.Point(228, 139)
+        Me.txtSuppCode.Margin = New System.Windows.Forms.Padding(4)
+        Me.txtSuppCode.Name = "txtSuppCode"
+        Me.txtSuppCode.ReadOnly = True
+        Me.txtSuppCode.Size = New System.Drawing.Size(267, 30)
+        Me.txtSuppCode.TabIndex = 63
         '
         'Label1
         '
@@ -120,23 +120,23 @@ Partial Class Supplier
         Me.LabelGender.TabIndex = 57
         Me.LabelGender.Text = "Email"
         '
-        'txtUnitprice
+        'txtLocation
         '
-        Me.txtUnitprice.Font = New System.Drawing.Font("Microsoft Sans Serif", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.txtUnitprice.Location = New System.Drawing.Point(726, 144)
-        Me.txtUnitprice.Margin = New System.Windows.Forms.Padding(4)
-        Me.txtUnitprice.Name = "txtUnitprice"
-        Me.txtUnitprice.Size = New System.Drawing.Size(267, 30)
-        Me.txtUnitprice.TabIndex = 54
+        Me.txtLocation.Font = New System.Drawing.Font("Microsoft Sans Serif", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.txtLocation.Location = New System.Drawing.Point(726, 144)
+        Me.txtLocation.Margin = New System.Windows.Forms.Padding(4)
+        Me.txtLocation.Name = "txtLocation"
+        Me.txtLocation.Size = New System.Drawing.Size(267, 30)
+        Me.txtLocation.TabIndex = 54
         '
-        'txtProductName
+        'txtSuppName
         '
-        Me.txtProductName.Font = New System.Drawing.Font("Microsoft Sans Serif", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.txtProductName.Location = New System.Drawing.Point(228, 189)
-        Me.txtProductName.Margin = New System.Windows.Forms.Padding(4)
-        Me.txtProductName.Name = "txtProductName"
-        Me.txtProductName.Size = New System.Drawing.Size(267, 30)
-        Me.txtProductName.TabIndex = 53
+        Me.txtSuppName.Font = New System.Drawing.Font("Microsoft Sans Serif", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.txtSuppName.Location = New System.Drawing.Point(228, 189)
+        Me.txtSuppName.Margin = New System.Windows.Forms.Padding(4)
+        Me.txtSuppName.Name = "txtSuppName"
+        Me.txtSuppName.Size = New System.Drawing.Size(267, 30)
+        Me.txtSuppName.TabIndex = 53
         '
         'LabelAddProductTitle
         '
@@ -182,32 +182,32 @@ Partial Class Supplier
         Me.LabelProductName.TabIndex = 46
         Me.LabelProductName.Text = "Name"
         '
-        'TextBox1
+        'txtEmail
         '
-        Me.TextBox1.Font = New System.Drawing.Font("Microsoft Sans Serif", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.TextBox1.Location = New System.Drawing.Point(228, 319)
-        Me.TextBox1.Margin = New System.Windows.Forms.Padding(4)
-        Me.TextBox1.Name = "TextBox1"
-        Me.TextBox1.Size = New System.Drawing.Size(267, 30)
-        Me.TextBox1.TabIndex = 67
+        Me.txtEmail.Font = New System.Drawing.Font("Microsoft Sans Serif", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.txtEmail.Location = New System.Drawing.Point(228, 319)
+        Me.txtEmail.Margin = New System.Windows.Forms.Padding(4)
+        Me.txtEmail.Name = "txtEmail"
+        Me.txtEmail.Size = New System.Drawing.Size(267, 30)
+        Me.txtEmail.TabIndex = 67
         '
-        'TextBox2
+        'txtPhone
         '
-        Me.TextBox2.Font = New System.Drawing.Font("Microsoft Sans Serif", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.TextBox2.Location = New System.Drawing.Point(228, 250)
-        Me.TextBox2.Margin = New System.Windows.Forms.Padding(4)
-        Me.TextBox2.Name = "TextBox2"
-        Me.TextBox2.Size = New System.Drawing.Size(267, 30)
-        Me.TextBox2.TabIndex = 68
+        Me.txtPhone.Font = New System.Drawing.Font("Microsoft Sans Serif", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.txtPhone.Location = New System.Drawing.Point(228, 250)
+        Me.txtPhone.Margin = New System.Windows.Forms.Padding(4)
+        Me.txtPhone.Name = "txtPhone"
+        Me.txtPhone.Size = New System.Drawing.Size(267, 30)
+        Me.txtPhone.TabIndex = 68
         '
-        'TextBox3
+        'txtComLocation
         '
-        Me.TextBox3.Font = New System.Drawing.Font("Microsoft Sans Serif", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.TextBox3.Location = New System.Drawing.Point(726, 283)
-        Me.TextBox3.Margin = New System.Windows.Forms.Padding(4)
-        Me.TextBox3.Name = "TextBox3"
-        Me.TextBox3.Size = New System.Drawing.Size(267, 30)
-        Me.TextBox3.TabIndex = 70
+        Me.txtComLocation.Font = New System.Drawing.Font("Microsoft Sans Serif", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.txtComLocation.Location = New System.Drawing.Point(726, 283)
+        Me.txtComLocation.Margin = New System.Windows.Forms.Padding(4)
+        Me.txtComLocation.Name = "txtComLocation"
+        Me.txtComLocation.Size = New System.Drawing.Size(267, 30)
+        Me.txtComLocation.TabIndex = 70
         '
         'Label2
         '
@@ -220,14 +220,14 @@ Partial Class Supplier
         Me.Label2.TabIndex = 69
         Me.Label2.Text = "Company Location"
         '
-        'TextBox4
+        'txtCompanyName
         '
-        Me.TextBox4.Font = New System.Drawing.Font("Microsoft Sans Serif", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.TextBox4.Location = New System.Drawing.Point(726, 210)
-        Me.TextBox4.Margin = New System.Windows.Forms.Padding(4)
-        Me.TextBox4.Name = "TextBox4"
-        Me.TextBox4.Size = New System.Drawing.Size(267, 30)
-        Me.TextBox4.TabIndex = 72
+        Me.txtCompanyName.Font = New System.Drawing.Font("Microsoft Sans Serif", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.txtCompanyName.Location = New System.Drawing.Point(726, 210)
+        Me.txtCompanyName.Margin = New System.Windows.Forms.Padding(4)
+        Me.txtCompanyName.Name = "txtCompanyName"
+        Me.txtCompanyName.Size = New System.Drawing.Size(267, 30)
+        Me.txtCompanyName.TabIndex = 72
         '
         'Label3
         '
@@ -255,21 +255,21 @@ Partial Class Supplier
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
         Me.ClientSize = New System.Drawing.Size(1181, 870)
         Me.Controls.Add(Me.DataGridViewSupplier)
-        Me.Controls.Add(Me.TextBox4)
+        Me.Controls.Add(Me.txtCompanyName)
         Me.Controls.Add(Me.Label3)
-        Me.Controls.Add(Me.TextBox3)
+        Me.Controls.Add(Me.txtComLocation)
         Me.Controls.Add(Me.Label2)
-        Me.Controls.Add(Me.TextBox2)
-        Me.Controls.Add(Me.TextBox1)
+        Me.Controls.Add(Me.txtPhone)
+        Me.Controls.Add(Me.txtEmail)
         Me.Controls.Add(Me.btnUpdate)
         Me.Controls.Add(Me.btnDelete)
         Me.Controls.Add(Me.Button1)
-        Me.Controls.Add(Me.txtProductCode)
+        Me.Controls.Add(Me.txtSuppCode)
         Me.Controls.Add(Me.Label1)
         Me.Controls.Add(Me.btnSave)
         Me.Controls.Add(Me.LabelGender)
-        Me.Controls.Add(Me.txtUnitprice)
-        Me.Controls.Add(Me.txtProductName)
+        Me.Controls.Add(Me.txtLocation)
+        Me.Controls.Add(Me.txtSuppName)
         Me.Controls.Add(Me.LabelAddProductTitle)
         Me.Controls.Add(Me.LabelUnitprice)
         Me.Controls.Add(Me.LabelCategory)
@@ -285,21 +285,21 @@ Partial Class Supplier
     Friend WithEvents btnUpdate As Button
     Friend WithEvents btnDelete As Button
     Friend WithEvents Button1 As Button
-    Friend WithEvents txtProductCode As TextBox
+    Friend WithEvents txtSuppCode As TextBox
     Friend WithEvents Label1 As Label
     Friend WithEvents btnSave As Button
     Friend WithEvents LabelGender As Label
-    Friend WithEvents txtUnitprice As TextBox
-    Friend WithEvents txtProductName As TextBox
+    Friend WithEvents txtLocation As TextBox
+    Friend WithEvents txtSuppName As TextBox
     Friend WithEvents LabelAddProductTitle As Label
     Friend WithEvents LabelUnitprice As Label
     Friend WithEvents LabelCategory As Label
     Friend WithEvents LabelProductName As Label
-    Friend WithEvents TextBox1 As TextBox
-    Friend WithEvents TextBox2 As TextBox
-    Friend WithEvents TextBox3 As TextBox
+    Friend WithEvents txtEmail As TextBox
+    Friend WithEvents txtPhone As TextBox
+    Friend WithEvents txtComLocation As TextBox
     Friend WithEvents Label2 As Label
-    Friend WithEvents TextBox4 As TextBox
+    Friend WithEvents txtCompanyName As TextBox
     Friend WithEvents Label3 As Label
     Friend WithEvents DataGridViewSupplier As DataGridView
 End Class
